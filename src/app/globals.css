@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #17A398;
+    --primary-light: #20C5B0;
+    --primary-dark: #0F766E;
+    --accent: #F79A49;
+    --accent-light: #FFB366;
+    --accent-dark: #D97706;
+    --gold: #F59E0B;
+    --sand: #FAF7F2;
+    --background: #FFFFFF;
+    --foreground: #1E293B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif;
+  }
+}
+
+/* Glassmorphism & Custom Accents */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #B45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-teal-gradient {
+  background: linear-gradient(135deg, #20C5B0 0%, #0F766E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth animations */
+.transition-luxury {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}

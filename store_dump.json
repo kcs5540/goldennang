@@ -1,0 +1,4048 @@
+{
+  "abt": {},
+  "channelProductVertical": {
+    "verticals": [],
+    "isFetched": false
+  },
+  "consumerSurveys": [],
+  "deliverySavingProduct": {
+    "sortType": "RECENT",
+    "simpleProducts": [],
+    "isFetched": false
+  },
+  "directCount": 0,
+  "forYouProduct": {
+    "recInfo": null,
+    "recItems": [],
+    "simpleProducts": [],
+    "currentPage": 1,
+    "totalCount": 0
+  },
+  "fulfillment": {
+    "rmidStatus": "INIT",
+    "rmids": [],
+    "sellerDeliveryPlans": {}
+  },
+  "groupProduct": {
+    "products": [],
+    "originProductNos": [],
+    "groupId": null,
+    "groupProductName": null,
+    "reviewAmount": null,
+    "standardPurchaseOptionConfig": null,
+    "displayConfig": null
+  },
+  "keepCartRecommend": {
+    "recommendProducts": {
+      "SIMILAR": {
+        "products": []
+      },
+      "BUNDLE": {
+        "products": []
+      },
+      "BUNDLE_DELIVERY": {
+        "products": []
+      }
+    },
+    "keepProductType": null,
+    "cartProductType": null,
+    "recommendType": null,
+    "add_cart_action_uid": null,
+    "shown": false,
+    "hasShown": false,
+    "isFetched": false
+  },
+  "live": {
+    "broadcasts": [],
+    "representShortclip": null,
+    "recentShortclips": null
+  },
+  "marketingMessage": {
+    "isFetched": {
+      "PURCHASE": false,
+      "PET_MEMBERSHIP": false,
+      "BABY_MEMBERSHIP": false,
+      "SHOPPING_FESTA": false
+    },
+    "messages": []
+  },
+  "myAddress": {
+    "districtNameText": "",
+    "zipCode": "",
+    "addressName": "",
+    "buildingManagementNo": "",
+    "hasShippingAddr": false,
+    "isError": false,
+    "defaultShippingAddress": {
+      "districtNameText": "서울시 강남구",
+      "zipCode": "06236",
+      "addressName": "",
+      "roadNameText": "테헤란로 142"
+    }
+  },
+  "naverMember": {
+    "adultAuthorizationType": "NOT_LOGIN",
+    "isLogin": false
+  },
+  "naverMembership": {
+    "isSubscribed": false,
+    "isFamilyMembership": false,
+    "payMembership": null,
+    "expectBenefit": null,
+    "lifeCycles": {
+      "isLifeCyclePet": null,
+      "isLifeCycleBaby": null
+    }
+  },
+  "productBenefit": {
+    "point": {
+      "pointResult": null,
+      "pointExtra": {
+        "inflowPoint": {
+          "normalInflowPoints": [],
+          "membershipInflowPoints": []
+        },
+        "reviewPoint": {
+          "total": 0,
+          "textReview": 0,
+          "photoVideoReview": 0,
+          "afterUseTextReview": 0,
+          "afterUsePhotoVideoReview": 0,
+          "storeMemberReview": 0
+        },
+        "sellerPurchasePoint": {
+          "isSpecialBadge": false,
+          "sellerPurchaseDiffDays": ""
+        },
+        "membershipPoint": {
+          "membershipExpectedPoint": 0,
+          "membershipDayPolicyName": "",
+          "expectedTotalSuperPoint": 0
+        }
+      },
+      "rentalPointExtra": null
+    },
+    "isCustomReviewPoint": false,
+    "customTextPoint": null,
+    "customPhotoVideoPoint": null,
+    "optimalDiscount": {
+      "fetched": false
+    },
+    "optimalDiscountResult": null,
+    "simulator": {
+      "fetched": false,
+      "isLayerOpened": false,
+      "showDetail": false,
+      "useProductOption": false,
+      "point": {
+        "pointResult": null,
+        "pointExtra": {
+          "inflowPoint": {
+            "normalInflowPoints": [],
+            "membershipInflowPoints": []
+          },
+          "reviewPoint": {
+            "total": 0,
+            "textReview": 0,
+            "photoVideoReview": 0,
+            "afterUseTextReview": 0,
+            "afterUsePhotoVideoReview": 0,
+            "storeMemberReview": 0
+          },
+          "sellerPurchasePoint": {
+            "isSpecialBadge": false,
+            "sellerPurchaseDiffDays": ""
+          },
+          "membershipPoint": {
+            "membershipExpectedPoint": 0,
+            "membershipDayPolicyName": "",
+            "expectedTotalSuperPoint": 0
+          }
+        },
+        "rentalPointExtra": null
+      },
+      "productBenefit": {
+        "benefitsPolicy": null,
+        "benefitsView": null
+      },
+      "productInfo": null
+    },
+    "promotion": null,
+    "isFetched": false
+  },
+  "productDelivery": {
+    "isRestrictedRegionFetched": false,
+    "restrictedRegion": null
+  },
+  "productReviewSummary": {
+    "PRODUCT": {
+      "productReviewInfo": null,
+      "recentProductReviewInfo": null,
+      "reviewEvaluations": [],
+      "reviewTopics": [],
+      "userInfo": null,
+      "generalReviews": null,
+      "photoVideoReviews": null,
+      "bestReviews": null,
+      "imageAnalysisType": null,
+      "summaryCardReviewInfo": null,
+      "reviewThumbnailDisplayType": "SQUARE",
+      "sizeRecommend": null
+    },
+    "REVIEW_DIALOG": {
+      "productReviewInfo": null,
+      "recentProductReviewInfo": null,
+      "reviewEvaluations": [],
+      "reviewTopics": [],
+      "userInfo": null,
+      "generalReviews": null,
+      "photoVideoReviews": null,
+      "bestReviews": null,
+      "imageAnalysisType": null,
+      "summaryCardReviewInfo": null,
+      "reviewThumbnailDisplayType": "SQUARE",
+      "sizeRecommend": null
+    },
+    "PHOTO_VIDEO_LIST_DIALOG": {
+      "productReviewInfo": null,
+      "recentProductReviewInfo": null,
+      "reviewEvaluations": [],
+      "reviewTopics": [],
+      "userInfo": null,
+      "generalReviews": null,
+      "photoVideoReviews": null,
+      "bestReviews": null,
+      "imageAnalysisType": null,
+      "summaryCardReviewInfo": null,
+      "reviewThumbnailDisplayType": "SQUARE",
+      "sizeRecommend": null
+    }
+  },
+  "recommendTabVisible": {
+    "hasRecommendProduct": false
+  },
+  "relationProducts": {
+    "isFetched": false,
+    "coordiProducts": [],
+    "togetherProducts": [],
+    "similarProducts": [],
+    "togetherImageProducts": []
+  },
+  "serviceConfig": null,
+  "subVerticalMeta": {},
+  "targetCondition": {
+    "type": "NONE",
+    "targetConditionActionDetails": []
+  },
+  "verticalInventoryItems": {},
+  "wtm": {
+    "wtmDryrunRulesEnc": "30asrwRC33Tl5AMBclElhc3gPgP3xK3QLcNgrylZRWI="
+  },
+  "categoryMenu": {
+    "firstCategories": [
+      {
+        "id": "e732e6b8ea1f452583da17832c9261ff",
+        "channelNo": 100475442,
+        "type": "DISPLAY_CATEGORY",
+        "name": "애플망고",
+        "parentStoreCategoryId": "0",
+        "superiorStoreCategoryId": "0",
+        "wholeStoreCategoryId": "e732e6b8ea1f452583da17832c9261ff",
+        "level": 1,
+        "sortOrder": 1,
+        "allProductCategory": false,
+        "exposure": true,
+        "selfExposure": true,
+        "productSortType": "POPULAR",
+        "productDisplayType": "BIG_IMAGE",
+        "mobileProductDisplayType": "LIST",
+        "mappingConfig": {
+          "mappingType": "PRODUCT",
+          "mappingContent": "5860526093|5800025791",
+          "mappingCount": 2
+        },
+        "topFreeSetting": {
+          "bannerSetting": {
+            "visible": true,
+            "pageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "mobilePageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "pageImageLink": "",
+            "useAltText": false,
+            "altTextTitle": "",
+            "altTextDescription": "",
+            "imageLinkType": "PRODUCT",
+            "title": "",
+            "description": "",
+            "textAlignment": "CENTER"
+          },
+          "videoSetting": {
+            "visible": false
+          },
+          "quickLinkSetting": {
+            "visible": false,
+            "quickLinks": []
+          },
+          "recommendProductSetting": {
+            "visible": true,
+            "titleContentType": "NOEXPOSURE",
+            "titleContent": "",
+            "sortType": "RANDOM",
+            "productNos": [
+              5860526093,
+              5800025791
+            ]
+          }
+        },
+        "mergeUpdatedDate": "2023-09-07T01:34:06.903+00:00"
+      },
+      {
+        "id": "2a6e9edfc18047aaa3213fb9604c144c",
+        "channelNo": 100475442,
+        "type": "DISPLAY_CATEGORY",
+        "name": "망고나무",
+        "parentStoreCategoryId": "0",
+        "superiorStoreCategoryId": "0",
+        "wholeStoreCategoryId": "2a6e9edfc18047aaa3213fb9604c144c",
+        "level": 1,
+        "sortOrder": 2,
+        "allProductCategory": false,
+        "exposure": true,
+        "selfExposure": true,
+        "productSortType": "POPULAR",
+        "productDisplayType": "BIG_IMAGE",
+        "mobileProductDisplayType": "LIST",
+        "mappingConfig": {
+          "mappingType": "PRODUCT",
+          "mappingContent": "5450975413|6969133507|6139176452|5457071830|4790070622",
+          "mappingCount": 5
+        },
+        "topFreeSetting": {
+          "bannerSetting": {
+            "visible": false,
+            "pageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "mobilePageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "pageImageLink": "",
+            "useAltText": false,
+            "altTextTitle": "",
+            "altTextDescription": "",
+            "imageLinkType": "PRODUCT",
+            "title": "",
+            "description": "",
+            "textAlignment": "CENTER"
+          },
+          "videoSetting": {
+            "visible": false
+          },
+          "quickLinkSetting": {
+            "visible": false,
+            "quickLinks": []
+          },
+          "recommendProductSetting": {
+            "visible": false,
+            "titleContentType": "NOEXPOSURE",
+            "titleContent": "",
+            "sortType": "RANDOM"
+          }
+        },
+        "mergeUpdatedDate": "2023-09-07T02:04:06.684+00:00"
+      },
+      {
+        "id": "d9c11fd5ddfe4d29a90ab9e23e6b1c39",
+        "channelNo": 100475442,
+        "type": "DISPLAY_CATEGORY",
+        "name": "귤나무",
+        "parentStoreCategoryId": "0",
+        "superiorStoreCategoryId": "0",
+        "wholeStoreCategoryId": "d9c11fd5ddfe4d29a90ab9e23e6b1c39",
+        "level": 1,
+        "sortOrder": 4,
+        "allProductCategory": false,
+        "exposure": true,
+        "selfExposure": true,
+        "productSortType": "POPULAR",
+        "productDisplayType": "BIG_IMAGE",
+        "mobileProductDisplayType": "LIST",
+        "mappingConfig": {
+          "mappingType": "PRODUCT",
+          "mappingContent": "4796801876|4796779517",
+          "mappingCount": 2
+        },
+        "topFreeSetting": {
+          "bannerSetting": {
+            "visible": false,
+            "pageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "mobilePageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "pageImageLink": "",
+            "useAltText": false,
+            "altTextTitle": "",
+            "altTextDescription": "",
+            "imageLinkType": "PRODUCT",
+            "title": "",
+            "description": "",
+            "textAlignment": "CENTER"
+          },
+          "videoSetting": {
+            "visible": false
+          },
+          "quickLinkSetting": {
+            "visible": false,
+            "quickLinks": []
+          },
+          "recommendProductSetting": {
+            "visible": false,
+            "titleContentType": "NOEXPOSURE",
+            "titleContent": "",
+            "sortType": "RANDOM",
+            "productNos": []
+          }
+        },
+        "mergeUpdatedDate": "2023-09-07T02:04:06.684+00:00"
+      },
+      {
+        "id": "4a2a9a8e3ba7474190d64877cc84f8bf",
+        "channelNo": 100475442,
+        "type": "DISPLAY_CATEGORY",
+        "name": "폰깡나무",
+        "parentStoreCategoryId": "0",
+        "superiorStoreCategoryId": "0",
+        "wholeStoreCategoryId": "4a2a9a8e3ba7474190d64877cc84f8bf",
+        "level": 1,
+        "sortOrder": 5,
+        "allProductCategory": false,
+        "exposure": true,
+        "selfExposure": true,
+        "productSortType": "POPULAR",
+        "productDisplayType": "BIG_IMAGE",
+        "mobileProductDisplayType": "LIST",
+        "mappingConfig": {
+          "mappingType": "PRODUCT",
+          "mappingContent": "4796713588",
+          "mappingCount": 1
+        },
+        "topFreeSetting": {
+          "bannerSetting": {
+            "visible": false,
+            "pageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "mobilePageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "pageImageLink": "",
+            "useAltText": false,
+            "altTextTitle": "",
+            "altTextDescription": "",
+            "imageLinkType": "PRODUCT",
+            "title": "",
+            "description": "",
+            "textAlignment": "CENTER"
+          },
+          "videoSetting": {
+            "visible": false
+          },
+          "quickLinkSetting": {
+            "visible": false,
+            "quickLinks": []
+          },
+          "recommendProductSetting": {
+            "visible": false,
+            "titleContentType": "NOEXPOSURE",
+            "titleContent": "",
+            "sortType": "RANDOM",
+            "productNos": []
+          }
+        },
+        "mergeUpdatedDate": "2023-09-07T02:04:06.684+00:00"
+      },
+      {
+        "id": "68df340b05cf4725b8904ca2dc676cbd",
+        "channelNo": 100475442,
+        "type": "DISPLAY_CATEGORY",
+        "name": "금귤나무",
+        "parentStoreCategoryId": "0",
+        "superiorStoreCategoryId": "0",
+        "wholeStoreCategoryId": "68df340b05cf4725b8904ca2dc676cbd",
+        "level": 1,
+        "sortOrder": 6,
+        "allProductCategory": false,
+        "exposure": true,
+        "selfExposure": true,
+        "productSortType": "POPULAR",
+        "productDisplayType": "BIG_IMAGE",
+        "mobileProductDisplayType": "LIST",
+        "mappingConfig": {
+          "mappingType": "PRODUCT",
+          "mappingContent": "5967726204|4796660754",
+          "mappingCount": 2
+        },
+        "topFreeSetting": {
+          "bannerSetting": {
+            "visible": false,
+            "pageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "mobilePageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "pageImageLink": "",
+            "useAltText": false,
+            "altTextTitle": "",
+            "altTextDescription": "",
+            "imageLinkType": "PRODUCT",
+            "title": "",
+            "description": "",
+            "textAlignment": "CENTER"
+          },
+          "videoSetting": {
+            "visible": false
+          },
+          "quickLinkSetting": {
+            "visible": false,
+            "quickLinks": []
+          },
+          "recommendProductSetting": {
+            "visible": false,
+            "titleContentType": "NOEXPOSURE",
+            "titleContent": "",
+            "sortType": "RANDOM",
+            "productNos": []
+          }
+        },
+        "mergeUpdatedDate": "2023-09-07T02:04:06.684+00:00"
+      },
+      {
+        "id": "2e7ed8a4e2264706b95960c9a608e7b6",
+        "channelNo": 100475442,
+        "type": "DISPLAY_CATEGORY",
+        "name": "기타 만감류",
+        "parentStoreCategoryId": "0",
+        "superiorStoreCategoryId": "0",
+        "wholeStoreCategoryId": "2e7ed8a4e2264706b95960c9a608e7b6",
+        "level": 1,
+        "sortOrder": 7,
+        "allProductCategory": false,
+        "exposure": true,
+        "selfExposure": true,
+        "productSortType": "POPULAR",
+        "productDisplayType": "BIG_IMAGE",
+        "mobileProductDisplayType": "LIST",
+        "mappingConfig": {
+          "mappingType": "PRODUCT",
+          "mappingContent": "4796756605|4796743460|4796713588|4796660754",
+          "mappingCount": 4
+        },
+        "topFreeSetting": {
+          "bannerSetting": {
+            "visible": false,
+            "pageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "mobilePageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "pageImageLink": "",
+            "useAltText": false,
+            "altTextTitle": "",
+            "altTextDescription": "",
+            "imageLinkType": "PRODUCT",
+            "title": "",
+            "description": "",
+            "textAlignment": "CENTER"
+          },
+          "videoSetting": {
+            "visible": false
+          },
+          "quickLinkSetting": {
+            "visible": false,
+            "quickLinks": []
+          },
+          "recommendProductSetting": {
+            "visible": false,
+            "titleContentType": "NOEXPOSURE",
+            "titleContent": "",
+            "sortType": "RANDOM",
+            "productNos": []
+          }
+        },
+        "mergeUpdatedDate": "2023-09-07T02:04:06.684+00:00"
+      },
+      {
+        "id": "423d14d253724c36acca6e84232265f8",
+        "channelNo": 100475442,
+        "type": "DISPLAY_CATEGORY",
+        "name": "전체상품",
+        "categoryId": "ALL",
+        "parentCategoryId": "ALL",
+        "superiorCategoryId": "ALL",
+        "parentStoreCategoryId": "0",
+        "superiorStoreCategoryId": "0",
+        "wholeStoreCategoryId": "423d14d253724c36acca6e84232265f8",
+        "level": 1,
+        "sortOrder": 8,
+        "allProductCategory": true,
+        "exposure": true,
+        "selfExposure": true,
+        "productSortType": "POPULAR",
+        "productDisplayType": "BIG_IMAGE",
+        "mobileProductDisplayType": "LIST",
+        "mappingConfig": {
+          "mappingType": "STANDARDCATEGORY",
+          "mappingContent": "",
+          "mappingCount": 0
+        },
+        "topFreeSetting": {
+          "bannerSetting": {
+            "visible": true,
+            "pageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "mobilePageImage": {
+              "url": "",
+              "width": 0,
+              "height": 0,
+              "originalUrl": "",
+              "top": 0,
+              "left": 0
+            },
+            "pageImageLink": "",
+            "useAltText": false,
+            "altTextTitle": "",
+            "altTextDescription": "",
+            "imageLinkType": "PRODUCT",
+            "title": "",
+            "description": "",
+            "textAlignment": "CENTER"
+          },
+          "videoSetting": {
+            "visible": false
+          },
+          "quickLinkSetting": {
+            "visible": false,
+            "quickLinks": []
+          },
+          "recommendProductSetting": {
+            "visible": false,
+            "titleContentType": "NOEXPOSURE",
+            "titleContent": "",
+            "sortType": "RANDOM",
+            "productNos": []
+          }
+        },
+        "mergeUpdatedDate": "2023-09-07T02:04:06.684+00:00"
+      }
+    ],
+    "categoryDisplayType": "DISPLAY",
+    "storeCategoryTree": {
+      "id": "0",
+      "name": "ROOT",
+      "categoryId": "0",
+      "parentCategoryId": "0",
+      "level": 0,
+      "sortOrder": 0,
+      "subCategories": [
+        {
+          "id": "e732e6b8ea1f452583da17832c9261ff",
+          "type": "DISPLAY_CATEGORY",
+          "name": "애플망고",
+          "parentStoreCategoryId": "0",
+          "level": 1,
+          "sortOrder": 1,
+          "allProductCategory": false,
+          "exposure": true,
+          "selfExposure": true
+        },
+        {
+          "id": "2a6e9edfc18047aaa3213fb9604c144c",
+          "type": "DISPLAY_CATEGORY",
+          "name": "망고나무",
+          "parentStoreCategoryId": "0",
+          "level": 1,
+          "sortOrder": 2,
+          "allProductCategory": false,
+          "exposure": true,
+          "selfExposure": true
+        },
+        {
+          "id": "d9c11fd5ddfe4d29a90ab9e23e6b1c39",
+          "type": "DISPLAY_CATEGORY",
+          "name": "귤나무",
+          "parentStoreCategoryId": "0",
+          "level": 1,
+          "sortOrder": 4,
+          "allProductCategory": false,
+          "exposure": true,
+          "selfExposure": true
+        },
+        {
+          "id": "4a2a9a8e3ba7474190d64877cc84f8bf",
+          "type": "DISPLAY_CATEGORY",
+          "name": "폰깡나무",
+          "parentStoreCategoryId": "0",
+          "level": 1,
+          "sortOrder": 5,
+          "allProductCategory": false,
+          "exposure": true,
+          "selfExposure": true
+        },
+        {
+          "id": "68df340b05cf4725b8904ca2dc676cbd",
+          "type": "DISPLAY_CATEGORY",
+          "name": "금귤나무",
+          "parentStoreCategoryId": "0",
+          "level": 1,
+          "sortOrder": 6,
+          "allProductCategory": false,
+          "exposure": true,
+          "selfExposure": true
+        },
+        {
+          "id": "2e7ed8a4e2264706b95960c9a608e7b6",
+          "type": "DISPLAY_CATEGORY",
+          "name": "기타 만감류",
+          "parentStoreCategoryId": "0",
+          "level": 1,
+          "sortOrder": 7,
+          "allProductCategory": false,
+          "exposure": true,
+          "selfExposure": true
+        },
+        {
+          "id": "423d14d253724c36acca6e84232265f8",
+          "type": "DISPLAY_CATEGORY",
+          "name": "전체상품",
+          "categoryId": "ALL",
+          "parentCategoryId": "ALL",
+          "parentStoreCategoryId": "0",
+          "level": 1,
+          "sortOrder": 8,
+          "allProductCategory": true,
+          "exposure": true,
+          "selfExposure": true
+        }
+      ]
+    },
+    "validMenu": {
+      "isBestValid": true,
+      "isPromotionValid": false,
+      "isLiveValid": false,
+      "isLoungeValid": false,
+      "isExhibitionValid": false,
+      "isArrivalGuaranteeValid": false,
+      "isNewProductValid": false
+    }
+  },
+  "categoryProducts": {
+    "key": null,
+    "isError": false,
+    "simpleProducts": [],
+    "simpleCatalogs": [],
+    "totalCount": 0,
+    "listDisplayType": null,
+    "mobileListDisplayType": null,
+    "sort": null,
+    "page": 1,
+    "pageSize": 20,
+    "recommendSimpleProducts": [],
+    "recommendSimpleCatalogs": [],
+    "swipeGuideTargetIds": [],
+    "filter": {
+      "filters": [],
+      "priceRange": null
+    },
+    "isDeduplicateGroupEpId": false,
+    "isFetched": false
+  },
+  "categorySetting": {
+    "data": null,
+    "isFetched": false
+  },
+  "categorySettingContents": {
+    "categoryProductDefaultImageUrlMap": null,
+    "visibleQuickLinks": []
+  },
+  "channel": {
+    "id": "100475442",
+    "channelId": "4yNPmlw0OCxyVibU0KVWBt",
+    "channelUid": "2sWDy7KDVVX2rtgGScH62",
+    "channelServiceType": "STOREFARM",
+    "channelExternalStatusType": "NORMAL",
+    "exhibitionYn": true,
+    "channelName": "황금낭",
+    "url": "goldennang",
+    "representImageInfoList": [
+      {
+        "imageUrl": "https://shop-phinf.pstatic.net/20260319_220/17738786621381F8sw_PNG/58835582220599131_121153573.png",
+        "imageName": "58835582220599131_121153573.png",
+        "imageClass": "STORE_REPRESENTATIVE",
+        "width": 1182,
+        "height": 1182,
+        "fileSize": 127853,
+        "sortOrder": 0,
+        "representative": false
+      }
+    ],
+    "talkAccountId": "wcemy4",
+    "talkExposureYn": true,
+    "description": "부와 복을 부르는 귤나무·애플망고나무 농장 제주 황금낭입니다",
+    "contactInfo": {
+      "displayTelNo": true,
+      "disabledDomesticTelNo": false,
+      "telNo": {
+        "countryCode": "********",
+        "phoneNo": "********",
+        "formattedNumber": "********"
+      },
+      "overseaTelNo": {
+        "countryCode": "********",
+        "phoneNo": "",
+        "formattedNumber": ""
+      },
+      "onlineSales": false,
+      "offlineSales": false
+    },
+    "representType": "DOMESTIC_BUSINESS",
+    "identity": "********",
+    "representName": "농업회사법인 주식회사 황금낭",
+    "representativeName": "신현주",
+    "businessType": "CORPORATION",
+    "declaredToOnlineMarkettingNumber": "********",
+    "businessAddressInfo": {
+      "address": "********",
+      "apiType": "********",
+      "basicAddress": "********",
+      "detailAddress": "********",
+      "fullAddressInfo": "********",
+      "hasJibunAddress": true,
+      "hasRoadNameAddress": true,
+      "jibunAddress": "********",
+      "latitude": "********",
+      "longitude": "********",
+      "massiveAddress": "",
+      "naverMapCode": "********",
+      "newZipCode": "********",
+      "oldZipCode": "********",
+      "overseas": false,
+      "placeId": "********",
+      "representAddressType": "********",
+      "roadGroupId": "********",
+      "zipCode": "********"
+    },
+    "accountNo": 100431533,
+    "accountId": "ncp_1nslgt_01",
+    "accountUid": "ncp_2sSEyVF0TVvxf4M9Ettr4",
+    "mallSeq": 993312,
+    "storeExposureInfo": {
+      "exposureInfo": {
+        "NAVERBLOG": [
+          "goldennang"
+        ],
+        "INSTAGRAM": [
+          "jeju_goldennang"
+        ]
+      }
+    },
+    "chrgrEmail": "********",
+    "naverPayNo": 100431429,
+    "payReferenceKey": "510441429",
+    "actionGrade": "FOURTH",
+    "saleCount": 8,
+    "naSiteId": "s_1a13e86afd3fb",
+    "representativeImageUrl": "https://shop-phinf.pstatic.net/20260319_220/17738786621381F8sw_PNG/58835582220599131_121153573.png",
+    "additionalImageInfoList": [],
+    "isBusiness": true,
+    "representTelephoneNumber": "********",
+    "isDomesticPhoneNumber": true,
+    "domesticTelephoneNumberReported": false,
+    "isDomesticTelephoneNumberReportable": true,
+    "domesticTelephoneNumberCertified": true,
+    "productAuthCategoryTypes": [
+      "LESSON_GOODS"
+    ],
+    "representativeBirthDay": "********",
+    "brandStoreName": "황금낭",
+    "brandUrl": "goldennang",
+    "brandDisplayReinforceYn": false,
+    "blogExposureYn": false,
+    "arrivalGuaranteeUseYn": false,
+    "sellerGuaranteeUseYn": false,
+    "loungeOperateYn": false,
+    "loungeNotifyReceiveAgreeYn": false,
+    "consumerSurveyYn": false,
+    "useAccountLogisticsDeliveryTypes": [],
+    "metaCollaborativeAdsCommerceSolutionYn": false,
+    "affiliateCommerceYn": false,
+    "newShoppingMarketingExposureYn": true,
+    "storeExhibitionType": "SMART_STORE",
+    "catalogBrandStoreExhibitionYn": false,
+    "adVoostYn": false,
+    "storeOpenDuration": "오픈 7년된 스토어"
+  },
+  "commonSetting": {
+    "channelNo": 100475442,
+    "colorType": "CYAN",
+    "colorCode": "#20c5B0"
+  },
+  "exhibition": {
+    "exhibitions": [],
+    "exhibition": null,
+    "sections": null,
+    "productsMap": {}
+  },
+  "globalPopupLayer": {
+    "element": null,
+    "executeFunctionAtClose": null,
+    "classNames": null,
+    "overElement": {
+      "element": null,
+      "executeFunctionAtClose": null,
+      "classNames": null
+    },
+    "keepPopupOnPush": false,
+    "isTransparent": null,
+    "importantScrollPosition": false
+  },
+  "homeSetting": {
+    "displayConfig": {
+      "widgets": {
+        "gnbWidget": {
+          "visible": true,
+          "order": 0,
+          "type": "GNB",
+          "gnbType": "SIMPLE",
+          "nameType": "LOGO",
+          "logo": {
+            "url": "https://shop-phinf.pstatic.net/20260319_75/1773879530764Pf4V5_PNG/%C1%A6%B8%F1_%BE%F8%C0%BD-1.png",
+            "property": "200:90",
+            "width": 200,
+            "height": 90,
+            "originalUrl": "https://shop-phinf.pstatic.net/20260319_75/1773879530764Pf4V5_PNG/%C1%A6%B8%F1_%BE%F8%C0%BD-1.png",
+            "top": 0,
+            "left": 0
+          },
+          "mobileLogo": {
+            "url": "https://shop-phinf.pstatic.net/20260319_149/1773878944176oUTuX_PNG/C8B2B1DDB3B6_B7CEB0ED_2.png",
+            "property": "1513:566",
+            "width": 1513,
+            "height": 566,
+            "originalUrl": "https://shop-phinf.pstatic.net/20260319_179/17738787749706P1Fd_PNG/%C8%B2%B1%DD%B3%B6_%B7%CE%B0%ED_2.png",
+            "top": 63,
+            "left": 27
+          }
+        },
+        "promotionBannerWidget": {
+          "visible": true,
+          "order": 1,
+          "type": "PROMOTION_BANNER",
+          "items": [
+            {
+              "id": 12,
+              "visible": true,
+              "mobileImage": {
+                "url": "",
+                "property": "0:0",
+                "width": 0,
+                "height": 0,
+                "originalUrl": "",
+                "top": 0,
+                "left": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20231104_254/1699073431135lz391_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-002.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400,
+                "originalUrl": "https://shop-phinf.pstatic.net/20231104_254/1699073431135lz391_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-002.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "NOLINK"
+            },
+            {
+              "id": 9,
+              "visible": false,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20240614_33/1718352059961X4Iw6_JPEG/002.jpg",
+                "property": "750:600",
+                "width": 750,
+                "height": 600,
+                "originalUrl": "https://shop-phinf.pstatic.net/20240614_33/1718352059961X4Iw6_JPEG/002.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20240614_232/17183532629101bU1x_JPEG/002.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400,
+                "originalUrl": "https://shop-phinf.pstatic.net/20240614_232/17183532629101bU1x_JPEG/002.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 5800025791
+            },
+            {
+              "id": 1,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20211130_123/1638248989362UKHo9_JPEG/%B3%D7%C0%CC%B9%F6_%BD%BA%B8%B6%C6%AE_%BD%BA%C5%E4%BE%EE_750_%B9%E8%B3%CA_%B8%F0%B9%D9%C0%CF_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "property": "750:600",
+                "width": 750,
+                "height": 600
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20211130_290/1638249141112KvXvx_JPEG/1920_400_%B9%E8%B3%CA_%C8%B2%B1%DD%B3%B6_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 4790070622
+            },
+            {
+              "id": 3,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20210122_74/161125809670835Yyw_JPEG/99312172894402062_705135226.jpg",
+                "property": "750;600",
+                "width": 750,
+                "height": 600
+              },
+              "pcImage": {
+                "url": "",
+                "property": "0;0",
+                "width": 0,
+                "height": 0
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 6969133507
+            },
+            {
+              "id": 5,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "0;0",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230425_59/1682354215872ii7Rf_JPEG/001.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 6969133507
+            },
+            {
+              "id": 10,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_46/1684718637468Ptqsh_JPEG/001.jpg",
+                "property": "750:600",
+                "width": 750,
+                "height": 600
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_215/16847176123883Sbct_JPEG/003.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 6969133507
+            },
+            {
+              "id": 11,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_50/168471764447605H4A_JPEG/005.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 4796801876
+            },
+            {
+              "id": 7,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230425_217/1682354424392K7x7L_JPEG/goldennang_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-003.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "URL",
+              "linkUrl": "https://smartstore.naver.com/goldennang/shoppingstory/detail?id=5000398899"
+            },
+            {
+              "id": 8,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_121/1684717511042QO4oQ_JPEG/001.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 5800025791
+            }
+          ]
+        },
+        "sellerInfoWidget": {
+          "visible": true,
+          "order": 2,
+          "type": "SELLER_INFO",
+          "storeIntroductionVisible": true,
+          "storeGradeVisible": true,
+          "dataLabVisible": true,
+          "todayVisitCountVisible": false,
+          "totalVisitCountVisible": false,
+          "storeSearchVisible": true
+        },
+        "benefitBannerWidget": {
+          "visible": true,
+          "order": 3,
+          "type": "BENEFIT_BANNER"
+        },
+        "customProductWidget": {
+          "visible": true,
+          "order": 4,
+          "type": "CUSTOM_PRODUCT",
+          "title": "실시간 인기상품",
+          "productDisplayType": "LIST",
+          "listProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [
+              10958477928,
+              6969133507,
+              4790070622
+            ],
+            "displayCount": 8
+          },
+          "mosaicProduct": {
+            "products": [
+              {
+                "id": 1,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 2,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 3,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 4,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 5,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 6,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 7,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 8,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          "fullImageProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          }
+        },
+        "customBannerWidget": {
+          "visible": true,
+          "order": 5,
+          "type": "CUSTOM_BANNER",
+          "banners": [
+            {
+              "id": 1,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20231003_261/1696301017726nqQPU_JPEG/%B9%E8%B3%CA_%B9%A6%B8%F1_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "property": "750:240",
+                "width": 750,
+                "height": 240,
+                "originalUrl": "https://shop-phinf.pstatic.net/20231003_261/1696301017726nqQPU_JPEG/%B9%E8%B3%CA_%B9%A6%B8%F1_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20231104_155/1699074153491vBfm8_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA-001.jpg",
+                "property": "1280:200",
+                "width": 1280,
+                "height": 200,
+                "originalUrl": "https://shop-phinf.pstatic.net/20231104_155/1699074153491vBfm8_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA-001.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "linkType": "NOLINK",
+              "productNo": 5800025791
+            }
+          ]
+        },
+        "bestProductWidget": {
+          "visible": true,
+          "order": 6,
+          "type": "BEST_PRODUCT",
+          "title": "주간베스트",
+          "thumbnailShapeType": "SQUARE",
+          "bestProductExposureType": "ALL",
+          "defaultAggregationType": "MONTHLY",
+          "selectedAggregationType": "MONTHLY",
+          "aggregationType": "MONTHLY",
+          "displayCount": 4
+        },
+        "bestReviewWidget": {
+          "visible": true,
+          "order": 7,
+          "type": "BEST_REVIEW",
+          "title": "베스트리뷰상품",
+          "productNos": [
+            5800025791,
+            6969133507,
+            4796801876,
+            4790070622,
+            5678032245,
+            5617645793,
+            5967726204,
+            4796779517,
+            4796756605,
+            4796660754
+          ],
+          "selectType": "MANUAL"
+        },
+        "newProductWidget": {
+          "visible": true,
+          "order": 8,
+          "type": "NEW_PRODUCT",
+          "title": "인기상품",
+          "thumbnailShapeType": "V_RECT",
+          "displayCount": 3
+        },
+        "customProductWidget1": {
+          "visible": false,
+          "order": 9,
+          "type": "CUSTOM_PRODUCT",
+          "title": "",
+          "productDisplayType": "MOSAIC",
+          "listProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          },
+          "mosaicProduct": {
+            "products": [
+              {
+                "id": 1,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 2,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 3,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 4,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 5,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 6,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 7,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 8,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          "fullImageProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          }
+        },
+        "customProductWidget2": {
+          "visible": false,
+          "order": 10,
+          "type": "CUSTOM_PRODUCT",
+          "title": "",
+          "productDisplayType": "MOSAIC",
+          "listProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          },
+          "mosaicProduct": {
+            "products": [
+              {
+                "id": 1,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 2,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 3,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 4,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 5,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 6,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 7,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 8,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          "fullImageProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          }
+        },
+        "shoppingStoryWidget": {
+          "visible": true,
+          "order": 11,
+          "type": "SHOPPING_STORY",
+          "title": "쇼핑 스토리",
+          "selectType": "AUTO",
+          "shoppingStoryIds": []
+        },
+        "exhibitionBannerWidget": {
+          "visible": true,
+          "order": 12,
+          "type": "EXHIBIT_BANNER"
+        },
+        "wholeProductWidget": {
+          "visible": true,
+          "order": 13,
+          "type": "WHOLE_PRODUCT",
+          "title": "황금낭 농장에서 산지직송",
+          "thumbnailShapeType": "SQUARE",
+          "selectType": "AUTO",
+          "productNos": [],
+          "sortType": "RECENT",
+          "displayCount": 50
+        }
+      }
+    },
+    "hasFreeReturnInsuranceProduct": false,
+    "isLoading": false,
+    "isSaving": false,
+    "error": null
+  },
+  "isPreview": false,
+  "keptProducts": {},
+  "logisticsProducts": {
+    "simpleProducts": [],
+    "totalCount": 0,
+    "sort": null,
+    "listDisplayType": null,
+    "page": 1,
+    "pageSize": 40,
+    "filter": {
+      "filters": [],
+      "priceRange": null
+    }
+  },
+  "loungeConfig": {
+    "channelNo": 0,
+    "join": {
+      "additionalInfoPageEnabled": true
+    },
+    "home": {
+      "widgets": {
+        "gradeWidget": {
+          "type": "GRADE",
+          "visible": true,
+          "order": 1
+        },
+        "noticeWidget": {
+          "type": "NOTICE",
+          "visible": true,
+          "order": 2
+        },
+        "benefitWidget": {
+          "type": "BENEFIT",
+          "visible": true,
+          "order": 3
+        },
+        "storyWidget": {
+          "type": "STORY",
+          "visible": true,
+          "order": 4
+        }
+      }
+    }
+  },
+  "menuSetting": {
+    "channelNo": 100475442,
+    "topMenus": {
+      "promotionMenu": {
+        "visible": true,
+        "order": 1,
+        "type": "PROMOTION",
+        "title": "프로모션",
+        "promotionCategoryExposureType": "LIST",
+        "promotionListExposureProp": {
+          "newLabelExposure": true,
+          "pageNameExposure": true,
+          "readMoreExposure": true
+        },
+        "periodDisplay": false
+      },
+      "shoppingLiveMenu": {
+        "visible": true,
+        "order": 2,
+        "type": "SHOPPING_LIVE"
+      },
+      "bestMenu": {
+        "visible": true,
+        "order": 3,
+        "type": "BEST",
+        "title": "베스트"
+      },
+      "categoryMenu": {
+        "visible": true,
+        "order": 4,
+        "type": "CATEGORY"
+      },
+      "newProductMenu": {
+        "visible": false,
+        "order": 5,
+        "type": "NEW_PRODUCT",
+        "title": "신상품"
+      },
+      "arrivalGuaranteeMenu": {
+        "visible": false,
+        "order": 6,
+        "type": "ARRIVAL_GUARANTEE"
+      },
+      "forYouMenu": {
+        "visible": true,
+        "order": 7,
+        "type": "FOR_YOU"
+      },
+      "loungeMenu": {
+        "visible": true,
+        "order": 8,
+        "type": "LOUNGE"
+      }
+    },
+    "bottomMenus": {
+      "exhibitionMenu": {
+        "visible": true,
+        "order": 1,
+        "type": "EXHIBITION",
+        "title": "기획전"
+      },
+      "noticeMenu": {
+        "visible": true,
+        "order": 2,
+        "type": "NOTICE"
+      },
+      "shoppingStoryMenu": {
+        "visible": true,
+        "order": 3,
+        "type": "SHOPPING_STORY",
+        "title": "쇼핑스토리"
+      },
+      "reviewEventMenu": {
+        "visible": true,
+        "order": 4,
+        "type": "REVIEW_EVENT",
+        "title": "리뷰이벤트"
+      },
+      "qnaMenu": {
+        "visible": true,
+        "order": 5,
+        "type": "QNA",
+        "title": "묻고 답하기"
+      },
+      "sellerInfoMenu": {
+        "visible": true,
+        "order": 6,
+        "type": "SELLER_INFO"
+      }
+    }
+  },
+  "newProducts": {
+    "simpleProducts": [],
+    "totalCount": 0,
+    "sort": null,
+    "listDisplayType": null,
+    "page": 1,
+    "pageSize": 1,
+    "filter": {
+      "filters": [],
+      "priceRange": null
+    }
+  },
+  "notice": {
+    "list": {
+      "contents": [],
+      "page": 1,
+      "totalElements": 0
+    },
+    "detail": {
+      "id": null,
+      "postCategoryType": "ORDINARY",
+      "postTitle": "",
+      "readCount": 0,
+      "regDate": "",
+      "editorType": null,
+      "renderContent": "",
+      "mobileRenderContent": ""
+    }
+  },
+  "productBenefitList": {},
+  "productCollection": {
+    "specialProducts": {
+      "bestProductNos": [],
+      "newProductNos": []
+    }
+  },
+  "productDetailSetting": {
+    "displayConfig": {
+      "representativeImageManagement": {
+        "marketingMessageManagement": {
+          "usePurchased": true,
+          "basisPurchased": 10,
+          "usePurchasedIn2Y": true,
+          "useRepurchased": true,
+          "basisRepurchased": 10,
+          "useBestProduct": true,
+          "useNewProduct": true
+        },
+        "mediaPreference": "VIDEO_PREFERRED",
+        "useBestReview": true,
+        "useShoppingLiveOnAirExposure": true
+      },
+      "topNoticeBannerManagement": {
+        "useTopNoticeBanner": false,
+        "bannerStyle": "LIGHT",
+        "benefitTypeText": "",
+        "benefitDescription": "",
+        "periodDisplay": false,
+        "bannerExposureTargetType": "PRODUCT",
+        "mappingProductNos": [],
+        "mappingCategoryIds": [],
+        "mappingCategoryType": "",
+        "mappingPromotionPageNos": []
+      },
+      "useSummaryCardReview": true,
+      "useOtherCompositionProducts": true,
+      "useSimilarProducts": true,
+      "useAitems": true,
+      "useShortClip": true,
+      "useTogetherProducts": true,
+      "useBundleDeliveryProducts": true,
+      "useCategoryOtherProducts": true,
+      "useSellerBestProducts": true,
+      "useInterestProducts": true,
+      "useForYouProducts": true
+    },
+    "isTargetTopNoticeBanner": false
+  },
+  "productListSetting": {
+    "channelNo": 0,
+    "imageShapeType": "SQUARE",
+    "imageDisplayType": "REPRESENTATIVE",
+    "productUnitAddInfo": {
+      "reviewRatingVisible": true,
+      "reviewCountVisible": true,
+      "colorChipVisible": false,
+      "detailForPcVisible": true,
+      "cartVisible": false,
+      "bestOrNewTagVisible": true,
+      "productAttributeTagVisible": true
+    },
+    "productSortOption": {
+      "detailFilterVisible": true,
+      "sortOrderVisible": true,
+      "displayTypeVisible": true
+    }
+  },
+  "qna": {
+    "contents": [],
+    "page": 0,
+    "size": 0,
+    "totalElements": 0,
+    "totalPages": 0
+  },
+  "reviewEvent": {
+    "list": {
+      "initialized": false,
+      "contents": []
+    },
+    "detail": null
+  },
+  "scrollKept": {
+    "isScrollKept": false,
+    "keptScrollHeight": null
+  },
+  "searchFilter": {
+    "completed": {
+      "filters": [],
+      "priceRange": null
+    },
+    "draft": {
+      "filters": [],
+      "priceRange": null,
+      "inputPriceRange": null,
+      "count": 0,
+      "countStatus": "idle"
+    },
+    "defaultPriceRange": {
+      "min": 0,
+      "max": 0
+    },
+    "exposure": {
+      "TODAY_DELIVERY": true,
+      "HOPE_DELIVERY": true,
+      "ARRIVAL_GUARANTEE": true,
+      "FREE_RETURN_INSURANCE": true,
+      "PC_DISCOUNT": true,
+      "MOBILE_DISCOUNT": true,
+      "ORDER_AVAILABLE": true,
+      "FREE_DELIVERY": true,
+      "PRE_ORDER": true,
+      "REGULAR_SUBSCRIPTION": true
+    },
+    "appliedFilter": null
+  },
+  "shoppingStory": {
+    "list": {
+      "contents": [],
+      "page": 1,
+      "totalElements": 0
+    },
+    "detail": {
+      "id": null,
+      "postTitle": "",
+      "readCount": 0,
+      "regDate": "",
+      "mobileRenderContent": "",
+      "editorType": null
+    }
+  },
+  "widgetContents": {
+    "bestProductWidget": {
+      "ssr": false,
+      "data": {
+        "bestProducts": {
+          "REALTIME": {
+            "simpleProducts": [],
+            "simpleCatalogs": []
+          },
+          "DAILY": {
+            "simpleProducts": [],
+            "simpleCatalogs": []
+          },
+          "WEEKLY": {
+            "simpleProducts": [],
+            "simpleCatalogs": []
+          },
+          "MONTHLY": {
+            "simpleProducts": [],
+            "simpleCatalogs": []
+          }
+        },
+        "allCategoryProducts": {
+          "simpleProducts": [],
+          "simpleCatalogs": []
+        },
+        "hasBestProducts": false
+      }
+    },
+    "bestReviewWidget": {
+      "ssr": false,
+      "data": {
+        "reviewProducts": []
+      }
+    },
+    "customBannerWidget": {
+      "customBannerWidget": {
+        "ssr": true,
+        "data": [
+          {
+            "id": 5800025791,
+            "channelServiceType": "STOREFARM",
+            "channelProductDisplayStatusType": "ON",
+            "category": {
+              "wholeCategoryId": "50000006>50000160>50000960>50002187",
+              "wholeCategoryName": "식품>농산물>과일>망고",
+              "categoryId": "50002187",
+              "categoryName": "망고"
+            },
+            "name": "황금낭 제주 프리미엄 애플망고 2kg 선물 세트",
+            "dispName": "황금낭 제주 프리미엄 애플망고 2kg 선물 세트",
+            "channel": {
+              "channelNo": 100475442,
+              "accountNo": 100431533,
+              "channelUid": "2sWDy7KDVVX2rtgGScH62",
+              "accountId": "ncp_1nslgt_01",
+              "channelName": "황금낭"
+            },
+            "storeKeepExclusiveProduct": false,
+            "productNo": 5773770701,
+            "salePrice": 96000,
+            "saleType": "NEW",
+            "productStatusType": "OUTOFSTOCK",
+            "authenticationType": "NORMAL",
+            "seoInfo": {
+              "pageTitle": "애플망고 제주 망고 달콤한 과일 추석선물세트 황금낭 농장 산지직송 제주특산품",
+              "metaDescription": "애플망고 제주 망고 달콤한 과일 추석선물세트 황금낭 농장 산지직송 제주특산품",
+              "sellerTags": [
+                {
+                  "code": 9541,
+                  "text": "제주특산물"
+                },
+                {
+                  "code": 136654,
+                  "text": "제주특산품"
+                },
+                {
+                  "code": 11527,
+                  "text": "열대과일"
+                },
+                {
+                  "code": 11810,
+                  "text": "제철과일"
+                },
+                {
+                  "code": 244384,
+                  "text": "과일상자"
+                },
+                {
+                  "code": 217866,
+                  "text": "망고선물세트"
+                },
+                {
+                  "code": 8512,
+                  "text": "산지직송"
+                },
+                {
+                  "code": 5487,
+                  "text": "달콤한맛"
+                },
+                {
+                  "code": 25286,
+                  "text": "추석선물세트"
+                },
+                {
+                  "code": 217867,
+                  "text": "과일선물세트"
+                }
+              ]
+            },
+            "optionUsable": true,
+            "optionStandards": [],
+            "supplementProductUsable": false,
+            "naverShoppingSearchInfo": {
+              "manufacturerName": "황금낭",
+              "brandName": "애플망고"
+            },
+            "purchaseReviewInfo": {
+              "purchaseReviewExposure": true
+            },
+            "minorPurchasable": true,
+            "isRestrictCart": false,
+            "benefitsView": {
+              "discountedSalePrice": 69100,
+              "mobileDiscountedSalePrice": 69100,
+              "sellerImmediateDiscountAmount": 26900,
+              "mobileSellerImmediateDiscountAmount": 26900,
+              "managerImmediateDiscountAmount": 0,
+              "mobileManagerImmediateDiscountAmount": 0,
+              "discountedRatio": 28,
+              "mobileDiscountedRatio": 28,
+              "sellerPurchasePoint": 0,
+              "mobileSellerPurchasePoint": 0,
+              "sellerCustomerManagementPoint": 0,
+              "mobileSellerCustomerManagementPoint": 0,
+              "managerPurchasePoint": 691,
+              "mobileManagerPurchasePoint": 691,
+              "managerPurchaseExtraPoint": 0,
+              "mobileManagerPurchaseExtraPoint": 0,
+              "generalPurchaseReviewPoint": 0,
+              "premiumPurchaseReviewPoint": 0,
+              "storeMemberReviewPoint": 0,
+              "managerGeneralPurchaseReviewPoint": 50,
+              "managerPremiumPurchaseReviewPoint": 150,
+              "givePresent": false,
+              "textReviewPoint": 0,
+              "photoVideoReviewPoint": 0,
+              "afterUseTextReviewPoint": 0,
+              "afterUsePhotoVideoReviewPoint": 0,
+              "managerTextReviewPoint": 50,
+              "managerPhotoVideoReviewPoint": 150,
+              "managerAfterUseTextReviewPoint": 0,
+              "managerAfterUsePhotoVideoReviewPoint": 0,
+              "dispDiscountedSalePrice": 69100,
+              "dispDiscountedRatio": 28
+            },
+            "reviewAmount": {
+              "totalReviewCount": 9,
+              "premiumReviewCount": 0,
+              "averageReviewScore": 5,
+              "productSatisfactionPercent": 0
+            },
+            "displayable": true,
+            "usableDelivery": true,
+            "representativeImageUrl": "https://shop-phinf.pstatic.net/20250722_49/1753143516726JNNyX_JPEG/87276315764172061_895732179.jpg",
+            "representativeImageWidth": 2100,
+            "representativeImageHeight": 2800,
+            "optionalImageUrls": [
+              "https://shop-phinf.pstatic.net/20250722_48/1753146645316fAiP7_JPEG/87279505386629688_1365127477.jpg",
+              "https://shop-phinf.pstatic.net/20250722_269/1753146646215mK3zO_JPEG/87279506285455940_883182262.jpg",
+              "https://shop-phinf.pstatic.net/20250722_247/1753146647555VBOCF_JPEG/87279507623189298_1689968838.jpg",
+              "https://shop-phinf.pstatic.net/20250722_206/1753146648938Bba2E_JPEG/87279508995454919_376748250.jpg",
+              "https://shop-phinf.pstatic.net/20250722_158/1753146650025KcMe7_JPEG/87279510080234715_1578521406.jpg",
+              "https://shop-phinf.pstatic.net/20250722_85/1753146925094ga1pr_JPEG/26092736088406816_1800066290.jpg"
+            ],
+            "productDeliveryInfo": {
+              "deliveryFeeType": "FREE",
+              "baseFee": 0,
+              "differentialFeeByArea": "무료배송",
+              "deliveryAttributeType": "TODAY",
+              "thisDayDispatchBasisTime": "23:30:00.000+0000",
+              "installationFee": false,
+              "deliveryMethodTypes": [
+                "DELIVERY"
+              ],
+              "deliveryCompany": {
+                "id": "EPOST",
+                "name": "우체국택배"
+              }
+            },
+            "detailContents": {
+              "editorType": "SEONE"
+            },
+            "enableCart": true,
+            "freeDelivery": true,
+            "todayDelivery": true,
+            "regularSubscription": false,
+            "arrivalGuarantee": false,
+            "subscriptionBenefitContent": [],
+            "rmids": [],
+            "rentalOneTimeFee": false,
+            "stockQuantity": 0,
+            "benefitsPolicy": {
+              "sellerImmediateDiscountPolicyNo": "SE_5773770701",
+              "sellerImmediateDiscountValueUnit": "WON",
+              "sellerImmediateDiscountValue": 26900
+            },
+            "mobileBenefitsPolicy": {
+              "sellerImmediateDiscountPolicyNo": "SE_5773770701",
+              "sellerImmediateDiscountValueUnit": "WON",
+              "sellerImmediateDiscountValue": 26900
+            },
+            "dispSalePrice": 96000,
+            "claimDeliveryInfo": {
+              "freeReturnInsurance": false
+            },
+            "epInfo": {
+              "syncNvMid": 83344525205,
+              "naverShoppingRegistration": true,
+              "naverShoppingExposure": false
+            },
+            "affiliateYn": false,
+            "unitCapacity": {
+              "unitCapacity": 100,
+              "indicationUnit": "g",
+              "unitPriceYn": true,
+              "totalCapacityValue": 2000
+            },
+            "adultAuthorizationType": "NOT_LOGIN",
+            "authorizationDisplay": "NORMAL",
+            "orderDeliveryAttributeType": null,
+            "orderScheduledChannelType": null
+          }
+        ]
+      }
+    },
+    "customProductWidget": {
+      "customProductWidget": {
+        "ssr": true,
+        "data": {
+          "simpleProducts": [
+            {
+              "id": 10958477928,
+              "channelServiceType": "STOREFARM",
+              "channelProductDisplayStatusType": "ON",
+              "category": {
+                "wholeCategoryId": "50000008>50000080>50001800",
+                "wholeCategoryName": "생활/건강>정원/원예용품>조경수/묘목",
+                "categoryId": "50001800",
+                "categoryName": "조경수/묘목"
+              },
+              "name": "황금낭 라이락 홍망고 애플망고묘목 접목 2년생",
+              "dispName": "황금낭 라이락 홍망고 애플망고묘목 접목 2년생",
+              "channel": {
+                "channelNo": 100475442,
+                "accountNo": 100431533,
+                "channelUid": "2sWDy7KDVVX2rtgGScH62",
+                "accountId": "ncp_1nslgt_01",
+                "channelName": "황금낭"
+              },
+              "storeKeepExclusiveProduct": false,
+              "productNo": 10906622159,
+              "salePrice": 137000,
+              "saleType": "NEW",
+              "productStatusType": "SALE",
+              "authenticationType": "NORMAL",
+              "seoInfo": {
+                "sellerTags": [
+                  {
+                    "code": 696802,
+                    "text": "망고나무"
+                  },
+                  {
+                    "code": 2401470,
+                    "text": "망고나무화분"
+                  },
+                  {
+                    "code": 16478,
+                    "text": "애플망고"
+                  },
+                  {
+                    "code": 220531,
+                    "text": "유실수"
+                  },
+                  {
+                    "code": 2118676,
+                    "text": "과실나무"
+                  },
+                  {
+                    "code": 329030,
+                    "text": "과일나무"
+                  },
+                  {
+                    "code": 48173,
+                    "text": "거실화분"
+                  },
+                  {
+                    "code": 2294046,
+                    "text": "식물배달"
+                  },
+                  {
+                    "code": 3587324,
+                    "text": "공기정화나무"
+                  },
+                  {
+                    "code": 136534,
+                    "text": "식물키우기"
+                  }
+                ]
+              },
+              "optionUsable": false,
+              "supplementProductUsable": false,
+              "naverShoppingSearchInfo": {
+                "manufacturerName": "황금낭",
+                "brandName": "황금낭",
+                "modelName": "애플망고나무 2년생"
+              },
+              "purchaseReviewInfo": {
+                "purchaseReviewExposure": true
+              },
+              "minorPurchasable": true,
+              "isRestrictCart": false,
+              "benefitsView": {
+                "discountedSalePrice": 58000,
+                "mobileDiscountedSalePrice": 58000,
+                "sellerImmediateDiscountAmount": 79000,
+                "mobileSellerImmediateDiscountAmount": 79000,
+                "managerImmediateDiscountAmount": 0,
+                "mobileManagerImmediateDiscountAmount": 0,
+                "discountedRatio": 57,
+                "mobileDiscountedRatio": 57,
+                "sellerPurchasePoint": 0,
+                "mobileSellerPurchasePoint": 0,
+                "sellerCustomerManagementPoint": 0,
+                "mobileSellerCustomerManagementPoint": 0,
+                "managerPurchasePoint": 580,
+                "mobileManagerPurchasePoint": 580,
+                "managerPurchaseExtraPoint": 0,
+                "mobileManagerPurchaseExtraPoint": 0,
+                "generalPurchaseReviewPoint": 0,
+                "premiumPurchaseReviewPoint": 0,
+                "storeMemberReviewPoint": 0,
+                "managerGeneralPurchaseReviewPoint": 50,
+                "managerPremiumPurchaseReviewPoint": 150,
+                "givePresent": true,
+                "textReviewPoint": 0,
+                "photoVideoReviewPoint": 0,
+                "afterUseTextReviewPoint": 0,
+                "afterUsePhotoVideoReviewPoint": 0,
+                "managerTextReviewPoint": 50,
+                "managerPhotoVideoReviewPoint": 150,
+                "managerAfterUseTextReviewPoint": 0,
+                "managerAfterUsePhotoVideoReviewPoint": 0,
+                "dispDiscountedSalePrice": 58000,
+                "dispDiscountedRatio": 57
+              },
+              "reviewAmount": {
+                "totalReviewCount": 7,
+                "premiumReviewCount": 0,
+                "averageReviewScore": 4.43,
+                "productSatisfactionPercent": 0
+              },
+              "displayable": true,
+              "usableDelivery": true,
+              "representativeImageUrl": "https://shop-phinf.pstatic.net/20260226_227/17720721409760sjQK_JPEG/40731575743602400_1731650058.jpg",
+              "representativeImageWidth": 3024,
+              "representativeImageHeight": 4032,
+              "optionalImageUrls": [
+                "https://shop-phinf.pstatic.net/20260226_227/17720721409760sjQK_JPEG/40731575743602400_1731650058.jpg",
+                "https://shop-phinf.pstatic.net/20260226_15/1772072198998zKSys_JPEG/2072652020940339_971695939.jpg",
+                "https://shop-phinf.pstatic.net/20260226_8/1772072200628AOnaa_JPEG/2072653700569493_1291037758.jpg",
+                "https://shop-phinf.pstatic.net/20260226_160/1772072201270fdrcw_JPEG/2072654344125342_806643482.jpg",
+                "https://shop-phinf.pstatic.net/20260226_9/1772072201929RvDjq_JPEG/2072654927216993_136226802.jpg"
+              ],
+              "productDeliveryInfo": {
+                "deliveryFeeType": "FREE",
+                "baseFee": 0,
+                "differentialFeeByArea": "택배사 도서산간 배송 추가금 있습니다",
+                "deliveryAttributeType": "NORMAL",
+                "deliveryBundleGroup": {
+                  "id": 23195630
+                },
+                "installationFee": false,
+                "deliveryMethodTypes": [
+                  "DELIVERY"
+                ],
+                "deliveryCompany": {
+                  "id": "CJGLS",
+                  "name": "CJ대한통운"
+                }
+              },
+              "detailContents": {
+                "detailContentText": "황금낭 공식채널 황금낭 농장과 소통해요~ 네이버카페 https://cafe.naver.com/goldennang 네이버블로그 https://blog.naver.com/goldennang 네이버 스마트스토어 https://smartstore.naver.com/goldennang 인스타그램 https://www.instagram.com/jeju_goldennang/ 유튜브채널 https://www.youtube.com/channel/UCgZpYSxJntQFsWgFoNZnkCw",
+                "editorType": "SEONE"
+              },
+              "enableCart": true,
+              "freeDelivery": true,
+              "todayDelivery": false,
+              "regularSubscription": false,
+              "arrivalGuarantee": false,
+              "subscriptionBenefitContent": [],
+              "rmids": [],
+              "rentalOneTimeFee": false,
+              "stockQuantity": 92,
+              "benefitsPolicy": {
+                "sellerImmediateDiscountPolicyNo": "SE_10906622159",
+                "sellerImmediateDiscountValueUnit": "WON",
+                "sellerImmediateDiscountValue": 79000
+              },
+              "mobileBenefitsPolicy": {
+                "sellerImmediateDiscountPolicyNo": "SE_10906622159",
+                "sellerImmediateDiscountValueUnit": "WON",
+                "sellerImmediateDiscountValue": 79000
+              },
+              "dispSalePrice": 137000,
+              "claimDeliveryInfo": {
+                "freeReturnInsurance": false
+              },
+              "epInfo": {
+                "syncNvMid": 88502983963,
+                "naverShoppingRegistration": true,
+                "naverShoppingExposure": true
+              },
+              "affiliateYn": false,
+              "adultAuthorizationType": "NOT_LOGIN",
+              "authorizationDisplay": "NORMAL",
+              "orderDeliveryAttributeType": null,
+              "orderScheduledChannelType": null
+            },
+            {
+              "id": 6969133507,
+              "channelServiceType": "STOREFARM",
+              "channelProductDisplayStatusType": "ON",
+              "category": {
+                "wholeCategoryId": "50000008>50000080>50001800",
+                "wholeCategoryName": "생활/건강>정원/원예용품>조경수/묘목",
+                "categoryId": "50001800",
+                "categoryName": "조경수/묘목"
+              },
+              "name": "황금낭 애플 망고 나무 묘목 제주 접목묘 2년생 유실수 특묘",
+              "dispName": "황금낭 애플 망고 나무 묘목 제주 접목묘 2년생 유실수 특묘",
+              "channel": {
+                "channelNo": 100475442,
+                "accountNo": 100431533,
+                "channelUid": "2sWDy7KDVVX2rtgGScH62",
+                "accountId": "ncp_1nslgt_01",
+                "channelName": "황금낭"
+              },
+              "storeKeepExclusiveProduct": false,
+              "productNo": 6935973892,
+              "salePrice": 108000,
+              "saleType": "NEW",
+              "productStatusType": "SALE",
+              "authenticationType": "NORMAL",
+              "seoInfo": {
+                "sellerTags": [
+                  {
+                    "code": 696802,
+                    "text": "망고나무"
+                  },
+                  {
+                    "code": 2401470,
+                    "text": "망고나무화분"
+                  },
+                  {
+                    "code": 220531,
+                    "text": "유실수"
+                  },
+                  {
+                    "code": 329030,
+                    "text": "과일나무"
+                  },
+                  {
+                    "code": 48173,
+                    "text": "거실화분"
+                  },
+                  {
+                    "code": 2294046,
+                    "text": "식물배달"
+                  },
+                  {
+                    "code": 3587324,
+                    "text": "공기정화나무"
+                  },
+                  {
+                    "code": 136534,
+                    "text": "식물키우기"
+                  },
+                  {
+                    "code": 16795,
+                    "text": "홈인테리어"
+                  },
+                  {
+                    "code": 7392,
+                    "text": "거실인테리어소품"
+                  }
+                ]
+              },
+              "optionUsable": false,
+              "supplementProductUsable": false,
+              "naverShoppingSearchInfo": {
+                "manufacturerName": "황금낭",
+                "brandName": "황금낭",
+                "modelName": "애플망고나무 2년생"
+              },
+              "purchaseReviewInfo": {
+                "purchaseReviewExposure": true
+              },
+              "minorPurchasable": true,
+              "isRestrictCart": false,
+              "benefitsView": {
+                "discountedSalePrice": 58000,
+                "mobileDiscountedSalePrice": 58000,
+                "sellerImmediateDiscountAmount": 50000,
+                "mobileSellerImmediateDiscountAmount": 50000,
+                "managerImmediateDiscountAmount": 0,
+                "mobileManagerImmediateDiscountAmount": 0,
+                "discountedRatio": 46,
+                "mobileDiscountedRatio": 46,
+                "sellerPurchasePoint": 0,
+                "mobileSellerPurchasePoint": 0,
+                "sellerCustomerManagementPoint": 0,
+                "mobileSellerCustomerManagementPoint": 0,
+                "managerPurchasePoint": 580,
+                "mobileManagerPurchasePoint": 580,
+                "managerPurchaseExtraPoint": 0,
+                "mobileManagerPurchaseExtraPoint": 0,
+                "generalPurchaseReviewPoint": 0,
+                "premiumPurchaseReviewPoint": 0,
+                "storeMemberReviewPoint": 0,
+                "managerGeneralPurchaseReviewPoint": 50,
+                "managerPremiumPurchaseReviewPoint": 150,
+                "givePresent": true,
+                "textReviewPoint": 0,
+                "photoVideoReviewPoint": 0,
+                "afterUseTextReviewPoint": 0,
+                "afterUsePhotoVideoReviewPoint": 0,
+                "managerTextReviewPoint": 50,
+                "managerPhotoVideoReviewPoint": 150,
+                "managerAfterUseTextReviewPoint": 0,
+                "managerAfterUsePhotoVideoReviewPoint": 0,
+                "dispDiscountedSalePrice": 58000,
+                "dispDiscountedRatio": 46
+              },
+              "reviewAmount": {
+                "totalReviewCount": 30,
+                "premiumReviewCount": 0,
+                "averageReviewScore": 4.67,
+                "productSatisfactionPercent": 0
+              },
+              "displayable": true,
+              "usableDelivery": true,
+              "representativeImageUrl": "https://shop-phinf.pstatic.net/20260226_283/1772072516086qJASk_JPEG/26648641196468682_1964337145.jpg",
+              "representativeImageWidth": 3024,
+              "representativeImageHeight": 4032,
+              "optionalImageUrls": [
+                "https://shop-phinf.pstatic.net/20260226_283/1772072516086qJASk_JPEG/26648641196468682_1964337145.jpg",
+                "https://shop-phinf.pstatic.net/20260226_132/1772072577612j0zsx_JPEG/106205390886497677_1621043689.jpg",
+                "https://shop-phinf.pstatic.net/20260226_39/1772072576817VRULQ_JPEG/106205390070372352_645147786.jpg",
+                "https://shop-phinf.pstatic.net/20260226_46/17720725781343irfI_JPEG/106205391297399904_107038277.jpg"
+              ],
+              "representativeVideoId": "45015ED2764AC739FA5D4BB787E326D1CC69",
+              "productDeliveryInfo": {
+                "deliveryFeeType": "FREE",
+                "baseFee": 0,
+                "differentialFeeByArea": "택배사 도서산간 배송 추가금 있습니다",
+                "deliveryAttributeType": "NORMAL",
+                "deliveryBundleGroup": {
+                  "id": 23195630
+                },
+                "installationFee": false,
+                "deliveryMethodTypes": [
+                  "DELIVERY"
+                ],
+                "deliveryCompany": {
+                  "id": "CJGLS",
+                  "name": "CJ대한통운"
+                }
+              },
+              "detailContents": {
+                "detailContentText": "황금낭 공식채널 황금낭 농장과 소통해요~ 네이버카페 https://cafe.naver.com/goldennang 네이버블로그 https://blog.naver.com/goldennang 네이버 스마트스토어 https://smartstore.naver.com/goldennang 인스타그램 https://www.instagram.com/jeju_goldennang/ 유튜브채널 https://www.youtube.com/channel/UCgZpYSxJntQFsWgFoNZnkCw",
+                "editorType": "SEONE"
+              },
+              "enableCart": true,
+              "freeDelivery": true,
+              "todayDelivery": false,
+              "regularSubscription": false,
+              "arrivalGuarantee": false,
+              "subscriptionBenefitContent": [],
+              "rmids": [],
+              "rentalOneTimeFee": false,
+              "stockQuantity": 1464,
+              "benefitsPolicy": {
+                "sellerImmediateDiscountPolicyNo": "SE_6935973892",
+                "sellerImmediateDiscountValueUnit": "WON",
+                "sellerImmediateDiscountValue": 50000
+              },
+              "mobileBenefitsPolicy": {
+                "sellerImmediateDiscountPolicyNo": "SE_6935973892",
+                "sellerImmediateDiscountValueUnit": "WON",
+                "sellerImmediateDiscountValue": 50000
+              },
+              "dispSalePrice": 108000,
+              "claimDeliveryInfo": {
+                "freeReturnInsurance": false
+              },
+              "epInfo": {
+                "syncNvMid": 84513633829,
+                "naverShoppingRegistration": true,
+                "naverShoppingExposure": true
+              },
+              "affiliateYn": false,
+              "adultAuthorizationType": "NOT_LOGIN",
+              "authorizationDisplay": "NORMAL",
+              "orderDeliveryAttributeType": null,
+              "orderScheduledChannelType": null
+            },
+            {
+              "id": 4790070622,
+              "channelServiceType": "STOREFARM",
+              "channelProductDisplayStatusType": "ON",
+              "category": {
+                "wholeCategoryId": "50000008>50000080>50001800",
+                "wholeCategoryName": "생활/건강>정원/원예용품>조경수/묘목",
+                "categoryId": "50001800",
+                "categoryName": "조경수/묘목"
+              },
+              "name": "황금낭 망고묘목 애플망고나무 화분 3년생 어윈 품종",
+              "dispName": "황금낭 망고묘목 애플망고나무 화분 3년생 어윈 품종",
+              "channel": {
+                "channelNo": 100475442,
+                "accountNo": 100431533,
+                "channelUid": "2sWDy7KDVVX2rtgGScH62",
+                "accountId": "ncp_1nslgt_01",
+                "channelName": "황금낭"
+              },
+              "storeKeepExclusiveProduct": false,
+              "productNo": 4776740769,
+              "salePrice": 132000,
+              "saleType": "NEW",
+              "productStatusType": "SALE",
+              "authenticationType": "NORMAL",
+              "seoInfo": {
+                "sellerTags": [
+                  {
+                    "code": 696802,
+                    "text": "망고나무"
+                  },
+                  {
+                    "code": 2401470,
+                    "text": "망고나무화분"
+                  },
+                  {
+                    "code": 16478,
+                    "text": "애플망고"
+                  },
+                  {
+                    "text": "거실화분"
+                  },
+                  {
+                    "text": "유실수"
+                  }
+                ]
+              },
+              "optionUsable": false,
+              "supplementProductUsable": false,
+              "naverShoppingSearchInfo": {
+                "manufacturerName": "황금낭",
+                "brandName": "황금낭"
+              },
+              "purchaseReviewInfo": {
+                "purchaseReviewExposure": true
+              },
+              "minorPurchasable": true,
+              "isRestrictCart": false,
+              "benefitsView": {
+                "discountedSalePrice": 90000,
+                "mobileDiscountedSalePrice": 90000,
+                "sellerImmediateDiscountAmount": 42000,
+                "mobileSellerImmediateDiscountAmount": 42000,
+                "managerImmediateDiscountAmount": 0,
+                "mobileManagerImmediateDiscountAmount": 0,
+                "discountedRatio": 31,
+                "mobileDiscountedRatio": 31,
+                "sellerPurchasePoint": 0,
+                "mobileSellerPurchasePoint": 0,
+                "sellerCustomerManagementPoint": 0,
+                "mobileSellerCustomerManagementPoint": 0,
+                "managerPurchasePoint": 900,
+                "mobileManagerPurchasePoint": 900,
+                "managerPurchaseExtraPoint": 0,
+                "mobileManagerPurchaseExtraPoint": 0,
+                "generalPurchaseReviewPoint": 0,
+                "premiumPurchaseReviewPoint": 0,
+                "storeMemberReviewPoint": 0,
+                "managerGeneralPurchaseReviewPoint": 50,
+                "managerPremiumPurchaseReviewPoint": 150,
+                "givePresent": true,
+                "textReviewPoint": 0,
+                "photoVideoReviewPoint": 0,
+                "afterUseTextReviewPoint": 0,
+                "afterUsePhotoVideoReviewPoint": 0,
+                "managerTextReviewPoint": 50,
+                "managerPhotoVideoReviewPoint": 150,
+                "managerAfterUseTextReviewPoint": 0,
+                "managerAfterUsePhotoVideoReviewPoint": 0,
+                "dispDiscountedSalePrice": 90000,
+                "dispDiscountedRatio": 31
+              },
+              "reviewAmount": {
+                "totalReviewCount": 29,
+                "premiumReviewCount": 0,
+                "averageReviewScore": 4.79,
+                "productSatisfactionPercent": 0
+              },
+              "displayable": true,
+              "usableDelivery": true,
+              "representativeImageUrl": "https://shop-phinf.pstatic.net/20260330_32/1774837509347JrBaL_PNG/55932915069211005_931202940.png",
+              "representativeImageWidth": 1800,
+              "representativeImageHeight": 2400,
+              "optionalImageUrls": [
+                "https://shop-phinf.pstatic.net/20260330_266/1774837528163N4rNx_JPEG/108970348217738752_1080092671.jpg",
+                "https://shop-phinf.pstatic.net/20260330_32/1774837509347JrBaL_PNG/55932915069211005_931202940.png",
+                "https://shop-phinf.pstatic.net/20260226_189/17720731093929BY2L_JPEG/56445526523596493_648794043.jpg",
+                "https://shop-phinf.pstatic.net/20260226_87/1772073109761r4Lvc_JPEG/56445526884501545_1150777588.jpg",
+                "https://shop-phinf.pstatic.net/20260330_72/1774837584286OGPA0_PNG/47811937014391092_443203727.png"
+              ],
+              "representativeVideoId": "F2DD91EE2147A47C109FE0A369ABE3BFE986",
+              "productDeliveryInfo": {
+                "deliveryFeeType": "UNIT_QUANTITY_PAID",
+                "baseFee": 10000,
+                "deliveryAttributeType": "NORMAL",
+                "installationFee": false,
+                "deliveryMethodTypes": [
+                  "DELIVERY"
+                ],
+                "deliveryFeePayType": "COLLECT",
+                "deliveryCompany": {
+                  "id": "KDEXP",
+                  "name": "경동택배"
+                }
+              },
+              "detailContents": {
+                "detailContentText": "황금낭 공식채널 황금낭 농장과 소통해요~ 네이버카페 https://cafe.naver.com/goldennang 네이버블로그 https://blog.naver.com/goldennang 공식 쇼핑몰 www.goldennang.com 네이버 스마트스토어 https://smartstore.naver.com/goldennang 인스타그램 https://www.instagram.com/jeju_goldennang/ 유튜브채널 https://www.youtube.com/channel/UCgZpYSxJntQFsWgFoNZnkCw",
+                "editorType": "SEONE"
+              },
+              "enableCart": true,
+              "freeDelivery": false,
+              "todayDelivery": false,
+              "regularSubscription": false,
+              "arrivalGuarantee": false,
+              "subscriptionBenefitContent": [],
+              "rmids": [],
+              "rentalOneTimeFee": false,
+              "stockQuantity": 1948,
+              "benefitsPolicy": {
+                "sellerImmediateDiscountPolicyNo": "SE_4776740769",
+                "sellerImmediateDiscountValueUnit": "WON",
+                "sellerImmediateDiscountValue": 42000
+              },
+              "mobileBenefitsPolicy": {
+                "sellerImmediateDiscountPolicyNo": "SE_4776740769",
+                "sellerImmediateDiscountValueUnit": "WON",
+                "sellerImmediateDiscountValue": 42000
+              },
+              "dispSalePrice": 132000,
+              "claimDeliveryInfo": {
+                "freeReturnInsurance": false
+              },
+              "epInfo": {
+                "syncNvMid": 82334593119,
+                "naverShoppingRegistration": true,
+                "naverShoppingExposure": true
+              },
+              "affiliateYn": false,
+              "adultAuthorizationType": "NOT_LOGIN",
+              "authorizationDisplay": "NORMAL",
+              "orderDeliveryAttributeType": null,
+              "orderScheduledChannelType": null
+            }
+          ]
+        }
+      }
+    },
+    "exhibitionBannerWidget": {
+      "ssr": false,
+      "data": {
+        "exhibitions": [],
+        "simpleProducts": {}
+      }
+    },
+    "newProductWidget": {
+      "ssr": false,
+      "data": []
+    },
+    "promotionBannerWidget": {
+      "ssr": true,
+      "data": [
+        {
+          "id": 5800025791,
+          "channelServiceType": "STOREFARM",
+          "channelProductDisplayStatusType": "ON",
+          "category": {
+            "wholeCategoryId": "50000006>50000160>50000960>50002187",
+            "wholeCategoryName": "식품>농산물>과일>망고",
+            "categoryId": "50002187",
+            "categoryName": "망고"
+          },
+          "name": "황금낭 제주 프리미엄 애플망고 2kg 선물 세트",
+          "dispName": "황금낭 제주 프리미엄 애플망고 2kg 선물 세트",
+          "channel": {
+            "channelNo": 100475442,
+            "accountNo": 100431533,
+            "channelUid": "2sWDy7KDVVX2rtgGScH62",
+            "accountId": "ncp_1nslgt_01",
+            "channelName": "황금낭"
+          },
+          "storeKeepExclusiveProduct": false,
+          "productNo": 5773770701,
+          "salePrice": 96000,
+          "saleType": "NEW",
+          "productStatusType": "OUTOFSTOCK",
+          "authenticationType": "NORMAL",
+          "seoInfo": {
+            "pageTitle": "애플망고 제주 망고 달콤한 과일 추석선물세트 황금낭 농장 산지직송 제주특산품",
+            "metaDescription": "애플망고 제주 망고 달콤한 과일 추석선물세트 황금낭 농장 산지직송 제주특산품",
+            "sellerTags": [
+              {
+                "code": 9541,
+                "text": "제주특산물"
+              },
+              {
+                "code": 136654,
+                "text": "제주특산품"
+              },
+              {
+                "code": 11527,
+                "text": "열대과일"
+              },
+              {
+                "code": 11810,
+                "text": "제철과일"
+              },
+              {
+                "code": 244384,
+                "text": "과일상자"
+              },
+              {
+                "code": 217866,
+                "text": "망고선물세트"
+              },
+              {
+                "code": 8512,
+                "text": "산지직송"
+              },
+              {
+                "code": 5487,
+                "text": "달콤한맛"
+              },
+              {
+                "code": 25286,
+                "text": "추석선물세트"
+              },
+              {
+                "code": 217867,
+                "text": "과일선물세트"
+              }
+            ]
+          },
+          "optionUsable": true,
+          "optionStandards": [],
+          "supplementProductUsable": false,
+          "naverShoppingSearchInfo": {
+            "manufacturerName": "황금낭",
+            "brandName": "애플망고"
+          },
+          "purchaseReviewInfo": {
+            "purchaseReviewExposure": true
+          },
+          "minorPurchasable": true,
+          "isRestrictCart": false,
+          "benefitsView": {
+            "discountedSalePrice": 69100,
+            "mobileDiscountedSalePrice": 69100,
+            "sellerImmediateDiscountAmount": 26900,
+            "mobileSellerImmediateDiscountAmount": 26900,
+            "managerImmediateDiscountAmount": 0,
+            "mobileManagerImmediateDiscountAmount": 0,
+            "discountedRatio": 28,
+            "mobileDiscountedRatio": 28,
+            "sellerPurchasePoint": 0,
+            "mobileSellerPurchasePoint": 0,
+            "sellerCustomerManagementPoint": 0,
+            "mobileSellerCustomerManagementPoint": 0,
+            "managerPurchasePoint": 691,
+            "mobileManagerPurchasePoint": 691,
+            "managerPurchaseExtraPoint": 0,
+            "mobileManagerPurchaseExtraPoint": 0,
+            "generalPurchaseReviewPoint": 0,
+            "premiumPurchaseReviewPoint": 0,
+            "storeMemberReviewPoint": 0,
+            "managerGeneralPurchaseReviewPoint": 50,
+            "managerPremiumPurchaseReviewPoint": 150,
+            "givePresent": false,
+            "textReviewPoint": 0,
+            "photoVideoReviewPoint": 0,
+            "afterUseTextReviewPoint": 0,
+            "afterUsePhotoVideoReviewPoint": 0,
+            "managerTextReviewPoint": 50,
+            "managerPhotoVideoReviewPoint": 150,
+            "managerAfterUseTextReviewPoint": 0,
+            "managerAfterUsePhotoVideoReviewPoint": 0,
+            "dispDiscountedSalePrice": 69100,
+            "dispDiscountedRatio": 28
+          },
+          "reviewAmount": {
+            "totalReviewCount": 9,
+            "premiumReviewCount": 0,
+            "averageReviewScore": 5,
+            "productSatisfactionPercent": 0
+          },
+          "displayable": true,
+          "usableDelivery": true,
+          "representativeImageUrl": "https://shop-phinf.pstatic.net/20250722_49/1753143516726JNNyX_JPEG/87276315764172061_895732179.jpg",
+          "representativeImageWidth": 2100,
+          "representativeImageHeight": 2800,
+          "optionalImageUrls": [
+            "https://shop-phinf.pstatic.net/20250722_48/1753146645316fAiP7_JPEG/87279505386629688_1365127477.jpg",
+            "https://shop-phinf.pstatic.net/20250722_269/1753146646215mK3zO_JPEG/87279506285455940_883182262.jpg",
+            "https://shop-phinf.pstatic.net/20250722_247/1753146647555VBOCF_JPEG/87279507623189298_1689968838.jpg",
+            "https://shop-phinf.pstatic.net/20250722_206/1753146648938Bba2E_JPEG/87279508995454919_376748250.jpg",
+            "https://shop-phinf.pstatic.net/20250722_158/1753146650025KcMe7_JPEG/87279510080234715_1578521406.jpg",
+            "https://shop-phinf.pstatic.net/20250722_85/1753146925094ga1pr_JPEG/26092736088406816_1800066290.jpg"
+          ],
+          "productDeliveryInfo": {
+            "deliveryFeeType": "FREE",
+            "baseFee": 0,
+            "differentialFeeByArea": "무료배송",
+            "deliveryAttributeType": "TODAY",
+            "thisDayDispatchBasisTime": "23:30:00.000+0000",
+            "installationFee": false,
+            "deliveryMethodTypes": [
+              "DELIVERY"
+            ],
+            "deliveryCompany": {
+              "id": "EPOST",
+              "name": "우체국택배"
+            }
+          },
+          "detailContents": {
+            "editorType": "SEONE"
+          },
+          "enableCart": true,
+          "freeDelivery": true,
+          "todayDelivery": true,
+          "regularSubscription": false,
+          "arrivalGuarantee": false,
+          "subscriptionBenefitContent": [],
+          "rmids": [],
+          "rentalOneTimeFee": false,
+          "stockQuantity": 0,
+          "benefitsPolicy": {
+            "sellerImmediateDiscountPolicyNo": "SE_5773770701",
+            "sellerImmediateDiscountValueUnit": "WON",
+            "sellerImmediateDiscountValue": 26900
+          },
+          "mobileBenefitsPolicy": {
+            "sellerImmediateDiscountPolicyNo": "SE_5773770701",
+            "sellerImmediateDiscountValueUnit": "WON",
+            "sellerImmediateDiscountValue": 26900
+          },
+          "dispSalePrice": 96000,
+          "claimDeliveryInfo": {
+            "freeReturnInsurance": false
+          },
+          "epInfo": {
+            "syncNvMid": 83344525205,
+            "naverShoppingRegistration": true,
+            "naverShoppingExposure": false
+          },
+          "affiliateYn": false,
+          "unitCapacity": {
+            "unitCapacity": 100,
+            "indicationUnit": "g",
+            "unitPriceYn": true,
+            "totalCapacityValue": 2000
+          },
+          "adultAuthorizationType": "NOT_LOGIN",
+          "authorizationDisplay": "NORMAL",
+          "orderDeliveryAttributeType": null,
+          "orderScheduledChannelType": null
+        },
+        {
+          "id": 4790070622,
+          "channelServiceType": "STOREFARM",
+          "channelProductDisplayStatusType": "ON",
+          "category": {
+            "wholeCategoryId": "50000008>50000080>50001800",
+            "wholeCategoryName": "생활/건강>정원/원예용품>조경수/묘목",
+            "categoryId": "50001800",
+            "categoryName": "조경수/묘목"
+          },
+          "name": "황금낭 망고묘목 애플망고나무 화분 3년생 어윈 품종",
+          "dispName": "황금낭 망고묘목 애플망고나무 화분 3년생 어윈 품종",
+          "channel": {
+            "channelNo": 100475442,
+            "accountNo": 100431533,
+            "channelUid": "2sWDy7KDVVX2rtgGScH62",
+            "accountId": "ncp_1nslgt_01",
+            "channelName": "황금낭"
+          },
+          "storeKeepExclusiveProduct": false,
+          "productNo": 4776740769,
+          "salePrice": 132000,
+          "saleType": "NEW",
+          "productStatusType": "SALE",
+          "authenticationType": "NORMAL",
+          "seoInfo": {
+            "sellerTags": [
+              {
+                "code": 696802,
+                "text": "망고나무"
+              },
+              {
+                "code": 2401470,
+                "text": "망고나무화분"
+              },
+              {
+                "code": 16478,
+                "text": "애플망고"
+              },
+              {
+                "text": "거실화분"
+              },
+              {
+                "text": "유실수"
+              }
+            ]
+          },
+          "optionUsable": false,
+          "supplementProductUsable": false,
+          "naverShoppingSearchInfo": {
+            "manufacturerName": "황금낭",
+            "brandName": "황금낭"
+          },
+          "purchaseReviewInfo": {
+            "purchaseReviewExposure": true
+          },
+          "minorPurchasable": true,
+          "isRestrictCart": false,
+          "benefitsView": {
+            "discountedSalePrice": 90000,
+            "mobileDiscountedSalePrice": 90000,
+            "sellerImmediateDiscountAmount": 42000,
+            "mobileSellerImmediateDiscountAmount": 42000,
+            "managerImmediateDiscountAmount": 0,
+            "mobileManagerImmediateDiscountAmount": 0,
+            "discountedRatio": 31,
+            "mobileDiscountedRatio": 31,
+            "sellerPurchasePoint": 0,
+            "mobileSellerPurchasePoint": 0,
+            "sellerCustomerManagementPoint": 0,
+            "mobileSellerCustomerManagementPoint": 0,
+            "managerPurchasePoint": 900,
+            "mobileManagerPurchasePoint": 900,
+            "managerPurchaseExtraPoint": 0,
+            "mobileManagerPurchaseExtraPoint": 0,
+            "generalPurchaseReviewPoint": 0,
+            "premiumPurchaseReviewPoint": 0,
+            "storeMemberReviewPoint": 0,
+            "managerGeneralPurchaseReviewPoint": 50,
+            "managerPremiumPurchaseReviewPoint": 150,
+            "givePresent": true,
+            "textReviewPoint": 0,
+            "photoVideoReviewPoint": 0,
+            "afterUseTextReviewPoint": 0,
+            "afterUsePhotoVideoReviewPoint": 0,
+            "managerTextReviewPoint": 50,
+            "managerPhotoVideoReviewPoint": 150,
+            "managerAfterUseTextReviewPoint": 0,
+            "managerAfterUsePhotoVideoReviewPoint": 0,
+            "dispDiscountedSalePrice": 90000,
+            "dispDiscountedRatio": 31
+          },
+          "reviewAmount": {
+            "totalReviewCount": 29,
+            "premiumReviewCount": 0,
+            "averageReviewScore": 4.79,
+            "productSatisfactionPercent": 0
+          },
+          "displayable": true,
+          "usableDelivery": true,
+          "representativeImageUrl": "https://shop-phinf.pstatic.net/20260330_32/1774837509347JrBaL_PNG/55932915069211005_931202940.png",
+          "representativeImageWidth": 1800,
+          "representativeImageHeight": 2400,
+          "optionalImageUrls": [
+            "https://shop-phinf.pstatic.net/20260330_266/1774837528163N4rNx_JPEG/108970348217738752_1080092671.jpg",
+            "https://shop-phinf.pstatic.net/20260330_32/1774837509347JrBaL_PNG/55932915069211005_931202940.png",
+            "https://shop-phinf.pstatic.net/20260226_189/17720731093929BY2L_JPEG/56445526523596493_648794043.jpg",
+            "https://shop-phinf.pstatic.net/20260226_87/1772073109761r4Lvc_JPEG/56445526884501545_1150777588.jpg",
+            "https://shop-phinf.pstatic.net/20260330_72/1774837584286OGPA0_PNG/47811937014391092_443203727.png"
+          ],
+          "representativeVideoId": "F2DD91EE2147A47C109FE0A369ABE3BFE986",
+          "productDeliveryInfo": {
+            "deliveryFeeType": "UNIT_QUANTITY_PAID",
+            "baseFee": 10000,
+            "deliveryAttributeType": "NORMAL",
+            "installationFee": false,
+            "deliveryMethodTypes": [
+              "DELIVERY"
+            ],
+            "deliveryFeePayType": "COLLECT",
+            "deliveryCompany": {
+              "id": "KDEXP",
+              "name": "경동택배"
+            }
+          },
+          "detailContents": {
+            "detailContentText": "황금낭 공식채널 황금낭 농장과 소통해요~ 네이버카페 https://cafe.naver.com/goldennang 네이버블로그 https://blog.naver.com/goldennang 공식 쇼핑몰 www.goldennang.com 네이버 스마트스토어 https://smartstore.naver.com/goldennang 인스타그램 https://www.instagram.com/jeju_goldennang/ 유튜브채널 https://www.youtube.com/channel/UCgZpYSxJntQFsWgFoNZnkCw",
+            "editorType": "SEONE"
+          },
+          "enableCart": true,
+          "freeDelivery": false,
+          "todayDelivery": false,
+          "regularSubscription": false,
+          "arrivalGuarantee": false,
+          "subscriptionBenefitContent": [],
+          "rmids": [],
+          "rentalOneTimeFee": false,
+          "stockQuantity": 1948,
+          "benefitsPolicy": {
+            "sellerImmediateDiscountPolicyNo": "SE_4776740769",
+            "sellerImmediateDiscountValueUnit": "WON",
+            "sellerImmediateDiscountValue": 42000
+          },
+          "mobileBenefitsPolicy": {
+            "sellerImmediateDiscountPolicyNo": "SE_4776740769",
+            "sellerImmediateDiscountValueUnit": "WON",
+            "sellerImmediateDiscountValue": 42000
+          },
+          "dispSalePrice": 132000,
+          "claimDeliveryInfo": {
+            "freeReturnInsurance": false
+          },
+          "epInfo": {
+            "syncNvMid": 82334593119,
+            "naverShoppingRegistration": true,
+            "naverShoppingExposure": true
+          },
+          "affiliateYn": false,
+          "adultAuthorizationType": "NOT_LOGIN",
+          "authorizationDisplay": "NORMAL",
+          "orderDeliveryAttributeType": null,
+          "orderScheduledChannelType": null
+        },
+        {
+          "id": 6969133507,
+          "channelServiceType": "STOREFARM",
+          "channelProductDisplayStatusType": "ON",
+          "category": {
+            "wholeCategoryId": "50000008>50000080>50001800",
+            "wholeCategoryName": "생활/건강>정원/원예용품>조경수/묘목",
+            "categoryId": "50001800",
+            "categoryName": "조경수/묘목"
+          },
+          "name": "황금낭 애플 망고 나무 묘목 제주 접목묘 2년생 유실수 특묘",
+          "dispName": "황금낭 애플 망고 나무 묘목 제주 접목묘 2년생 유실수 특묘",
+          "channel": {
+            "channelNo": 100475442,
+            "accountNo": 100431533,
+            "channelUid": "2sWDy7KDVVX2rtgGScH62",
+            "accountId": "ncp_1nslgt_01",
+            "channelName": "황금낭"
+          },
+          "storeKeepExclusiveProduct": false,
+          "productNo": 6935973892,
+          "salePrice": 108000,
+          "saleType": "NEW",
+          "productStatusType": "SALE",
+          "authenticationType": "NORMAL",
+          "seoInfo": {
+            "sellerTags": [
+              {
+                "code": 696802,
+                "text": "망고나무"
+              },
+              {
+                "code": 2401470,
+                "text": "망고나무화분"
+              },
+              {
+                "code": 220531,
+                "text": "유실수"
+              },
+              {
+                "code": 329030,
+                "text": "과일나무"
+              },
+              {
+                "code": 48173,
+                "text": "거실화분"
+              },
+              {
+                "code": 2294046,
+                "text": "식물배달"
+              },
+              {
+                "code": 3587324,
+                "text": "공기정화나무"
+              },
+              {
+                "code": 136534,
+                "text": "식물키우기"
+              },
+              {
+                "code": 16795,
+                "text": "홈인테리어"
+              },
+              {
+                "code": 7392,
+                "text": "거실인테리어소품"
+              }
+            ]
+          },
+          "optionUsable": false,
+          "supplementProductUsable": false,
+          "naverShoppingSearchInfo": {
+            "manufacturerName": "황금낭",
+            "brandName": "황금낭",
+            "modelName": "애플망고나무 2년생"
+          },
+          "purchaseReviewInfo": {
+            "purchaseReviewExposure": true
+          },
+          "minorPurchasable": true,
+          "isRestrictCart": false,
+          "benefitsView": {
+            "discountedSalePrice": 58000,
+            "mobileDiscountedSalePrice": 58000,
+            "sellerImmediateDiscountAmount": 50000,
+            "mobileSellerImmediateDiscountAmount": 50000,
+            "managerImmediateDiscountAmount": 0,
+            "mobileManagerImmediateDiscountAmount": 0,
+            "discountedRatio": 46,
+            "mobileDiscountedRatio": 46,
+            "sellerPurchasePoint": 0,
+            "mobileSellerPurchasePoint": 0,
+            "sellerCustomerManagementPoint": 0,
+            "mobileSellerCustomerManagementPoint": 0,
+            "managerPurchasePoint": 580,
+            "mobileManagerPurchasePoint": 580,
+            "managerPurchaseExtraPoint": 0,
+            "mobileManagerPurchaseExtraPoint": 0,
+            "generalPurchaseReviewPoint": 0,
+            "premiumPurchaseReviewPoint": 0,
+            "storeMemberReviewPoint": 0,
+            "managerGeneralPurchaseReviewPoint": 50,
+            "managerPremiumPurchaseReviewPoint": 150,
+            "givePresent": true,
+            "textReviewPoint": 0,
+            "photoVideoReviewPoint": 0,
+            "afterUseTextReviewPoint": 0,
+            "afterUsePhotoVideoReviewPoint": 0,
+            "managerTextReviewPoint": 50,
+            "managerPhotoVideoReviewPoint": 150,
+            "managerAfterUseTextReviewPoint": 0,
+            "managerAfterUsePhotoVideoReviewPoint": 0,
+            "dispDiscountedSalePrice": 58000,
+            "dispDiscountedRatio": 46
+          },
+          "reviewAmount": {
+            "totalReviewCount": 30,
+            "premiumReviewCount": 0,
+            "averageReviewScore": 4.67,
+            "productSatisfactionPercent": 0
+          },
+          "displayable": true,
+          "usableDelivery": true,
+          "representativeImageUrl": "https://shop-phinf.pstatic.net/20260226_283/1772072516086qJASk_JPEG/26648641196468682_1964337145.jpg",
+          "representativeImageWidth": 3024,
+          "representativeImageHeight": 4032,
+          "optionalImageUrls": [
+            "https://shop-phinf.pstatic.net/20260226_283/1772072516086qJASk_JPEG/26648641196468682_1964337145.jpg",
+            "https://shop-phinf.pstatic.net/20260226_132/1772072577612j0zsx_JPEG/106205390886497677_1621043689.jpg",
+            "https://shop-phinf.pstatic.net/20260226_39/1772072576817VRULQ_JPEG/106205390070372352_645147786.jpg",
+            "https://shop-phinf.pstatic.net/20260226_46/17720725781343irfI_JPEG/106205391297399904_107038277.jpg"
+          ],
+          "representativeVideoId": "45015ED2764AC739FA5D4BB787E326D1CC69",
+          "productDeliveryInfo": {
+            "deliveryFeeType": "FREE",
+            "baseFee": 0,
+            "differentialFeeByArea": "택배사 도서산간 배송 추가금 있습니다",
+            "deliveryAttributeType": "NORMAL",
+            "deliveryBundleGroup": {
+              "id": 23195630
+            },
+            "installationFee": false,
+            "deliveryMethodTypes": [
+              "DELIVERY"
+            ],
+            "deliveryCompany": {
+              "id": "CJGLS",
+              "name": "CJ대한통운"
+            }
+          },
+          "detailContents": {
+            "detailContentText": "황금낭 공식채널 황금낭 농장과 소통해요~ 네이버카페 https://cafe.naver.com/goldennang 네이버블로그 https://blog.naver.com/goldennang 네이버 스마트스토어 https://smartstore.naver.com/goldennang 인스타그램 https://www.instagram.com/jeju_goldennang/ 유튜브채널 https://www.youtube.com/channel/UCgZpYSxJntQFsWgFoNZnkCw",
+            "editorType": "SEONE"
+          },
+          "enableCart": true,
+          "freeDelivery": true,
+          "todayDelivery": false,
+          "regularSubscription": false,
+          "arrivalGuarantee": false,
+          "subscriptionBenefitContent": [],
+          "rmids": [],
+          "rentalOneTimeFee": false,
+          "stockQuantity": 1464,
+          "benefitsPolicy": {
+            "sellerImmediateDiscountPolicyNo": "SE_6935973892",
+            "sellerImmediateDiscountValueUnit": "WON",
+            "sellerImmediateDiscountValue": 50000
+          },
+          "mobileBenefitsPolicy": {
+            "sellerImmediateDiscountPolicyNo": "SE_6935973892",
+            "sellerImmediateDiscountValueUnit": "WON",
+            "sellerImmediateDiscountValue": 50000
+          },
+          "dispSalePrice": 108000,
+          "claimDeliveryInfo": {
+            "freeReturnInsurance": false
+          },
+          "epInfo": {
+            "syncNvMid": 84513633829,
+            "naverShoppingRegistration": true,
+            "naverShoppingExposure": true
+          },
+          "affiliateYn": false,
+          "adultAuthorizationType": "NOT_LOGIN",
+          "authorizationDisplay": "NORMAL",
+          "orderDeliveryAttributeType": null,
+          "orderScheduledChannelType": null
+        },
+        {
+          "id": 4796801876,
+          "channelServiceType": "STOREFARM",
+          "channelProductDisplayStatusType": "ON",
+          "category": {
+            "wholeCategoryId": "50000008>50000080>50001800",
+            "wholeCategoryName": "생활/건강>정원/원예용품>조경수/묘목",
+            "categoryId": "50001800",
+            "categoryName": "조경수/묘목"
+          },
+          "name": "황금낭 귤묘목 8년이상 감귤나무 화분 특상품",
+          "dispName": "황금낭 귤묘목 8년이상 감귤나무 화분 특상품",
+          "channel": {
+            "channelNo": 100475442,
+            "accountNo": 100431533,
+            "channelUid": "2sWDy7KDVVX2rtgGScH62",
+            "accountId": "ncp_1nslgt_01",
+            "channelName": "황금낭"
+          },
+          "storeKeepExclusiveProduct": false,
+          "productNo": 4783363064,
+          "salePrice": 200000,
+          "saleType": "NEW",
+          "productStatusType": "SALE",
+          "authenticationType": "NORMAL",
+          "seoInfo": {
+            "sellerTags": [
+              {
+                "code": 48173,
+                "text": "거실화분"
+              },
+              {
+                "code": 139553,
+                "text": "개업화분"
+              },
+              {
+                "code": 2118676,
+                "text": "과실나무"
+              },
+              {
+                "code": 65171,
+                "text": "거실나무"
+              },
+              {
+                "code": 11189,
+                "text": "제주감귤"
+              },
+              {
+                "code": 1846325,
+                "text": "행복한일상"
+              },
+              {
+                "code": 76629,
+                "text": "40대"
+              },
+              {
+                "code": 145343,
+                "text": "40대여성"
+              },
+              {
+                "code": 76636,
+                "text": "30대"
+              },
+              {
+                "code": 246400,
+                "text": "50대"
+              }
+            ]
+          },
+          "optionUsable": false,
+          "supplementProductUsable": false,
+          "naverShoppingSearchInfo": {
+            "manufacturerName": "황금낭",
+            "brandName": "황금낭"
+          },
+          "purchaseReviewInfo": {
+            "purchaseReviewExposure": true
+          },
+          "minorPurchasable": true,
+          "isRestrictCart": false,
+          "benefitsView": {
+            "discountedSalePrice": 200000,
+            "mobileDiscountedSalePrice": 200000,
+            "sellerImmediateDiscountAmount": 0,
+            "mobileSellerImmediateDiscountAmount": 0,
+            "managerImmediateDiscountAmount": 0,
+            "mobileManagerImmediateDiscountAmount": 0,
+            "discountedRatio": 0,
+            "mobileDiscountedRatio": 0,
+            "sellerPurchasePoint": 0,
+            "mobileSellerPurchasePoint": 0,
+            "sellerCustomerManagementPoint": 0,
+            "mobileSellerCustomerManagementPoint": 0,
+            "managerPurchasePoint": 2000,
+            "mobileManagerPurchasePoint": 2000,
+            "managerPurchaseExtraPoint": 0,
+            "mobileManagerPurchaseExtraPoint": 0,
+            "generalPurchaseReviewPoint": 0,
+            "premiumPurchaseReviewPoint": 0,
+            "storeMemberReviewPoint": 0,
+            "managerGeneralPurchaseReviewPoint": 50,
+            "managerPremiumPurchaseReviewPoint": 150,
+            "givePresent": false,
+            "textReviewPoint": 0,
+            "photoVideoReviewPoint": 0,
+            "afterUseTextReviewPoint": 0,
+            "afterUsePhotoVideoReviewPoint": 0,
+            "managerTextReviewPoint": 50,
+            "managerPhotoVideoReviewPoint": 150,
+            "managerAfterUseTextReviewPoint": 0,
+            "managerAfterUsePhotoVideoReviewPoint": 0,
+            "dispDiscountedSalePrice": 200000,
+            "dispDiscountedRatio": 0
+          },
+          "reviewAmount": {
+            "totalReviewCount": 18,
+            "premiumReviewCount": 0,
+            "averageReviewScore": 4.78,
+            "productSatisfactionPercent": 0
+          },
+          "displayable": true,
+          "usableDelivery": true,
+          "representativeImageUrl": "https://shop-phinf.pstatic.net/20200120_280/1579507828810d9jVf_JPEG/16867663354128618_2066657604.jpg",
+          "representativeImageWidth": 319,
+          "representativeImageHeight": 330,
+          "optionalImageUrls": [
+            "https://shop-phinf.pstatic.net/20210610_2/1623289973329SIGcx_JPEG/24425871984391629_132937672.jpg",
+            "https://shop-phinf.pstatic.net/20210611_246/1623388592236YE9Hg_JPEG/24524371933618340_1223345774.jpg",
+            "https://shop-phinf.pstatic.net/20210611_22/1623388599960aKVoX_JPEG/24524379655692751_1733557944.jpg",
+            "https://shop-phinf.pstatic.net/20210611_271/1623388616185MiAk2_JPEG/24524395865754596_124462706.jpg"
+          ],
+          "productDeliveryInfo": {
+            "deliveryFeeType": "UNIT_QUANTITY_PAID",
+            "baseFee": 10000,
+            "deliveryAttributeType": "NORMAL",
+            "installationFee": false,
+            "deliveryMethodTypes": [
+              "DELIVERY"
+            ],
+            "deliveryFeePayType": "COLLECT",
+            "deliveryCompany": {
+              "id": "KDEXP",
+              "name": "경동택배"
+            }
+          },
+          "detailContents": {
+            "detailContentText": "주문시 주의해주세요 귤묘목은 조생온주 또는 폰깡나무 품종으로 배송됩니다. 실제 배송시에는 플라스틱 화분으로 배송되니, 이점 참고부탁드립니다. 배송 묘목은 경동택배로 착불 발송되며, 익일배송입니다. 묘목 키우는 방법 소중한 반려식물과 오랫동안 함께 하기 위해서 네이버 #황금낭카페 에서 묘목을 키우는 방법을 확인해주세요~ 황금낭 공식채널 황금낭 농장과 소통해요~ 네이버카페 https://cafe.naver.com/goldennang 네이버블로그 https://blog.naver.com/goldennang 공식 쇼핑몰 www.golden",
+            "editorType": "SEONE"
+          },
+          "enableCart": true,
+          "freeDelivery": false,
+          "todayDelivery": false,
+          "regularSubscription": false,
+          "arrivalGuarantee": false,
+          "subscriptionBenefitContent": [],
+          "rmids": [],
+          "rentalOneTimeFee": false,
+          "stockQuantity": 972,
+          "benefitsPolicy": {},
+          "mobileBenefitsPolicy": {},
+          "dispSalePrice": 200000,
+          "claimDeliveryInfo": {
+            "freeReturnInsurance": false
+          },
+          "epInfo": {
+            "syncNvMid": 82341324479,
+            "naverShoppingRegistration": true,
+            "naverShoppingExposure": true
+          },
+          "affiliateYn": false,
+          "adultAuthorizationType": "NOT_LOGIN",
+          "authorizationDisplay": "NORMAL",
+          "orderDeliveryAttributeType": null,
+          "orderScheduledChannelType": null
+        }
+      ]
+    },
+    "shoppingStoryWidget": {
+      "ssr": false,
+      "data": {
+        "shoppingStories": []
+      }
+    }
+  },
+  "widgetStates": {
+    "flickingLastIndices": {}
+  },
+  "addressBook": {
+    "accountNo": null,
+    "addressBookType": null,
+    "addressInfo": null,
+    "alias": null,
+    "id": null,
+    "possibleOversea": null,
+    "modAuditInfo": null,
+    "phoneNumber1": null,
+    "phoneNumber2": null,
+    "regAuditInfo": null,
+    "regDate": null,
+    "modDate": null
+  },
+  "benefit": {
+    "user": null,
+    "customerBenefits": null,
+    "basicBenefits": [],
+    "sortedHomeBenefits": []
+  },
+  "brandStatuses": [],
+  "bundle": {
+    "bundleGroupId": null,
+    "previousProductId": null,
+    "simpleProducts": [],
+    "totalCount": 0,
+    "listDisplayType": null,
+    "sort": null,
+    "page": 1,
+    "pageSize": 40,
+    "filter": {
+      "filters": [],
+      "priceRange": null
+    }
+  },
+  "cart": {
+    "totalCount": 0
+  },
+  "cartProducts": {
+    "simpleProducts": [],
+    "totalCount": 0,
+    "isLoaded": false
+  },
+  "datalab": {
+    "ratings": [],
+    "ratioFemale": 0,
+    "ratioMale": 0,
+    "sequence": 0,
+    "tag": [],
+    "type": ""
+  },
+  "delivery": {
+    "todayDispatch": null
+  },
+  "detailReviews": {},
+  "frequentlyPaidProducts": {
+    "isHeavyUser": false,
+    "items": [],
+    "itemCount": 0,
+    "isLoaded": false
+  },
+  "keepStore": {
+    "kept": false,
+    "count": 1827,
+    "newsInterlock": false,
+    "hasTooltip": false
+  },
+  "keptRelationProducts": {},
+  "keywordSearch": {
+    "keyword": null,
+    "normalizedKeywordInfo": {
+      "originQuery": "",
+      "normalizedKeyword": ""
+    },
+    "sort": null,
+    "listDisplayType": null,
+    "simpleProducts": [],
+    "totalCount": 0,
+    "page": 1,
+    "pageSize": 20,
+    "filter": {
+      "filters": [],
+      "priceRange": null
+    },
+    "querySummaryInfo": {
+      "isQR": null,
+      "isPartialSearch": null,
+      "orgQueryTotal": null
+    }
+  },
+  "layoutStatus": {
+    "isActiveStoreTopBanner": false
+  },
+  "loungeBenefit": [],
+  "loungeJoin": {
+    "externalProvisions": null,
+    "externalProvision": null,
+    "collectedItems": null,
+    "reportedItemIds": []
+  },
+  "loungeMember": {
+    "sellerNo": null,
+    "memberIdNo": null,
+    "memberId": null,
+    "gradeType": null,
+    "grade": null,
+    "gradeApplyDateTime": null,
+    "name": null,
+    "sex": null,
+    "birthday": null,
+    "status": null,
+    "joinDateTime": null,
+    "leaveDateTime": null,
+    "attendanceCount": 0,
+    "lastAttendanceDate": null,
+    "promotionNotification": null,
+    "sexAgreementDateTime": null,
+    "sexAgreementCancelDateTime": null,
+    "birthdayAgreementDateTime": null,
+    "birthdayAgreementCancelDateTime": null,
+    "contactTelephoneAgreementDateTime": null,
+    "contactTelephoneAgreementCancelDateTime": null,
+    "realtimeSummaryInfo": null,
+    "accumulateSummaryInfo": null,
+    "predictSummaryInfo": null,
+    "agreements": [],
+    "isMember": false,
+    "rejoinPossibleDate": null,
+    "attendanceRequestState": null,
+    "agreeSex": false,
+    "agreeBirthday": false,
+    "agreeContactPhone": false
+  },
+  "loungeMy": {
+    "myCommentActivities": null,
+    "myPollActivities": null
+  },
+  "loungeNotice": {
+    "pages": null,
+    "detail": null,
+    "newestPost": null
+  },
+  "loungeSimpleMember": {
+    "sellerNo": null,
+    "memberIdNo": null,
+    "memberId": null,
+    "gradeType": null,
+    "grade": null,
+    "gradeApplyDateTime": null,
+    "name": null,
+    "sex": null,
+    "birthday": null,
+    "status": null,
+    "joinDateTime": null,
+    "leaveDateTime": null,
+    "attendanceCount": 0,
+    "lastAttendanceDate": null,
+    "promotionNotification": null,
+    "sexAgreementDateTime": null,
+    "sexAgreementCancelDateTime": null,
+    "birthdayAgreementDateTime": null,
+    "birthdayAgreementCancelDateTime": null,
+    "isMember": false,
+    "rejoinPossibleDate": null,
+    "agreeSex": false,
+    "agreeBirthday": false
+  },
+  "loungeStory": {
+    "pages": null,
+    "detail": null
+  },
+  "my": {
+    "point": 0,
+    "coinType": "06",
+    "orderDeliveryCounts": 0,
+    "zzimProductCount": 0
+  },
+  "myKeptProducts": {
+    "simpleProducts": [],
+    "totalCount": 0,
+    "isLoaded": false
+  },
+  "myListProducts": {
+    "simpleProducts": [],
+    "hasNextPage": true,
+    "page": 1,
+    "pageSize": 20,
+    "isLoaded": false
+  },
+  "optimizeRequest": {
+    "types": []
+  },
+  "product": {
+    "id": null,
+    "channelServiceType": null,
+    "channelProductType": null,
+    "channelProductSupplyType": null,
+    "channelProductStatusType": null,
+    "channelProductDisplayStatusType": null,
+    "category": null,
+    "categoryNavigations": null,
+    "name": null,
+    "productUrl": null,
+    "mobileProductUrl": null,
+    "channel": null,
+    "content": null,
+    "regDate": null,
+    "modDate": null,
+    "manufactureDate": null,
+    "validDate": null,
+    "storeKeepExclusiveProduct": false,
+    "epInfo": {
+      "naverShoppingExposure": false,
+      "enuriRegistration": false,
+      "danawaRegistration": false
+    },
+    "best": false,
+    "displayDate": null,
+    "materialContent": null,
+    "orderRequestUsable": false,
+    "channelProductImages": null,
+    "channelProductAttributes": [],
+    "productNo": null,
+    "salePrice": 0,
+    "stockQuantity": 0,
+    "saleType": null,
+    "excludeAdminDiscount": false,
+    "payExposure": false,
+    "productStatusType": null,
+    "reasonForProhibition": null,
+    "statusType": null,
+    "authenticationType": null,
+    "productImages": null,
+    "naverShoppingSearchInfo": null,
+    "itselfProductionProductYn": null,
+    "afterServiceInfo": null,
+    "originAreaInfo": null,
+    "seoInfo": null,
+    "optionUsable": false,
+    "supplementProductUsable": false,
+    "purchaseReviewInfo": null,
+    "isCustomProduct": false,
+    "taxType": null,
+    "certificationTargetExcludeContent": null,
+    "minorPurchasable": false,
+    "productInfoProvidedNoticeView": null,
+    "productAttributes": null,
+    "productDeliveryInfo": null,
+    "claimDeliveryInfo": null,
+    "benefitsView": null,
+    "benefitsPolicy": null,
+    "mobileBenefitsPolicy": null,
+    "saleAmount": null,
+    "reviewAmount": null,
+    "averageDeliveryLeadTime": null,
+    "preOrder": null,
+    "sellerTags": null,
+    "bbsSeq": 0,
+    "galleryImages": null,
+    "materialImages": null,
+    "tagImages": null,
+    "barcodeImages": null,
+    "soldout": false,
+    "viewAttributes": null,
+    "additionalAttributes": null,
+    "eCouponCategory": false,
+    "cultureCategory": false,
+    "mobileDiscountRatio": 0,
+    "cultureCostIncomeDeductionRate": null,
+    "isRestrictCart": false,
+    "channelProductVideos": [],
+    "productVideos": [],
+    "detailAttributes": null,
+    "commentCount": 0,
+    "interestFreePlans": null,
+    "productVideoAuth": null,
+    "userNickname": null,
+    "relatedProductsIds": [],
+    "isPayRestrictCategory": false,
+    "isOrderRestrictCategory": false,
+    "isPointPlusMember": false,
+    "hopeDelivery": null,
+    "discountedSalePrice": 0,
+    "reviewEvent": null,
+    "rmidByUser": null,
+    "orderDeliveryAttributeType": null,
+    "orderScheduledChannelType": null,
+    "disableAdditionalApi": false
+  },
+  "productBestReviews": {
+    "exceptionalStorepickReviewIds": []
+  },
+  "productDetailBroadcast": {
+    "storeBroadcastChannelAuth": {
+      "id": null,
+      "serviceId": "",
+      "serviceName": "",
+      "broadcasterId": "",
+      "channelUid": "",
+      "broadcastAuthority": false,
+      "shortclipAuthority": false,
+      "grade": ""
+    },
+    "broadcastOnAir": {
+      "isFetched": false,
+      "data": null
+    },
+    "broadcastStandBy": {
+      "isFetched": false,
+      "data": null
+    }
+  },
+  "productGift": {
+    "giftParams": {},
+    "giftButton": {
+      "isLoading": true,
+      "type": null,
+      "friendInfo": null
+    }
+  },
+  "productReviewContentSummaryTags": {
+    "PRODUCT": {
+      "status": "IDLE",
+      "reviewContentSummaryTags": null,
+      "defaultReviewContentSumamryTags": null,
+      "isOnUserBased": false
+    },
+    "REVIEW_DIALOG": {
+      "status": "IDLE",
+      "reviewContentSummaryTags": null,
+      "defaultReviewContentSumamryTags": null,
+      "isOnUserBased": false
+    },
+    "PHOTO_VIDEO_LIST_DIALOG": {
+      "status": "IDLE",
+      "reviewContentSummaryTags": null,
+      "defaultReviewContentSumamryTags": null,
+      "isOnUserBased": false
+    }
+  },
+  "productReviewGalleryAttaches": {
+    "PRODUCT": {
+      "contentListChunks": {},
+      "contentDetails": {},
+      "totalElements": null,
+      "totalPages": null
+    },
+    "REVIEW_DIALOG": {
+      "contentListChunks": {},
+      "contentDetails": {},
+      "totalElements": null,
+      "totalPages": null
+    },
+    "PHOTO_VIDEO_LIST_DIALOG": {
+      "contentListChunks": {},
+      "contentDetails": {},
+      "totalElements": null,
+      "totalPages": null
+    }
+  },
+  "productReviews": {
+    "PRODUCT": {
+      "contents": [],
+      "page": 0,
+      "size": 0,
+      "totalElements": 0,
+      "totalPages": 0,
+      "loaded": false,
+      "reviewsByTempFilters": null,
+      "status": "pending"
+    },
+    "REVIEW_DIALOG": {
+      "contents": [],
+      "page": 0,
+      "size": 0,
+      "totalElements": 0,
+      "totalPages": 0,
+      "loaded": false,
+      "reviewsByTempFilters": null,
+      "status": "pending"
+    },
+    "PHOTO_VIDEO_LIST_DIALOG": {
+      "contents": [],
+      "page": 0,
+      "size": 0,
+      "totalElements": 0,
+      "totalPages": 0,
+      "loaded": false,
+      "reviewsByTempFilters": null,
+      "status": "pending"
+    }
+  },
+  "productSizeRecommendation": {
+    "hasValidRecommendation": false,
+    "userRepSize": null,
+    "sizeShowing": [],
+    "sizeRecommendationMap": null
+  },
+  "recentOtherProduct": {
+    "simpleProducts": [],
+    "totalCount": 0,
+    "page": 1,
+    "isLoaded": false
+  },
+  "recentlyViewedProducts": {
+    "simpleProducts": [],
+    "totalCount": 0,
+    "listDisplayType": null,
+    "page": 1,
+    "hasMore": false,
+    "filter": {
+      "filters": [],
+      "priceRange": null
+    },
+    "isLoaded": false
+  },
+  "renderSequence": "topBanner",
+  "rental": {
+    "policies": {},
+    "affiliateCards": {},
+    "contractConditionId": null
+  },
+  "reviewDetail": null,
+  "reviewLike": {},
+  "reviewsFilter": {
+    "selectedSort": "REVIEW_RANKING",
+    "selectedFeature": "ALL",
+    "selectedScore": "ALL",
+    "selectedTopic": null,
+    "selectedTag": null,
+    "selectedOptions": [],
+    "selectedOptionsTemp": [],
+    "selectedCustomFilterOptions": [],
+    "selectedCustomFilterOptionsTemp": [],
+    "registeredCustomFilter": {
+      "active": false
+    },
+    "registeredCustomFilterTemp": {
+      "active": false
+    }
+  },
+  "seViewerContent": {
+    "isLoadedCompleted": {
+      "content": false,
+      "notice": false
+    },
+    "content": null,
+    "notices": {
+      "channelNoticeContent": null,
+      "productNoticeContent": null
+    }
+  },
+  "searchFormLayer": {
+    "keywordSuggestions": [],
+    "storePopular": null
+  },
+  "selectedOptions": {
+    "product": {},
+    "coordi": {},
+    "delivery": {},
+    "textOptions": null,
+    "simpleOptions": null,
+    "combinationOptions": null,
+    "standardOptions": null,
+    "supplementProducts": null,
+    "colorOptions": null,
+    "sizeOptions": null,
+    "hopeDeliveryOptions": {},
+    "purchaseMethodTypes": {},
+    "subscriptionDeliveryOptions": {}
+  },
+  "selectiveLive": {
+    "channel": {
+      "banner": ""
+    },
+    "productMap": {},
+    "productDiscountBroadcastMap": {}
+  },
+  "serverLocationPath": "/goldennang",
+  "serverReferer": {
+    "referNaver": false,
+    "referer": null,
+    "shoppingAppReferer": null
+  },
+  "serverRenderStatus": {
+    "isError": false
+  },
+  "serverRendered": true,
+  "simpleProductForDetailPage": {
+    "id": null,
+    "productNo": null,
+    "authorizationDisplay": null,
+    "adultAuthorizationType": null,
+    "authenticationType": null
+  },
+  "talktalk": {
+    "marketingMessage": null
+  },
+  "talktalkSearch": {
+    "isError": false,
+    "keyword": null,
+    "categoryKey": null,
+    "simpleProducts": [],
+    "totalCount": 0,
+    "page": 1,
+    "selectedProductNos": [],
+    "hasMore": false
+  },
+  "toast": {
+    "isVisible": false,
+    "type": null,
+    "data": null,
+    "dialogToastRootId": null,
+    "sequence": 0
+  },
+  "userCollectItems": [],
+  "view": {
+    "type": "pc"
+  },
+  "visit": {
+    "today": 0,
+    "total": 0
+  }
+}

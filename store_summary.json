@@ -1,0 +1,866 @@
+{
+  "channel": {
+    "channelName": "황금낭",
+    "accountName": null,
+    "representativeName": "신현주",
+    "businessAddress": null,
+    "phoneNo": null,
+    "email": null,
+    "mallIntroduction": null,
+    "introduction": null,
+    "representImage": null,
+    "subRepresentImages": null,
+    "talktalkBannerUrl": null,
+    "instagramUrl": null,
+    "youtubeUrl": null,
+    "blogUrl": null
+  },
+  "categories": [
+    {
+      "id": "e732e6b8ea1f452583da17832c9261ff",
+      "name": "애플망고",
+      "subCategories": []
+    },
+    {
+      "id": "2a6e9edfc18047aaa3213fb9604c144c",
+      "name": "망고나무",
+      "subCategories": []
+    },
+    {
+      "id": "d9c11fd5ddfe4d29a90ab9e23e6b1c39",
+      "name": "귤나무",
+      "subCategories": []
+    },
+    {
+      "id": "4a2a9a8e3ba7474190d64877cc84f8bf",
+      "name": "폰깡나무",
+      "subCategories": []
+    },
+    {
+      "id": "68df340b05cf4725b8904ca2dc676cbd",
+      "name": "금귤나무",
+      "subCategories": []
+    },
+    {
+      "id": "2e7ed8a4e2264706b95960c9a608e7b6",
+      "name": "기타 만감류",
+      "subCategories": []
+    },
+    {
+      "id": "423d14d253724c36acca6e84232265f8",
+      "name": "전체상품",
+      "subCategories": []
+    }
+  ],
+  "homeSetting": {
+    "displayConfig": {
+      "widgets": {
+        "gnbWidget": {
+          "visible": true,
+          "order": 0,
+          "type": "GNB",
+          "gnbType": "SIMPLE",
+          "nameType": "LOGO",
+          "logo": {
+            "url": "https://shop-phinf.pstatic.net/20260319_75/1773879530764Pf4V5_PNG/%C1%A6%B8%F1_%BE%F8%C0%BD-1.png",
+            "property": "200:90",
+            "width": 200,
+            "height": 90,
+            "originalUrl": "https://shop-phinf.pstatic.net/20260319_75/1773879530764Pf4V5_PNG/%C1%A6%B8%F1_%BE%F8%C0%BD-1.png",
+            "top": 0,
+            "left": 0
+          },
+          "mobileLogo": {
+            "url": "https://shop-phinf.pstatic.net/20260319_149/1773878944176oUTuX_PNG/C8B2B1DDB3B6_B7CEB0ED_2.png",
+            "property": "1513:566",
+            "width": 1513,
+            "height": 566,
+            "originalUrl": "https://shop-phinf.pstatic.net/20260319_179/17738787749706P1Fd_PNG/%C8%B2%B1%DD%B3%B6_%B7%CE%B0%ED_2.png",
+            "top": 63,
+            "left": 27
+          }
+        },
+        "promotionBannerWidget": {
+          "visible": true,
+          "order": 1,
+          "type": "PROMOTION_BANNER",
+          "items": [
+            {
+              "id": 12,
+              "visible": true,
+              "mobileImage": {
+                "url": "",
+                "property": "0:0",
+                "width": 0,
+                "height": 0,
+                "originalUrl": "",
+                "top": 0,
+                "left": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20231104_254/1699073431135lz391_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-002.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400,
+                "originalUrl": "https://shop-phinf.pstatic.net/20231104_254/1699073431135lz391_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-002.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "NOLINK"
+            },
+            {
+              "id": 9,
+              "visible": false,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20240614_33/1718352059961X4Iw6_JPEG/002.jpg",
+                "property": "750:600",
+                "width": 750,
+                "height": 600,
+                "originalUrl": "https://shop-phinf.pstatic.net/20240614_33/1718352059961X4Iw6_JPEG/002.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20240614_232/17183532629101bU1x_JPEG/002.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400,
+                "originalUrl": "https://shop-phinf.pstatic.net/20240614_232/17183532629101bU1x_JPEG/002.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 5800025791
+            },
+            {
+              "id": 1,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20211130_123/1638248989362UKHo9_JPEG/%B3%D7%C0%CC%B9%F6_%BD%BA%B8%B6%C6%AE_%BD%BA%C5%E4%BE%EE_750_%B9%E8%B3%CA_%B8%F0%B9%D9%C0%CF_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "property": "750:600",
+                "width": 750,
+                "height": 600
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20211130_290/1638249141112KvXvx_JPEG/1920_400_%B9%E8%B3%CA_%C8%B2%B1%DD%B3%B6_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 4790070622
+            },
+            {
+              "id": 3,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20210122_74/161125809670835Yyw_JPEG/99312172894402062_705135226.jpg",
+                "property": "750;600",
+                "width": 750,
+                "height": 600
+              },
+              "pcImage": {
+                "url": "",
+                "property": "0;0",
+                "width": 0,
+                "height": 0
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 6969133507
+            },
+            {
+              "id": 5,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "0;0",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230425_59/1682354215872ii7Rf_JPEG/001.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 6969133507
+            },
+            {
+              "id": 10,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_46/1684718637468Ptqsh_JPEG/001.jpg",
+                "property": "750:600",
+                "width": 750,
+                "height": 600
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_215/16847176123883Sbct_JPEG/003.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 6969133507
+            },
+            {
+              "id": 11,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_50/168471764447605H4A_JPEG/005.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 4796801876
+            },
+            {
+              "id": 7,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230425_217/1682354424392K7x7L_JPEG/goldennang_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-003.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "URL",
+              "linkUrl": "https://smartstore.naver.com/goldennang/shoppingstory/detail?id=5000398899"
+            },
+            {
+              "id": 8,
+              "visible": false,
+              "mobileImage": {
+                "url": "",
+                "property": "",
+                "width": 0,
+                "height": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20230522_121/1684717511042QO4oQ_JPEG/001.jpg",
+                "property": "1920:400",
+                "width": 1920,
+                "height": 400
+              },
+              "imageDimType": "NONE",
+              "useAltText": false,
+              "altTextTitle": "",
+              "altTextDescription": "",
+              "textColor": "WHITE",
+              "title": "",
+              "description": "",
+              "linkType": "PRODUCT",
+              "productNo": 5800025791
+            }
+          ]
+        },
+        "sellerInfoWidget": {
+          "visible": true,
+          "order": 2,
+          "type": "SELLER_INFO",
+          "storeIntroductionVisible": true,
+          "storeGradeVisible": true,
+          "dataLabVisible": true,
+          "todayVisitCountVisible": false,
+          "totalVisitCountVisible": false,
+          "storeSearchVisible": true
+        },
+        "benefitBannerWidget": {
+          "visible": true,
+          "order": 3,
+          "type": "BENEFIT_BANNER"
+        },
+        "customProductWidget": {
+          "visible": true,
+          "order": 4,
+          "type": "CUSTOM_PRODUCT",
+          "title": "실시간 인기상품",
+          "productDisplayType": "LIST",
+          "listProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [
+              10958477928,
+              6969133507,
+              4790070622
+            ],
+            "displayCount": 8
+          },
+          "mosaicProduct": {
+            "products": [
+              {
+                "id": 1,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 2,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 3,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 4,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 5,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 6,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 7,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 8,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          "fullImageProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          }
+        },
+        "customBannerWidget": {
+          "visible": true,
+          "order": 5,
+          "type": "CUSTOM_BANNER",
+          "banners": [
+            {
+              "id": 1,
+              "visible": true,
+              "mobileImage": {
+                "url": "https://shop-phinf.pstatic.net/20231003_261/1696301017726nqQPU_JPEG/%B9%E8%B3%CA_%B9%A6%B8%F1_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "property": "750:240",
+                "width": 750,
+                "height": 240,
+                "originalUrl": "https://shop-phinf.pstatic.net/20231003_261/1696301017726nqQPU_JPEG/%B9%E8%B3%CA_%B9%A6%B8%F1_%BA%B9%BB%E7%BA%BB-001.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "pcImage": {
+                "url": "https://shop-phinf.pstatic.net/20231104_155/1699074153491vBfm8_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA-001.jpg",
+                "property": "1280:200",
+                "width": 1280,
+                "height": 200,
+                "originalUrl": "https://shop-phinf.pstatic.net/20231104_155/1699074153491vBfm8_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA-001.jpg",
+                "top": 0,
+                "left": 0
+              },
+              "linkType": "NOLINK",
+              "productNo": 5800025791
+            }
+          ]
+        },
+        "bestProductWidget": {
+          "visible": true,
+          "order": 6,
+          "type": "BEST_PRODUCT",
+          "title": "주간베스트",
+          "thumbnailShapeType": "SQUARE",
+          "bestProductExposureType": "ALL",
+          "defaultAggregationType": "MONTHLY",
+          "selectedAggregationType": "MONTHLY",
+          "aggregationType": "MONTHLY",
+          "displayCount": 4
+        },
+        "bestReviewWidget": {
+          "visible": true,
+          "order": 7,
+          "type": "BEST_REVIEW",
+          "title": "베스트리뷰상품",
+          "productNos": [
+            5800025791,
+            6969133507,
+            4796801876,
+            4790070622,
+            5678032245,
+            5617645793,
+            5967726204,
+            4796779517,
+            4796756605,
+            4796660754
+          ],
+          "selectType": "MANUAL"
+        },
+        "newProductWidget": {
+          "visible": true,
+          "order": 8,
+          "type": "NEW_PRODUCT",
+          "title": "인기상품",
+          "thumbnailShapeType": "V_RECT",
+          "displayCount": 3
+        },
+        "customProductWidget1": {
+          "visible": false,
+          "order": 9,
+          "type": "CUSTOM_PRODUCT",
+          "title": "",
+          "productDisplayType": "MOSAIC",
+          "listProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          },
+          "mosaicProduct": {
+            "products": [
+              {
+                "id": 1,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 2,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 3,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 4,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 5,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 6,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 7,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 8,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          "fullImageProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          }
+        },
+        "customProductWidget2": {
+          "visible": false,
+          "order": 10,
+          "type": "CUSTOM_PRODUCT",
+          "title": "",
+          "productDisplayType": "MOSAIC",
+          "listProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          },
+          "mosaicProduct": {
+            "products": [
+              {
+                "id": 1,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 2,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 3,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 4,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 5,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 6,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 7,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              },
+              {
+                "id": 8,
+                "displayImage": {
+                  "url": "",
+                  "width": 0,
+                  "height": 0,
+                  "originalUrl": "",
+                  "top": 0,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          "fullImageProduct": {
+            "thumbnailShapeType": "SQUARE",
+            "productNos": [],
+            "displayCount": 8
+          }
+        },
+        "shoppingStoryWidget": {
+          "visible": true,
+          "order": 11,
+          "type": "SHOPPING_STORY",
+          "title": "쇼핑 스토리",
+          "selectType": "AUTO",
+          "shoppingStoryIds": []
+        },
+        "exhibitionBannerWidget": {
+          "visible": true,
+          "order": 12,
+          "type": "EXHIBIT_BANNER"
+        },
+        "wholeProductWidget": {
+          "visible": true,
+          "order": 13,
+          "type": "WHOLE_PRODUCT",
+          "title": "황금낭 농장에서 산지직송",
+          "thumbnailShapeType": "SQUARE",
+          "selectType": "AUTO",
+          "productNos": [],
+          "sortType": "RECENT",
+          "displayCount": 50
+        }
+      }
+    },
+    "hasFreeReturnInsuranceProduct": false,
+    "isLoading": false,
+    "isSaving": false,
+    "error": null
+  },
+  "found_product_count": 9,
+  "sample_products": [
+    {
+      "path": ".widgetContents.customBannerWidget.customBannerWidget.data[0]",
+      "data": {
+        "name": "황금낭 제주 프리미엄 애플망고 2kg 선물 세트",
+        "productNo": 5773770701,
+        "salePrice": 96000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20250722_49/1753143516726JNNyX_JPEG/87276315764172061_895732179.jpg",
+        "id": 5800025791
+      }
+    },
+    {
+      "path": ".widgetContents.customProductWidget.customProductWidget.data.simpleProducts[0]",
+      "data": {
+        "name": "황금낭 라이락 홍망고 애플망고묘목 접목 2년생",
+        "productNo": 10906622159,
+        "salePrice": 137000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20260226_227/17720721409760sjQK_JPEG/40731575743602400_1731650058.jpg",
+        "id": 10958477928
+      }
+    },
+    {
+      "path": ".widgetContents.customProductWidget.customProductWidget.data.simpleProducts[1]",
+      "data": {
+        "name": "황금낭 애플 망고 나무 묘목 제주 접목묘 2년생 유실수 특묘",
+        "productNo": 6935973892,
+        "salePrice": 108000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20260226_283/1772072516086qJASk_JPEG/26648641196468682_1964337145.jpg",
+        "id": 6969133507
+      }
+    },
+    {
+      "path": ".widgetContents.customProductWidget.customProductWidget.data.simpleProducts[2]",
+      "data": {
+        "name": "황금낭 망고묘목 애플망고나무 화분 3년생 어윈 품종",
+        "productNo": 4776740769,
+        "salePrice": 132000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20260330_32/1774837509347JrBaL_PNG/55932915069211005_931202940.png",
+        "id": 4790070622
+      }
+    },
+    {
+      "path": ".widgetContents.promotionBannerWidget.data[0]",
+      "data": {
+        "name": "황금낭 제주 프리미엄 애플망고 2kg 선물 세트",
+        "productNo": 5773770701,
+        "salePrice": 96000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20250722_49/1753143516726JNNyX_JPEG/87276315764172061_895732179.jpg",
+        "id": 5800025791
+      }
+    },
+    {
+      "path": ".widgetContents.promotionBannerWidget.data[1]",
+      "data": {
+        "name": "황금낭 망고묘목 애플망고나무 화분 3년생 어윈 품종",
+        "productNo": 4776740769,
+        "salePrice": 132000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20260330_32/1774837509347JrBaL_PNG/55932915069211005_931202940.png",
+        "id": 4790070622
+      }
+    },
+    {
+      "path": ".widgetContents.promotionBannerWidget.data[2]",
+      "data": {
+        "name": "황금낭 애플 망고 나무 묘목 제주 접목묘 2년생 유실수 특묘",
+        "productNo": 6935973892,
+        "salePrice": 108000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20260226_283/1772072516086qJASk_JPEG/26648641196468682_1964337145.jpg",
+        "id": 6969133507
+      }
+    },
+    {
+      "path": ".widgetContents.promotionBannerWidget.data[3]",
+      "data": {
+        "name": "황금낭 귤묘목 8년이상 감귤나무 화분 특상품",
+        "productNo": 4783363064,
+        "salePrice": 200000,
+        "representativeImageUrl": "https://shop-phinf.pstatic.net/20200120_280/1579507828810d9jVf_JPEG/16867663354128618_2066657604.jpg",
+        "id": 4796801876
+      }
+    },
+    {
+      "path": ".product",
+      "data": {
+        "name": null,
+        "productNo": null,
+        "salePrice": 0,
+        "id": null
+      }
+    }
+  ]
+}
