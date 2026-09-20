@@ -16,7 +16,7 @@ export default function FloatingActionButtons() {
       {/* Scroll to Top */}
       <button
         onClick={scrollToTop}
-        className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/95 hover:bg-white text-stone-700 hover:text-teal-700 shadow-md sm:shadow-lg border border-stone-200 flex items-center justify-center transition-all cursor-pointer transform hover:-translate-y-0.5"
+        className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/70 hover:bg-white/95 text-stone-700 hover:text-teal-700 shadow-md border border-stone-300/60 backdrop-blur-md flex items-center justify-center transition-all cursor-pointer transform hover:-translate-y-0.5"
         aria-label="맨 위로 가기"
       >
         <ArrowUp className="w-4 h-4" />
@@ -27,7 +27,7 @@ export default function FloatingActionButtons() {
         href={BRAND_INFO.links.talkTalk}
         target="_blank"
         rel="noopener noreferrer"
-        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-[#03C75A] hover:bg-[#02b351] text-white font-bold text-xs sm:text-sm shadow-lg flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 group border border-emerald-400/40"
+        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-[#03C75A]/65 hover:bg-[#03C75A]/95 text-white font-extrabold text-xs sm:text-sm shadow-md backdrop-blur-md flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 group border border-emerald-300/40"
         title="네이버 톡톡 실시간 1:1 문의"
       >
         <MessageCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white fill-current shrink-0" />
@@ -37,9 +37,9 @@ export default function FloatingActionButtons() {
       {/* Direct Order / Call Reservation */}
       <button
         onClick={openDirectOrderModal}
-        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-stone-900/95 hover:bg-stone-800 text-white font-bold text-xs sm:text-sm shadow-lg flex items-center justify-center gap-1.5 sm:gap-2 transition-all transform hover:-translate-y-0.5 cursor-pointer border border-stone-700/80 backdrop-blur-sm"
+        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-stone-900/65 hover:bg-stone-900/95 text-white font-extrabold text-xs sm:text-sm shadow-md backdrop-blur-md flex items-center justify-center gap-1.5 sm:gap-2 transition-all transform hover:-translate-y-0.5 cursor-pointer border border-stone-600/50"
       >
-        <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 animate-pulse shrink-0" />
+        <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 animate-pulse shrink-0" />
         <span className="tracking-tight sm:inline">전화예약</span>
         <span className="hidden sm:inline">·방문</span>
       </button>
@@ -49,9 +49,9 @@ export default function FloatingActionButtons() {
         href={BRAND_INFO.links.smartstore}
         target="_blank"
         rel="noopener noreferrer"
-        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 text-white font-bold text-xs sm:text-sm shadow-lg flex items-center justify-center gap-1.5 sm:gap-2 transition-all transform hover:-translate-y-0.5 group border border-teal-300/30 shadow-teal-900/20"
+        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-teal-700/65 hover:bg-teal-700/95 text-white font-extrabold text-xs sm:text-sm shadow-md backdrop-blur-md flex items-center justify-center gap-1.5 sm:gap-2 transition-all transform hover:-translate-y-0.5 group border border-teal-300/40"
       >
-        <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 group-hover:scale-110 transition-transform shrink-0" />
+        <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-200 group-hover:scale-110 transition-transform shrink-0" />
         <span className="tracking-tight">네이버스토어</span>
       </a>
     </div>
