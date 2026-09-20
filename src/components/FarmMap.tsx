@@ -72,11 +72,11 @@ export default function FarmMap() {
                 href={BRAND_INFO.links.naverPlace}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-4 rounded-xl bg-[#03C75A] hover:bg-[#02b350] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all"
+                className="w-full py-3.5 px-3 sm:px-4 rounded-xl bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all whitespace-nowrap"
               >
-                <span className="w-5 h-5 bg-white text-[#03C75A] rounded-full flex items-center justify-center text-xs font-black">N</span>
-                <span>네이버 플레이스 지도에서 길찾기</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                <span className="w-5 h-5 bg-white text-[#03C75A] rounded-full flex items-center justify-center text-xs font-black shrink-0">N</span>
+                <span className="whitespace-nowrap">네이버 플레이스 길찾기</span>
+                <ExternalLink className="w-3.5 h-3.5 opacity-80 shrink-0" />
               </a>
 
               <a
@@ -153,11 +153,11 @@ export default function FarmMap() {
                   href={BRAND_INFO.links.naverPlace}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex-1 py-3.5 px-5 rounded-xl bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg transition-all"
+                  className="w-full sm:w-auto flex-1 py-3.5 px-3 sm:px-5 rounded-xl bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-lg transition-all whitespace-nowrap"
                 >
-                  <span className="w-5 h-5 bg-white text-[#03C75A] rounded-full flex items-center justify-center text-xs font-black">N</span>
-                  <span>네이버 지도에서 농장 위치 &amp; 길찾기</span>
-                  <ExternalLink className="w-4 h-4 opacity-80" />
+                  <span className="w-5 h-5 bg-white text-[#03C75A] rounded-full flex items-center justify-center text-xs font-black shrink-0">N</span>
+                  <span className="whitespace-nowrap">네이버 지도 빠른 길찾기</span>
+                  <ExternalLink className="w-3.5 h-3.5 opacity-80 shrink-0" />
                 </a>
 
                 <a
