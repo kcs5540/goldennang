@@ -114,37 +114,61 @@ export default function FarmMap() {
               </a>
             </div>
 
-            {/* Embedded Live Interactive Map Container */}
-            <div className="relative w-full h-[380px] sm:h-[420px] bg-stone-100 overflow-hidden">
-              <iframe
-                title="농업회사법인 황금낭 위치 지도"
-                src="https://www.google.com/maps?q=33.2644,126.5878&hl=ko&z=16&output=embed"
-                className="w-full h-full border-0 filter saturate-[1.05]"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-
-              {/* Floating Real-time Location Badge */}
-              <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg border border-stone-200/80 flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5 animate-pulse" />
+            {/* Embedded Live Map Container - Naver Map Card */}
+            <div className="relative w-full h-[380px] sm:h-[420px] bg-emerald-950 overflow-hidden flex flex-col justify-between p-6 sm:p-8 text-white">
+              {/* Background Map Graphic Pattern */}
+              <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]" />
+              
+              {/* Top Location Info */}
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold mb-3">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                  <span>제주 서귀포 본점 농원</span>
                 </div>
-                <div>
-                  <h4 className="text-xs font-bold text-stone-900">농업회사법인 황금낭 본점</h4>
-                  <p className="text-[11px] text-stone-500">서귀포시 토평남로27번길 44</p>
+                <h4 className="text-xl sm:text-2xl font-black text-white">
+                  농업회사법인 주식회사 황금낭
+                </h4>
+                <p className="text-xs sm:text-sm text-emerald-200/90 mt-1">
+                  제주특별자치도 서귀포시 토평남로27번길 44 (토평동)
+                </p>
+              </div>
+
+              {/* Center Road/GPS Highlight */}
+              <div className="relative z-10 my-auto py-4">
+                <div className="p-4 rounded-2xl bg-black/40 backdrop-blur-md border border-white/10 max-w-md space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-stone-300">
+                    <Compass className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>서귀포 토평동 감귤·애플망고 특성화 단지 내</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-stone-300">
+                    <Navigation className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>네이버 지도 내비게이션 &middot; 티맵 &middot; 카카오내비 "황금낭" 검색</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Bottom Direct CTA Over Map */}
-              <div className="absolute bottom-4 right-4 z-10">
+              {/* Bottom Action Buttons */}
+              <div className="relative z-10 flex flex-col sm:flex-row items-center gap-3 pt-2">
                 <a
                   href={BRAND_INFO.links.naverPlace}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2.5 rounded-xl bg-[#03C75A] text-white text-xs font-extrabold flex items-center gap-1.5 shadow-xl hover:bg-[#02b350] transition-all transform hover:scale-105"
+                  className="w-full sm:w-auto flex-1 py-3.5 px-5 rounded-xl bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg transition-all"
                 >
-                  <Navigation className="w-3.5 h-3.5" />
-                  <span>네이버 빠른 길찾기</span>
+                  <span className="w-5 h-5 bg-white text-[#03C75A] rounded-full flex items-center justify-center text-xs font-black">N</span>
+                  <span>네이버 지도에서 농장 위치 &amp; 길찾기</span>
+                  <ExternalLink className="w-4 h-4 opacity-80" />
+                </a>
+
+                <a
+                  href={`https://map.kakao.com/link/search/${encodeURIComponent(BRAND_INFO.address)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto py-3.5 px-5 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg transition-all"
+                >
+                  <span className="w-5 h-5 bg-[#191919] text-[#FEE500] rounded-full flex items-center justify-center text-xs font-black">K</span>
+                  <span>카카오맵 보기</span>
+                  <ExternalLink className="w-4 h-4 opacity-70" />
                 </a>
               </div>
             </div>
