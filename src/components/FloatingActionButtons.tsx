@@ -27,7 +27,7 @@ export default function FloatingActionButtons() {
         href={BRAND_INFO.links.talkTalk}
         target="_blank"
         rel="noopener noreferrer"
-        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-[#03C75A]/25 hover:bg-[#03C75A] text-emerald-950 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 group border border-[#03C75A]/60"
+        className="h-10 sm:h-11 w-[138px] sm:w-44 rounded-full bg-[#03C75A]/25 hover:bg-[#03C75A] text-emerald-950 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 group border border-[#03C75A]/60 shrink-0"
         title="네이버 톡톡 실시간 1:1 문의"
       >
         <MessageCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#03C75A] group-hover:text-white fill-current shrink-0" />
@@ -37,11 +37,10 @@ export default function FloatingActionButtons() {
       {/* Direct Order / Call Reservation */}
       <button
         onClick={openDirectOrderModal}
-        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-stone-900/25 hover:bg-stone-900 text-stone-900 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all transform hover:-translate-y-0.5 cursor-pointer border border-stone-900/50 group"
+        className="h-10 sm:h-11 w-[138px] sm:w-44 rounded-full bg-stone-900/25 hover:bg-stone-900 text-stone-900 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 cursor-pointer border border-stone-900/50 group shrink-0"
       >
         <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-600 group-hover:text-amber-300 animate-pulse shrink-0" />
-        <span className="tracking-tight text-stone-900 group-hover:text-white font-extrabold sm:inline">전화예약</span>
-        <span className="hidden sm:inline text-stone-900 group-hover:text-white font-extrabold">·방문</span>
+        <span className="tracking-tight text-stone-900 group-hover:text-white font-extrabold">전화예약·방문</span>
       </button>
 
       {/* Naver Store Direct Buy */}
@@ -49,7 +48,7 @@ export default function FloatingActionButtons() {
         href={BRAND_INFO.links.smartstore}
         target="_blank"
         rel="noopener noreferrer"
-        className="h-10 sm:h-11 px-3 sm:px-0 sm:w-44 rounded-full bg-teal-800/25 hover:bg-teal-700 text-teal-950 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all transform hover:-translate-y-0.5 group border border-teal-800/50"
+        className="h-10 sm:h-11 w-[138px] sm:w-44 rounded-full bg-teal-800/25 hover:bg-teal-700 text-teal-950 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 group border border-teal-800/50 shrink-0"
       >
         <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-teal-800 group-hover:text-amber-200 group-hover:scale-110 transition-transform shrink-0" />
         <span className="tracking-tight text-stone-900 group-hover:text-white font-extrabold">네이버스토어</span>
