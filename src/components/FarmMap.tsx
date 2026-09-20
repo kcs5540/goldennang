@@ -79,44 +79,44 @@ export default function FarmMap() {
           {/* Right: Interactive Navigation & Map Banner Panel */}
           <div className="lg:col-span-7 rounded-3xl border border-stone-200 overflow-hidden bg-white shadow-xl flex flex-col justify-between">
             {/* Real Farm Orchard Atmosphere Banner */}
-            <div className="relative w-full h-[280px] sm:h-[320px] bg-stone-900 overflow-hidden flex flex-col justify-between p-6 sm:p-8 text-white">
+            <div className="relative w-full min-h-[360px] sm:min-h-[320px] bg-stone-900 overflow-hidden flex flex-col justify-between p-5 sm:p-8 text-white">
               {/* Orchard Background Image */}
               <div 
                 className="absolute inset-0 bg-cover bg-center opacity-40 scale-105"
                 style={{ backgroundImage: `url('https://shop-phinf.pstatic.net/20231104_254/1699073431135lz391_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-002.jpg')` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-stone-900/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-900/50" />
 
               {/* Location Badge */}
-              <div className="relative z-10 flex items-center justify-between">
+              <div className="relative z-10 flex items-center justify-between gap-2 flex-wrap mb-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
                   <span>제주 서귀포 현장 농원</span>
                 </div>
-                <span className="text-xs text-stone-300 font-medium">제주공항 기준 약 50분 소요</span>
+                <span className="text-[11px] sm:text-xs text-stone-300 font-medium">제주공항 기준 약 50분</span>
               </div>
 
               {/* Center Navigation Tip */}
-              <div className="relative z-10 my-auto py-2">
-                <h4 className="text-xl sm:text-2xl font-black text-white mb-2">
+              <div className="relative z-10 my-2">
+                <h4 className="text-lg sm:text-2xl font-black text-white mb-2">
                   서귀포 토평동 햇살 가득한 농원
                 </h4>
-                <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-black/50 backdrop-blur-md border border-white/15 text-xs text-stone-200">
-                  <Navigation className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>내비게이션 검색: <strong>"황금낭"</strong> 또는 <strong>"토평남로27번길 44"</strong></span>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-black/50 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs text-stone-200">
+                  <Navigation className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <span>내비 검색: <strong>"황금낭"</strong> 또는 <strong>"토평남로27번길 44"</strong></span>
                 </div>
               </div>
 
-              {/* Quick Route Buttons */}
-              <div className="relative z-10 flex flex-col sm:flex-row items-center gap-3 pt-2">
+              {/* Quick Route Buttons (1 Col on Mobile, 2 Col on Desktop) */}
+              <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-3">
                 <a
                   href={BRAND_INFO.links.naverPlace}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex-1 py-3.5 px-4 rounded-xl bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg transition-all whitespace-nowrap"
+                  className="w-full py-3 px-3 rounded-xl bg-[#03C75A] hover:bg-[#02b350] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-lg transition-all whitespace-nowrap"
                 >
-                  <span className="w-5 h-5 bg-white text-[#03C75A] rounded-full flex items-center justify-center text-xs font-black shrink-0">N</span>
-                  <span>네이버 플레이스 빠른 길찾기</span>
+                  <span className="w-4 h-4 bg-white text-[#03C75A] rounded-full flex items-center justify-center text-[10px] font-black shrink-0">N</span>
+                  <span>네이버 플레이스 길찾기</span>
                   <ExternalLink className="w-3.5 h-3.5 opacity-80 shrink-0" />
                 </a>
 
@@ -124,9 +124,9 @@ export default function FarmMap() {
                   href={`https://map.kakao.com/link/search/${encodeURIComponent(BRAND_INFO.address)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex-1 py-3.5 px-4 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg transition-all whitespace-nowrap"
+                  className="w-full py-3 px-3 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-extrabold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-lg transition-all whitespace-nowrap"
                 >
-                  <span className="w-5 h-5 bg-[#191919] text-[#FEE500] rounded-full flex items-center justify-center text-xs font-black shrink-0">K</span>
+                  <span className="w-4 h-4 bg-[#191919] text-[#FEE500] rounded-full flex items-center justify-center text-[10px] font-black shrink-0">K</span>
                   <span>카카오맵 바로보기</span>
                   <ExternalLink className="w-3.5 h-3.5 opacity-70 shrink-0" />
                 </a>
