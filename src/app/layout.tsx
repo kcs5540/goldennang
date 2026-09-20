@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     description: '부와 복을 부르는 귤나무·애플망고나무 농장 제주 황금낭.',
     images: ['https://shop-phinf.pstatic.net/20231104_254/1699073431135lz391_JPEG/%C8%B2%B1%DD%B3%B6_%B9%E8%B3%CA_%BD%BA%B8%B6%C6%AE%BD%BA%C5%E4%BE%EE-002.jpg'],
   },
+  icons: {
+    icon: 'https://shop-phinf.pstatic.net/20260319_220/17738786621381F8sw_PNG/58835582220599131_121153573.png',
+    shortcut: 'https://shop-phinf.pstatic.net/20260319_220/17738786621381F8sw_PNG/58835582220599131_121153573.png',
+    apple: 'https://shop-phinf.pstatic.net/20260319_220/17738786621381F8sw_PNG/58835582220599131_121153573.png',
+  },
   robots: {
     index: true,
     follow: true,
