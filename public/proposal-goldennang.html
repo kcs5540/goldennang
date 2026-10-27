@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>농업회사법인(주) 황금낭 플랫폼 운영 및 디지털 커머스 · 마케팅 총괄 제안서</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #065F46; /* 황금낭 딥 에메랄드 그린 */
+      --primary-light: #0D9488; /* 틸 그린 */
+      --secondary: #D97706; /* 황금낭 감귤·망고 골드 */
+      --accent: #F59E0B; /* 골드 하이라이트 */
+      --dark: #0F172A;
+      --gray-800: #1E293B;
+      --gray-600: #475569;
+      --gray-100: #F1F5F9;
+      --gray-50: #F8FAFC;
+      --border: #E2E8F0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      background-color: #E2E8F0;
+      color: var(--dark);
+      line-height: 1.65;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .document-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    /* Header */
+    .doc-header {
+      background: linear-gradient(135deg, #064E3B 0%, #0D9488 55%, #D97706 100%);
+      color: #FFFFFF;
+      padding: 48px 44px;
+      position: relative;
+    }
+
+    .badge-top {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #FEF3C7;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .doc-title {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .doc-subtitle {
+      font-size: 16px;
+      color: #E2E8F0;
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 28px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 14.5px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    .meta-item strong {
+      color: #A7F3D0;
+      display: inline-block;
+      width: 72px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .meta-item span {
+      color: #F8FAFC;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Content Body */
+    .doc-body {
+      padding: 44px;
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--gray-100);
+      letter-spacing: -0.3px;
+    }
+
+    .section-title .num-badge {
+      background: var(--primary);
+      color: #FFF;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* Card Box */
+    .highlight-card {
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-left: 5px solid var(--primary);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 24px;
+      font-size: 15px;
+      color: var(--gray-800);
+      line-height: 1.7;
+    }
+
+    .highlight-card strong {
+      color: #065F46;
+    }
+
+    /* Showcase Box */
+    .showcase-card {
+      border: 1px solid #E2E8F0;
+      border-top: 4px solid var(--secondary);
+      border-radius: 12px;
+      padding: 24px;
+      background: #FFF;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      margin-bottom: 24px;
+    }
+
+    .showcase-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .showcase-tag {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #FEF3C7;
+      color: #B45309;
+      display: inline-block;
+    }
+
+    .site-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #065F46;
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .site-link-btn:hover {
+      background: #044E37;
+    }
+
+    .feature-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .feature-tag-item {
+      font-size: 12.5px;
+      background: #F1F5F9;
+      color: #334155;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    /* R&R Box */
+    .work-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      transition: transform 0.2s;
+    }
+
+    .work-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .work-badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .badge-green { background: #D1FAE5; color: #065F46; }
+    .badge-amber { background: #FEF3C7; color: #B45309; }
+    .badge-teal { background: #CCFBF1; color: #0F766E; }
+    .badge-purple { background: #F3E8FF; color: #6B21A8; }
+    .badge-blue { background: #DBEAFE; color: #1E40AF; }
+
+    .work-item h4 {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .work-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 14px;
+      color: var(--gray-600);
+    }
+
+    .work-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 7px;
+      line-height: 1.6;
+    }
+
+    .work-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .work-list strong {
+      color: var(--gray-800);
+    }
+
+    /* Comparison Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13.5px;
+    }
+
+    th {
+      background: #F8FAFC;
+      padding: 14px 18px;
+      font-weight: 700;
+      color: var(--gray-800);
+      border-bottom: 2px solid var(--border);
+    }
+
+    td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      color: var(--gray-600);
+      vertical-align: middle;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .highlight-col {
+      background: #F0FDF4;
+      font-weight: 600;
+      color: #166534;
+    }
+
+    th.highlight-col {
+      background: #DCFCE7;
+      color: #14532D;
+    }
+
+    .text-red {
+      color: #DC2626;
+      font-weight: 700;
+    }
+
+    .total-row td {
+      font-size: 15px;
+      font-weight: 800;
+      background: #F8FAFC;
+    }
+
+    .total-row td.highlight-col {
+      background: #BBF7D0;
+      font-size: 16px;
+      color: #14532D;
+    }
+
+    /* Plan Option Cards */
+    .plan-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 24px 0;
+    }
+
+    .plan-card {
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      background: #FFF;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .plan-card.recommended {
+      border-color: #065F46;
+      background: #F0FDF4;
+    }
+
+    .plan-ribbon {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: #D97706;
+      color: #FFF;
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      letter-spacing: 0.5px;
+    }
+
+    .plan-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+
+    .plan-price {
+      font-size: 26px;
+      font-weight: 800;
+      color: #065F46;
+      margin-bottom: 12px;
+    }
+
+    .plan-price span {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray-600);
+    }
+
+    .plan-desc {
+      font-size: 13.5px;
+      color: var(--gray-600);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .plan-items {
+      list-style: none;
+      padding: 0;
+      margin-top: auto;
+      font-size: 13.5px;
+      border-top: 1px solid #E2E8F0;
+      padding-top: 14px;
+    }
+
+    .plan-items li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      color: var(--gray-800);
+    }
+
+    .plan-items li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #059669;
+      font-weight: 800;
+    }
+
+    /* Action Tip Box */
+    .closing-box {
+      background: linear-gradient(135deg, #064E3B 0%, #0F172A 100%);
+      color: #FFF;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 36px;
+    }
+
+    .closing-box h4 {
+      font-size: 18px;
+      color: #FBBF24;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .closing-box p {
+      font-size: 14.5px;
+      color: #E2E8F0;
+      line-height: 1.75;
+    }
+
+    .print-btn {
+      display: block;
+      margin: 24px auto 0;
+      padding: 12px 28px;
+      background: #065F46;
+      color: #FFF;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+      transition: background 0.2s;
+    }
+
+    .print-btn:hover {
+      background: #044E37;
+    }
+
+    @media (max-width: 768px) {
+      .doc-title {
+        font-size: 22px;
+        line-height: 1.4;
+      }
+      .doc-subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .meta-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .meta-item {
+        font-size: 13.5px;
+        white-space: normal;
+        align-items: flex-start;
+      }
+      .meta-item strong {
+        width: 65px;
+        margin-top: 1px;
+      }
+      .meta-item span {
+        white-space: normal;
+        word-break: keep-all;
+        overflow: visible;
+        text-overflow: clip;
+      }
+      .plan-grid {
+        grid-template-columns: 1fr;
+      }
+      .doc-body {
+        padding: 24px 16px;
+      }
+      .doc-header {
+        padding: 32px 18px;
+      }
+      th, td {
+        padding: 12px 10px;
+        font-size: 13px;
+        white-space: normal;
+        word-break: keep-all;
+      }
+      th:nth-child(1), td:nth-child(1) {
+        width: 85px;
+      }
+      th:nth-child(2), td:nth-child(2) {
+        width: 200px;
+      }
+      th:nth-child(3), td:nth-child(3) {
+        width: 195px;
+      }
+      .table-container {
+        margin: 16px -16px;
+        padding: 0 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+      }
+      table {
+        min-width: 480px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #FFF;
+        padding: 0;
+      }
+      .document-container {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+      }
+      .print-btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="document-container">
+    <!-- Header -->
+    <header class="doc-header">
+      <div class="badge-top">2026 DIGITAL COMMERCE & GROWTH PROPOSAL</div>
+      <h1 class="doc-title">농업회사법인(주) 황금낭 공식 브랜드 플랫폼 고도화 및<br>디지털 커머스 · 스마트플레이스 · 숏폼 마케팅 총괄 제안서</h1>
+      <p class="doc-subtitle">제주 서귀포 토평동 명품 유실수 브랜드 가치 극대화 · 이커머스 매출 견인 · AI 콘텐츠 전담</p>
+      
+      <div class="meta-grid">
+        <div class="meta-item"><strong>수 신</strong> <span>농업회사법인 주식회사 황금낭 대표이사 및 경영진 귀하</span></div>
+        <div class="meta-item"><strong>제안자</strong> <span>김철수 (정보처리기사 · 정보통신 중급기술자 / 풀스택 엔지니어)</span></div>
+        <div class="meta-item"><strong>제안일</strong> <span>2026년 10월</span></div>
+        <div class="meta-item"><strong>협력범위</strong> <span>공식 웹 플랫폼 가동 유지 + 스마트플레이스 + 숏폼 영상 + 커머스 총괄</span></div>
+      </div>
+    </header>
+
+    <!-- Body -->
+    <main class="doc-body">
+
+      <!-- Section 1 -->
+      <section class="section">
+        <h2 class="section-title"><span class="num-badge">1</span> 제안 배경 및 황금낭 디지털 전환 핵심 가치</h2>
+        
+        <div class="highlight-card">
+          <p>
+            제주 서귀포 토평동의 따스한 햇살과 맑은 바람으로 일군 <strong>농업회사법인 황금낭</strong>은 대한민국 최고 품질의 애플망고 및 감귤 묘목·과실을 공급하는 독보적인 프리미엄 농장 브랜드입니다.<br><br>
+            ‘부와 복을 부르는 길조의 나무’라는 특별한 스토리텔링을 기반으로, <strong>온라인 고객 유입(홈가드닝·식집사 시장)</strong>과 <strong>고품격 B2B·기념일 선물 시장(개업·승진·집들이)</strong>의 전국 단위 수요를 흡수할 수 있도록, <strong>공식 웹 플랫폼 운영 고도화와 네이버 플레이스·숏폼 영상 마케팅을 통합 전담</strong>하는 전속 디지털 파트너십을 제안드립니다.
+          </p>
+        </div>
+
+        <!-- 선제적 구축 쇼케이스 -->
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div>
+              <span class="showcase-tag">✨ 1차 맞춤 개발 구축 완료 (선제 가동 중)</span>
+              <h3 style="font-size: 19px; font-weight: 800; color: #0F172A; margin-top: 6px;">황금낭 공식 웹 플랫폼 (goldennang.vercel.app)</h3>
+            </div>
+            <a href="https://goldennang.vercel.app" target="_blank" class="site-link-btn">
+              🔗 공식 웹사이트 둘러보기 →
+            </a>
+          </div>
+          <p style="font-size: 14px; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+            서귀포 토평동 명품 애플망고 3년생 특묘, 라이락 홍망고, 감귤 묘목 12종 및 생과 선물세트를 한눈에 볼 수 있는 최신 Next.js 기반 반응형 플랫폼입니다.
+            네이버 스마트스토어 구매 연동, 1초 간편 직통 전화주문 모달, 서귀포 농장 방문 예약 신청 인프라가 완벽히 탑재되어 있습니다.
+          </p>
+          <div class="feature-tags">
+            <span class="feature-tag-item">📱 모바일 반응형 100% 최적화</span>
+            <span class="feature-tag-item">⚡ 0.5초 초고속 웹 로딩</span>
+            <span class="feature-tag-item">📞 원터치 직통 전화주문 접수</span>
+            <span class="feature-tag-item">📍 서귀포 토평동 농장 지도/예약</span>
+            <span class="feature-tag-item">📦 안심 특수 완충포장 기술 안내</span>
+            <span class="feature-tag-item">🛡️ Supabase 보안 고객 DB 탑재</span>
+          </div>
+        </div>
+
+        <p style="font-size: 14.5px; color: #065F46; font-weight: 600; line-height: 1.7;">
+          💡 <strong>초기 구축비 전액 무상 지원 (0원)</strong>: 일반 IT 에이전시 외주 시 <strong>최소 300만 ~ 500만 원 상당의 개발비가 소요되는 웹 플랫폼을 선제적으로 무상 구축 완료</strong>하였으며, 초기 개발비 부담 없이 합리적인 월간 운영·마케팅 관리 보수로 즉시 전환할 수 있습니다.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section">
+        <h2 class="section-title"><span class="num-badge">2</span> 황금낭 월간 전담 업무 범위 (5대 핵심 R&R)</h2>
+        <p style="font-size: 14px; color: var(--gray-600); margin-bottom: 20px;">
+          농장 현장 작업에 바쁘신 대표님과 임직원분들을 대신하여, <strong>전문 소프트웨어 엔지니어링, 포털 검색 최적화(SEO), 로컬 플레이스, AI 홍보 영상 제작</strong>을 원스톱으로 책임집니다.
+        </p>
+
+        <!-- Work 1 -->
+        <div class="work-item">
+          <div class="work-header">
+            <span class="work-badge badge-green">웹 시스템 총괄</span>
+            <h4>황금낭 공식 웹 플랫폼 무중단 운영 & 기능 고도화</h4>
+          </div>
+          <ul class="work-list">
+            <li><strong>클라우드 무중단 서버 관리</strong>: Vercel 글로벌 클라우드를 통한 24시간 365일 무중단 서버 운영 및 트래픽 폭증기(명절·출하시즌) 완벽 대응</li>
+            <li><strong>포털 검색 상위 노출 최적화 (SEO)</strong>: 네이버 및 구글 검색창에서 <em>'제주 애플망고나무 화분'</em>, <em>'개업선물 귤나무'</em>, <em>'라이락 홍망고 묘목'</em>, <em>'서귀포 토평동 농장'</em> 검색 시 최상단 노출되도록 메타데이터 상시 최적화</li>
+            <li><strong>주문·예약 실시간 자동 알림 인프라</strong>: 웹사이트 내 전화주문, 방문예약, 기업 대량납품 B2B 문의 접수 시 사내 담당자에게 1초 만에 알림이 전송되는 시스템 유지</li>
+            <li><strong>계절별 상품 업데이트</strong>: 12종 묘목 재고 상태, 제철 생과 출하 공지, 설/추석 명절 특별 프로모션 팝업 및 배너 적시 반영</li>
+          </ul>
+        </div>
+
+        <!-- Work 2 -->
+        <div class="work-item">
+          <div class="work-header">
+            <span class="work-badge badge-teal">로컬 마케팅</span>
+            <h4>네이버 스마트플레이스 & 로컬 검색 생태계 전담 관리</h4>
+          </div>
+          <ul class="work-list">
+            <li><strong>스마트플레이스 상시 최적화</strong>: 제주 서귀포 현장 방문객 유치 및 농장 직판 문의 확대를 위한 대표 키워드, 상세 소개글, 대표 이미지 상시 업데이트</li>
+            <li><strong>새소식 피드 정기 발행</strong>: 농장 전경, 묘목 재배 일지, 특수 완충포장 과정, 제철 수확 소식 등 네이버 플레이스 정기 소식 발행으로 검색 가산점 및 신뢰도 극대화</li>
+            <li><strong>네이버 예약 & 톡톡 상담 연계</strong>: 농장 방문 견학 예약 및 스마트스토어 1:1 톡톡 상담 연동 동선 점검</li>
+            <li><strong>리뷰 평점 및 평판 관리</strong>: 네이버 영수증 리뷰 및 예약 리뷰 모니터링을 통한 농장 브랜드 이미지 관리 가이드</li>
+          </ul>
+        </div>
+
+        <!-- Work 3 -->
+        <div class="work-item">
+          <div class="work-header">
+            <span class="work-badge badge-amber">숏폼 영상</span>
+            <h4>AI 기반 고효율 숏폼 영상 정기 제작 (월 2~4편)</h4>
+          </div>
+          <ul class="work-list">
+            <li><strong>프로급 오디오 & AI 비디오 파이프라인</strong>: ElevenLabs 고품질 음성 + Flow AI 시네마틱 영상 + <strong>황금낭 시그니처 1줄 요약 자막</strong> 완벽 연출</li>
+            <li><strong>시청자 구매 유도 핵심 테마</strong>:
+              <br>• ① 베란다에서 키우는 3년생 접목 애플망고 재배 꿀팁 & 열매 맺는 노하우
+              <br>• ② "부와 복이 주렁주렁" 개업·승진·집들이 선물용 황금귤나무 언박싱 & 안전 택배포장 검증
+              <br>• ③ 제주 서귀포 토평동 농장에서 당일 수확하는 16브릭스 완숙 애플망고 생과 스토리
+            </li>
+            <li><strong>유튜브 쇼츠 & 인스타그램 릴스 최적화 규격</strong> 제공 및 영상 하단 스마트스토어/공식몰 직결 링크 안내를 통한 실질 구매 전환 견인</li>
+          </ul>
+        </div>
+
+        <!-- Work 4 -->
+        <div class="work-item">
+          <div class="work-header">
+            <span class="work-badge badge-blue">이커머스 연동</span>
+            <h4>네이버 스마트스토어 연동 & B2B 대량납품 채널 확장</h4>
+          </div>
+          <ul class="work-list">
+            <li><strong>스마트스토어-공식몰 시너지</strong>: 공식 플랫폼의 방문자를 네이버 스마트스토어(리뷰 평점 4.6+) 결제로 원활히 유도하는 전환 동선 설계</li>
+            <li><strong>B2B 기업 선물 & 관공서 조경 납품 채널</strong>: 기업 명절 선물세트 및 호텔/카페 조경용 대형 감귤나무 납품 온라인 전용 견적 창구 운영</li>
+            <li><strong>고객 데이터베이스 보안 관리</strong>: 고객 주문 내역 및 상담 정보(Supabase DB) 안전 암호화 통제</li>
+          </ul>
+        </div>
+
+        <!-- Work 5 -->
+        <div class="work-item">
+          <div class="work-header">
+            <span class="work-badge badge-purple">농가 IT/스마트팜</span>
+            <h4>농가 업무 자동화 및 농업 ICT · 국비 지원사업 자문</h4>
+          </div>
+          <ul class="work-list">
+            <li><strong>현장 업무 자동화</strong>: 수기 전화주문 및 배송 안내 문자 등 번거로운 반복 업무를 간소화할 수 있는 AI·전산 도구 도입 가이드</li>
+            <li><strong>농업 스마트팜 & 국비 지원사업 자문</strong>: 농림축산식품부, 제주특별자치도 농업기술원, 중소벤처기업부의 스마트팜 ICT 융복합 지원, 소상공인 AI/디지털 바우처 공고 모니터링 및 신청 기술 자문 무상 제공</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section">
+        <h2 class="section-title"><span class="num-badge">3</span> 비용 분석: 사내 직원 채용 및 개별 외주 대비 절감 효과</h2>
+        
+        <p style="font-size: 13px; color: #059669; font-weight: 600; margin-bottom: 8px; text-align: right;">
+          👉 좌우로 스크롤하여 비교하기 ➔
+        </p>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>구분 항목</th>
+                <th>일반적인 운영 방식 (사내직원 + 개별외주)</th>
+                <th class="highlight-col">황금낭 전담 디지털 파트너십 (추천)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>사내 전담 인력</strong></td>
+                <td>웹/이커머스 전담 직원 1명 신규 채용: <strong>월 280만 ~ 310만 원</strong><br><small style="color:#64748B;">(기본급 230~250만 + 4대보험/퇴직적립금 50~60만)</small></td>
+                <td class="highlight-col"><strong>별도 인력 신규 채용 불필요</strong><br>(전문 IT 엔지니어가 비상주 전담 총괄)</td>
+              </tr>
+              <tr>
+                <td><strong>웹 플랫폼 유지보수 / 기능 코딩</strong></td>
+                <td>외부 개발 에이전시 유지보수 외주: <strong>월 40만 ~ 50만 원</strong></td>
+                <td class="highlight-col"><strong>공식 웹 플랫폼 무중단 운영 & SEO 최적화 전액 포함</strong></td>
+              </tr>
+              <tr>
+                <td><strong>네이버 스마트플레이스 관리</strong></td>
+                <td>플레이스 상위노출 마케팅 대행비: <strong>월 30만 ~ 40만 원</strong></td>
+                <td class="highlight-col"><strong>서귀포 토평동 플레이스 상시 관리 & 새소식 피드 포함</strong></td>
+              </tr>
+              <tr>
+                <td><strong>홍보 숏폼 영상 제작</strong><br><small style="color:#DC2626;">(일반 직원은 기획·AI제작 불가)</small></td>
+                <td>영상 전문 외주 제작 (월 2~4편): <strong>월 50만 ~ 80만 원</strong></td>
+                <td class="highlight-col"><strong>AI 고화질 영상 + 자막 + 보이스 숏폼 정기 제작 포함</strong></td>
+              </tr>
+              <tr>
+                <td><strong>초기 웹 플랫폼 구축비</strong></td>
+                <td>신규 웹사이트 제작 외주비: <span class="text-red">300만 ~ 500만 원 (일시금)</span></td>
+                <td class="highlight-col"><strong style="font-size:15px; color:#15803D;">0원 (이미 1차 구축 완료, 무상 제공)</strong></td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>월 환산 소요 비용</strong></td>
+                <td><span class="text-red">월 400만 ~ 480만 원 상당 소요</span></td>
+                <td class="highlight-col">월 60만 ~ 80만 원 (맞춤형 단독 플랜)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="font-size: 14.5px; color: #15803D; font-weight: 700; text-align: right; margin-top: 8px;">
+          💰 연간 기대 효과: 매달 약 340만 ~ 400만 원 (연간 4,000만 원 이상)의 막대한 비용 절감 및 온라인 직판 매출 성장
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section" style="margin-bottom: 0;">
+        <h2 class="section-title"><span class="num-badge">4</span> 제안 플랜 선택 및 계약 조건</h2>
+        <p style="font-size: 14px; color: var(--gray-600); margin-bottom: 16px;">
+          황금낭의 사업 규모와 시즌별 집중도에 맞춰 가장 합리적인 플랜을 선택하실 수 있습니다.
+        </p>
+
+        <div class="plan-grid">
+          <!-- Plan 1 -->
+          <div class="plan-card">
+            <div class="plan-name">스탠다드 플랜 (Standard)</div>
+            <div class="plan-price">월 60만 원 <span>/ 월 (VAT 별도)</span></div>
+            <div class="plan-desc">안정적인 공식 웹사이트 운영과 네이버 플레이스 활성화를 위한 실속형 플랜</div>
+            <ul class="plan-items">
+              <li>공식 웹 플랫폼 무중단 운영 & 모바일 최적화</li>
+              <li>네이버 / 구글 포털 검색 상위노출 (SEO)</li>
+              <li>네이버 스마트플레이스 상시 관리 & 새소식 피드</li>
+              <li><strong>AI 홍보 숏폼 영상 월 2편 제작</strong></li>
+              <li>전화주문 / 방문예약 실시간 접수 알림 유지</li>
+              <li>농가 IT 자동화 및 국비 지원사업 기본 자문</li>
+            </ul>
+          </div>
+
+          <!-- Plan 2 -->
+          <div class="plan-card recommended">
+            <span class="plan-ribbon">⭐ 강력 추천</span>
+            <div class="plan-name">프로 그로스 플랜 (Pro Growth)</div>
+            <div class="plan-price">월 80만 원 <span>/ 월 (VAT 별도)</span></div>
+            <div class="plan-desc">적극적인 주간 숏폼 바이럴과 스마트스토어 매출 확대를 집중 견인하는 플랜</div>
+            <ul class="plan-items">
+              <li>스탠다드 플랜의 <strong>모든 혜택 기본 포함</strong></li>
+              <li><strong>AI 홍보 숏폼 영상 월 4편 제작 (주 1회 집중 바이럴)</strong></li>
+              <li>스마트스토어 기획전 및 이벤트 웹 배너 맞춤 제작 지원</li>
+              <li>B2B 기업 명절 선물 및 대량납품 전용 랜딩 페이지 관리</li>
+              <li>스마트팜 ICT 및 소상공인 국비 지원사업 공모 우선 기술 자문</li>
+              <li>월간 유입 검색어 및 플레이스 성과 요약 리포트 제공</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:22px; font-size:14.5px; line-height:1.8; margin-top: 16px;">
+          <p>• <strong>계약 형태</strong>: 농업회사법인 주식회사 황금낭 전담 디지털 커머스 및 마케팅 총괄 용역 계약 (3개월 / 6개월 / 1년 단위)</p>
+          <p>• <strong>업무 착수</strong>: 계약 체결 즉시 가동 (이미 공식 사이트 및 1차 숏폼 제작 환경 완비)</p>
+          <p>• <strong>세금계산서</strong>: 매월 정기 전자세금계산서 발행 (또는 협의된 결제 방식 적용)</p>
+        </div>
+
+        <div class="closing-box">
+          <h4>🍊 황금낭과의 상생을 약속드리는 기술 파트너의 다짐</h4>
+          <p>
+            황금낭은 단순한 묘목 판매점을 넘어, 사람들에게 황금빛 복과 힐링을 전하는 대한민국 최고의 프리미엄 유실수 브랜드입니다.
+            이미 구축해 둔 공식 플랫폼과 최신 AI 영상 마케팅 기술력을 바탕으로, 서귀포 토평동 현장의 땀방울이 온·오프라인 전국의 더 많은 고객들에게 감동으로 전달되고 실질적인 매출 성장으로 이어지도록 온 힘을 다해 서포트하겠습니다.
+          </p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <button class="print-btn" onclick="window.print()">🖨️ 제안서 인쇄 / PDF 저장하기</button>
+
+</body>
+</html>
