@@ -105,15 +105,27 @@ export default function Footer() {
               <p><strong className="text-stone-300">대표자:</strong> {BRAND_INFO.ceo}</p>
               <p><strong className="text-stone-300">사업장 주소:</strong> {BRAND_INFO.address}</p>
               <p className="flex items-center gap-1.5 flex-wrap">
-                <strong className="text-stone-300">고객상담센터:</strong> 
+                <strong className="text-stone-300">대표 상담센터:</strong> 
                 <a 
                   href={`tel:${BRAND_INFO.tel}`} 
                   className="text-teal-400 hover:text-teal-300 font-bold hover:underline inline-flex items-center gap-1"
-                  title="전화 연결하기"
+                  title="대표번호 전화 연결"
                 >
                   <Phone className="w-3.5 h-3.5" />
                   <span>{BRAND_INFO.tel}</span>
                   <span className="text-[10px] text-teal-300/80 bg-teal-950 px-1.5 py-0.5 rounded border border-teal-800 ml-1">전화연결</span>
+                </a>
+              </p>
+              <p className="flex items-center gap-1.5 flex-wrap">
+                <strong className="text-stone-300">직통 상담전화:</strong> 
+                <a 
+                  href={`tel:${BRAND_INFO.mobile}`} 
+                  className="text-amber-400 hover:text-amber-300 font-bold hover:underline inline-flex items-center gap-1"
+                  title="직통 휴대폰 전화 연결"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  <span>{BRAND_INFO.mobile}</span>
+                  <span className="text-[10px] text-amber-300/80 bg-amber-950 px-1.5 py-0.5 rounded border border-amber-800 ml-1">직통상담</span>
                 </a>
               </p>
               <p><strong className="text-stone-300">운영시간:</strong> {BRAND_INFO.businessHours}</p>

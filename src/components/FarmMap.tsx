@@ -48,9 +48,15 @@ export default function FarmMap() {
                   </div>
                   <div>
                     <p className="text-xs text-stone-400 font-medium">대표 전화 및 방문 상담</p>
-                    <a href={`tel:${BRAND_INFO.tel}`} className="text-xl font-black text-white hover:text-teal-300 transition-colors block mt-0.5">
-                      {BRAND_INFO.tel}
-                    </a>
+                    <div className="flex items-center gap-3 flex-wrap mt-0.5">
+                      <a href={`tel:${BRAND_INFO.tel}`} className="text-xl font-black text-white hover:text-teal-300 transition-colors">
+                        {BRAND_INFO.tel}
+                      </a>
+                      <span className="text-stone-500">|</span>
+                      <a href={`tel:${BRAND_INFO.mobile}`} className="text-lg font-bold text-amber-400 hover:text-amber-300 transition-colors">
+                        {BRAND_INFO.mobile}
+                      </a>
+                    </div>
                   </div>
                 </div>
 

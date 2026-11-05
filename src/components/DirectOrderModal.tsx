@@ -256,8 +256,17 @@ export default function DirectOrderModal({ isOpen, onClose }: DirectOrderModalPr
                 </button>
               </div>
 
-              <div className="text-center pt-1 text-xs text-stone-500 space-y-1">
-                <p>즉시 통화를 원하시면 대표번호 <strong>{BRAND_INFO.tel}</strong> 로 전화주세요.</p>
+              <div className="text-center pt-1 text-xs text-stone-500 space-y-1.5">
+                <p className="flex items-center justify-center gap-2 flex-wrap">
+                  <span>즉시 통화 문의:</span>
+                  <a href={`tel:${BRAND_INFO.tel}`} className="font-bold text-teal-700 hover:underline inline-flex items-center gap-0.5">
+                    📞 {BRAND_INFO.tel}
+                  </a>
+                  <span className="text-stone-300">|</span>
+                  <a href={`tel:${BRAND_INFO.mobile}`} className="font-bold text-amber-700 hover:underline inline-flex items-center gap-0.5">
+                    📱 {BRAND_INFO.mobile}
+                  </a>
+                </p>
                 <p className="text-[11px] text-teal-800 bg-teal-50 py-1.5 px-3 rounded-lg border border-teal-200">
                   🛡️ 직거래 입금은 오직 <strong>&apos;농업회사법인 주식회사 황금낭&apos;</strong> 공식 법인계좌로만 진행됩니다.
                 </p>
