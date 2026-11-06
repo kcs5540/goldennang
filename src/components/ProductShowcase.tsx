@@ -194,6 +194,15 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
           ))}
         </div>
 
+        {/* Platform Notice */}
+        <div className="mt-8 p-4 rounded-2xl bg-stone-50 border border-stone-200 text-xs text-stone-600 flex items-center justify-between gap-3 flex-wrap">
+          <p className="flex items-center gap-2">
+            <span className="text-amber-600 font-bold">ℹ️ 공식 안내:</span>
+            <span>각 판매처(네이버 스마트스토어, 쿠팡)의 회원 프로모션 혜택, 할인 쿠폰 및 배송 정책에 따라 최종 실결제 금액에 일부 차이가 있을 수 있습니다.</span>
+          </p>
+          <span className="text-stone-400 text-[11px] font-medium">제주 서귀포 황금낭 직영 정품 보증</span>
+        </div>
+
         {/* B2B Promo Banner in Product Section */}
         <div className="mt-16 rounded-3xl bg-gradient-to-r from-teal-900 via-stone-900 to-stone-900 p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2 text-center md:text-left">
