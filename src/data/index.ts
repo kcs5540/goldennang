@@ -221,7 +221,7 @@ export const PRODUCTS: Product[] = [
     storeUrl: 'https://smartstore.naver.com/goldennang/products/4796713588',
   },
   {
-    id: 'geumgyul-pot',
+    id: '4796660754',
     name: '황금낭 금귤나무 낑깡묘목 포트 3 ~ 4년생',
     category: 'citrus',
     categoryName: '감귤·만감류',
@@ -235,7 +235,7 @@ export const PRODUCTS: Product[] = [
     features: ['3~4년생 포트 완성목', '은은한 감귤꽃 향기', '착불 10,000원', '아파트 실내 추천'],
     imageUrl: '/images/naver_real/prod_10.jpg',
     deliveryInfo: '화물 착불 10,000원 (안전 포장)',
-    storeUrl: 'https://smartstore.naver.com/goldennang',
+    storeUrl: 'https://smartstore.naver.com/goldennang/products/4796660754',
   },
   {
     id: '4790070622',
