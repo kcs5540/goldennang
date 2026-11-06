@@ -28,7 +28,7 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
 
   return (
     <section id="products" className="py-24 bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-10">
@@ -123,41 +123,41 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
           </div>
         )}
 
-        {/* Product Cards Grid */}
-        <div id="products-all" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Product Cards Grid - 4 Columns like Naver SmartStore */}
+        <div id="products-all" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {currentProducts.map((product) => (
             <div
               key={product.id}
               className="group rounded-3xl bg-white border border-stone-200/90 overflow-hidden hover:border-teal-400/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                {/* Image Container */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-stone-100">
+                {/* Image Container - Square Aspect Ratio (1:1 like Naver) */}
+                <div className="relative aspect-square w-full overflow-hidden bg-stone-100">
                   <Image
                     src={product.imageUrl}
                     alt={product.name}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className={`object-cover transition-transform duration-500 ${
                       product.isSoldOut ? 'grayscale-[40%]' : 'group-hover:scale-105'
                     }`}
                   />
                   {product.isSoldOut && (
                     <div className="absolute inset-0 bg-stone-950/50 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center p-4">
-                      <span className="px-3.5 py-1.5 rounded-full bg-rose-600 text-white text-xs font-black tracking-wider uppercase shadow-lg">
+                      <span className="px-3 py-1 rounded-full bg-rose-600 text-white text-xs font-black tracking-wider uppercase shadow-lg">
                         품절 (SOLD OUT)
                       </span>
                       <span className="text-[11px] text-white/90 font-medium mt-1">시즌 완판 / 예약 대기</span>
                     </div>
                   )}
                   {product.badge && !product.isSoldOut && (
-                    <div className={`absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-white text-xs font-bold shadow-md backdrop-blur-md ${
+                    <div className={`absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full text-white text-[11px] font-bold shadow-md backdrop-blur-md ${
                       storeChannel === 'coupang' ? 'bg-[#E61E2B]' : 'bg-teal-800/90'
                     }`}>
                       {product.badge}
                     </div>
                   )}
-                  <div className="absolute top-4 right-4 z-20 flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-stone-900 text-xs font-extrabold shadow-md">
+                  <div className="absolute top-3 right-3 z-20 flex items-center gap-1 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-stone-900 text-xs font-extrabold shadow-md">
                     <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
                     <span>{product.rating}</span>
                     <span className="text-stone-400 font-normal">({product.reviewCount})</span>
@@ -165,83 +165,83 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
                 </div>
 
                 {/* Card Content */}
-                <div className="p-6">
-                  <span className={`text-xs font-bold uppercase tracking-wider mb-1 block ${
+                <div className="p-4 sm:p-5">
+                  <span className={`text-[11px] font-bold uppercase tracking-wider mb-1 block ${
                     storeChannel === 'coupang' ? 'text-[#E61E2B]' : 'text-teal-700'
                   }`}>
                     {product.categoryName}
                   </span>
-                  <h3 className="text-lg font-bold text-stone-900 line-clamp-2 group-hover:text-teal-700 transition-colors mb-2">
+                  <h3 className="text-sm sm:text-base font-bold text-stone-900 line-clamp-2 group-hover:text-teal-700 transition-colors mb-2 min-h-[2.5rem]">
                     {product.name}
                   </h3>
-                  <p className="text-sm text-stone-600 line-clamp-2 leading-relaxed mb-4">
+                  <p className="text-xs text-stone-500 line-clamp-2 leading-relaxed mb-3">
                     {product.description}
                   </p>
 
                   {/* Feature Tags */}
-                  <div className="flex flex-wrap gap-1.5 mb-5">
-                    {product.features.map((feature, i) => (
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {product.features.slice(0, 3).map((feature, i) => (
                       <span
                         key={i}
-                        className="inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md bg-stone-100 text-stone-700"
+                        className="inline-flex items-center gap-0.5 text-[10px] font-medium px-1.5 py-0.5 rounded bg-stone-100 text-stone-600"
                       >
-                        <CheckCircle2 className={`w-3 h-3 ${storeChannel === 'coupang' ? 'text-[#E61E2B]' : 'text-teal-600'}`} />
-                        {feature}
+                        <CheckCircle2 className={`w-2.5 h-2.5 ${storeChannel === 'coupang' ? 'text-[#E61E2B]' : 'text-teal-600'}`} />
+                        <span className="truncate max-w-[120px]">{feature}</span>
                       </span>
                     ))}
                   </div>
 
                   {/* Pricing */}
-                  <div className="flex items-baseline gap-2 mb-3">
+                  <div className="flex items-baseline gap-1.5 mb-2">
                     {product.discountRate > 0 && (
-                      <span className="text-lg font-extrabold text-rose-500">
+                      <span className="text-base sm:text-lg font-extrabold text-rose-500">
                         {product.discountRate}%
                       </span>
                     )}
-                    <span className="text-2xl font-black text-stone-900">
+                    <span className="text-xl sm:text-2xl font-black text-stone-900">
                       {product.salePrice.toLocaleString()}
-                      <span className="text-sm font-normal text-stone-700">원</span>
+                      <span className="text-xs font-normal text-stone-700">원</span>
                     </span>
                     {product.originalPrice > product.salePrice && (
-                      <span className="text-xs text-stone-400 line-through">
+                      <span className="text-[11px] text-stone-400 line-through">
                         {product.originalPrice.toLocaleString()}원
                       </span>
                     )}
                   </div>
 
                   {/* Delivery Info */}
-                  <div className="flex items-center gap-1.5 text-xs text-stone-500 pt-3 border-t border-stone-100">
-                    <Truck className="w-3.5 h-3.5 text-stone-400" />
+                  <div className="flex items-center gap-1.5 text-[11px] text-stone-500 pt-2.5 border-t border-stone-100">
+                    <Truck className="w-3.5 h-3.5 text-stone-400 shrink-0" />
                     <span className="truncate">{product.deliveryInfo}</span>
                   </div>
                 </div>
               </div>
 
               {/* Bottom Action Button */}
-              <div className="p-6 pt-0">
+              <div className="p-4 sm:p-5 pt-0">
                 {storeChannel === 'naver' ? (
                   <a
                     href={product.storeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3.5 px-4 rounded-xl bg-[#03C75A] hover:bg-[#02b150] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
+                    className="w-full py-3 px-3 rounded-xl bg-[#03C75A] hover:bg-[#02b150] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
                     title="네이버 스마트스토어에서 구매하기"
                   >
-                    <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[11px] font-black flex items-center justify-center leading-none shrink-0">N</span>
-                    <span>네이버스토어로 구매하기</span>
-                    <ArrowUpRight className="w-4 h-4 opacity-80" />
+                    <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[10px] font-black flex items-center justify-center leading-none shrink-0">N</span>
+                    <span className="truncate">네이버스토어 구매</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 opacity-80 shrink-0" />
                   </a>
                 ) : (
                   <a
                     href={product.storeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3.5 px-4 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
-                    title="쿠팡에서 구매하기"
+                    className="w-full py-3 px-3 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
+                    title="쿠팡에서 바로구매"
                   >
-                    <span>🚀</span>
-                    <span>쿠팡에서 바로구매</span>
-                    <ArrowUpRight className="w-4 h-4 opacity-80" />
+                    <span className="text-xs shrink-0">🚀</span>
+                    <span className="truncate">쿠팡 바로구매</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 opacity-80 shrink-0" />
                   </a>
                 )}
               </div>
