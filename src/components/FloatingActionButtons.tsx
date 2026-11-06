@@ -2,7 +2,7 @@
 
 import { BRAND_INFO } from '@/data';
 import { useInquiryModal } from '@/context/InquiryModalContext';
-import { ShoppingBag, Phone, ArrowUp, MessageCircle } from 'lucide-react';
+import { ShoppingBag, Phone, ArrowUp, MessageCircle, Rocket } from 'lucide-react';
 
 export default function FloatingActionButtons() {
   const { openDirectOrderModal } = useInquiryModal();
@@ -49,9 +49,22 @@ export default function FloatingActionButtons() {
         target="_blank"
         rel="noopener noreferrer"
         className="h-10 sm:h-11 w-[138px] sm:w-44 rounded-full bg-teal-800/25 hover:bg-teal-700 text-teal-950 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 group border border-teal-800/50 shrink-0"
+        title="황금낭 네이버 스마트스토어 바로가기"
       >
         <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-teal-800 group-hover:text-amber-200 group-hover:scale-110 transition-transform shrink-0" />
         <span className="tracking-tight text-stone-900 group-hover:text-white font-extrabold">네이버스토어</span>
+      </a>
+
+      {/* Coupang Store Direct Buy */}
+      <a
+        href={BRAND_INFO.links.coupang}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="h-10 sm:h-11 w-[138px] sm:w-44 rounded-full bg-[#E61E2B]/25 hover:bg-[#E61E2B] text-rose-950 hover:text-white font-black text-xs sm:text-sm shadow-sm backdrop-blur-sm flex items-center justify-center gap-1.5 transition-all transform hover:-translate-y-0.5 group border border-[#E61E2B]/50 shrink-0"
+        title="쿠팡 공식 매장 [망고마을 황금낭] 바로가기"
+      >
+        <Rocket className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#E61E2B] group-hover:text-amber-200 group-hover:scale-110 transition-transform shrink-0" />
+        <span className="tracking-tight text-stone-900 group-hover:text-white font-extrabold">쿠팡 공식매장</span>
       </a>
     </div>
   );
