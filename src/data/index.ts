@@ -99,7 +99,7 @@ export const PRODUCTS: Product[] = [
     storeUrl: 'https://smartstore.naver.com/goldennang/products/6969133507',
   },
   {
-    id: 'fresh-mango-3kg',
+    id: '5860526093',
     name: '황금낭 제주 프리미엄 애플망고 3kg 선물 세트',
     category: 'fresh',
     categoryName: '제주생과',
@@ -114,7 +114,7 @@ export const PRODUCTS: Product[] = [
     features: ['16+ Brix 고당도', '3kg 명품 전용 패키지', '무료배송 / 오늘출발', '제철 완판 인기상품'],
     imageUrl: '/images/naver_real/prod_3.jpg',
     deliveryInfo: '우체국택배 무료배송 (오늘출발)',
-    storeUrl: 'https://smartstore.naver.com/goldennang',
+    storeUrl: 'https://smartstore.naver.com/goldennang/products/5860526093',
   },
   {
     id: '5800025791',
