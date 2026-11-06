@@ -49,6 +49,15 @@ export default function Footer() {
                 N스토어
               </a>
               <a
+                href={BRAND_INFO.links.coupang}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-xl bg-rose-900/40 hover:bg-rose-700 text-rose-300 hover:text-white border border-rose-700/50 flex items-center justify-center transition-colors text-xs font-bold"
+                title="쿠팡 공식 매장 (망고마을 황금낭)"
+              >
+                쿠팡
+              </a>
+              <a
                 href={BRAND_INFO.links.cafe}
                 target="_blank"
                 rel="noopener noreferrer"

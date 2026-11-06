@@ -15,6 +15,7 @@ export interface Product {
   additionalImages?: string[];
   deliveryInfo: string;
   storeUrl: string;
+  coupangUrl?: string;
   isSoldOut?: boolean;
 }
 

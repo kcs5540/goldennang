@@ -90,10 +90,20 @@ export default function HeroBanner() {
               href={BRAND_INFO.links.smartstore}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 text-sm sm:text-base font-bold text-white bg-teal-600/90 hover:bg-teal-500 border border-teal-400/40 rounded-xl backdrop-blur-md transition-all transform hover:-translate-y-0.5 shadow-md"
+              className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-3.5 text-xs sm:text-sm font-bold text-white bg-[#03C75A]/90 hover:bg-[#03C75A] border border-emerald-400/40 rounded-xl backdrop-blur-md transition-all transform hover:-translate-y-0.5 shadow-md"
             >
-              <ShoppingBag className="w-4 h-4" />
-              <span>네이버스토어로 구매</span>
+              <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[10px] font-black flex items-center justify-center leading-none shrink-0">N</span>
+              <span>네이버스토어</span>
+            </a>
+
+            <a
+              href={BRAND_INFO.links.coupang}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-3.5 text-xs sm:text-sm font-bold text-white bg-[#E61E2B]/90 hover:bg-[#E61E2B] border border-rose-400/40 rounded-xl backdrop-blur-md transition-all transform hover:-translate-y-0.5 shadow-md"
+            >
+              <span className="text-xs">🚀</span>
+              <span>쿠팡 공식매장</span>
             </a>
 
             <Link

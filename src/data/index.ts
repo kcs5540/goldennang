@@ -13,6 +13,7 @@ export const BRAND_INFO = {
   meaning: '황금낭의 "낭"은 제주 방언으로 "나무"를 뜻합니다. 황금빛 과실이 주렁주렁 열려 가정과 일터에 재물과 행복을 가져다주는 길조의 나무입니다.',
   links: {
     smartstore: 'https://smartstore.naver.com/goldennang',
+    coupang: 'https://link.coupang.com/re/SHOPPAGESHAREVID?pageKey=A00490832&lptag=A00490832&sourceType2=brandstore_share&title=%EB%A7%9D%EA%B3%A0%EB%A7%88%EC%9D%84%20%ED%99%A9%EA%B8%88%EB%82%AD&destUrl=https%3A%2F%2Fshop.coupang.com%2Fvid%2FA00490832%3Fsource%3Dbrandstore_share',
     talkTalk: 'https://talk.naver.com/ct/w4h3f0', // 스마트스토어 1:1 톡톡 연동
     kakaoChannel: 'https://pf.kakao.com/_goldennang', // 카카오톡 채널 1:1 채팅
     cafe: 'https://cafe.naver.com/goldennang',

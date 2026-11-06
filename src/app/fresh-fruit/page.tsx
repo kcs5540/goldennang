@@ -115,16 +115,26 @@ export default function FreshFruitPage() {
                   </div>
                 </div>
 
-                <div className="p-6 pt-0">
+                <div className="p-6 pt-0 grid grid-cols-2 gap-2.5">
                   <a
-                    href={product.storeUrl}
+                    href={product.storeUrl || BRAND_INFO.links.smartstore}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3.5 px-4 rounded-xl bg-stone-900 hover:bg-rose-600 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
+                    className="py-3 px-2 sm:px-3 rounded-xl bg-[#03C75A] hover:bg-[#02b150] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
+                    title="네이버 스마트스토어에서 구매"
                   >
-                    <ShoppingBag className="w-4 h-4" />
-                    <span>스마트스토어 주문하기</span>
-                    <ArrowUpRight className="w-4 h-4 opacity-70" />
+                    <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[11px] font-black flex items-center justify-center leading-none shrink-0">N</span>
+                    <span className="truncate">네이버 구매</span>
+                  </a>
+                  <a
+                    href={product.coupangUrl || BRAND_INFO.links.coupang}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-3 px-2 sm:px-3 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
+                    title="쿠팡 망고마을 황금낭 매장에서 구매"
+                  >
+                    <span className="text-xs shrink-0">🚀</span>
+                    <span className="truncate">쿠팡 구매</span>
                   </a>
                 </div>
               </div>
