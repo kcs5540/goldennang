@@ -152,7 +152,7 @@ export const PRODUCTS: Product[] = [
     storeUrl: 'https://smartstore.naver.com/goldennang/products/4796801876',
   },
   {
-    id: 'citrus-6yr',
+    id: '4796779517',
     name: '황금낭 귤묘목 6년이상 감귤나무 화분',
     category: 'citrus',
     categoryName: '감귤·만감류',
@@ -166,7 +166,7 @@ export const PRODUCTS: Product[] = [
     features: ['6년생 이상 건실목', '가정용 결실 최적화', '착불 10,000원', '안전 완충 박스포장'],
     imageUrl: '/images/naver_real/prod_6.jpg',
     deliveryInfo: '경동택배 화물 착불 10,000원',
-    storeUrl: 'https://smartstore.naver.com/goldennang',
+    storeUrl: 'https://smartstore.naver.com/goldennang/products/4796779517',
   },
   {
     id: 'cheonhyehyang-tree',
