@@ -258,7 +258,7 @@ export const PRODUCTS: Product[] = [
 
 export const COUPANG_PRODUCTS: Product[] = [
   {
-    id: 'cp-mango-3yr',
+    id: '9470160816',
     name: '망고마을 황금낭 망고묘목 애플망고나무 3년생 화분 (배송비 포함)',
     category: 'mangotree',
     categoryName: '애플망고나무',
@@ -272,8 +272,8 @@ export const COUPANG_PRODUCTS: Product[] = [
     features: ['접목 3년생 특묘', '배송비 포함 특가', '최대 4,050원 적립', '초보 식집사 추천'],
     imageUrl: '/images/coupang/coupang_prod_2.jpg',
     deliveryInfo: '무료배송 (배송비 포함 특가)',
-    storeUrl: 'https://link.coupang.com/re/SHOPPAGESHAREVID?pageKey=A00490832&lptag=A00490832&sourceType2=brandstore_share&title=%EB%A7%9D%EA%B3%A0%EB%A7%88%EC%9D%84%20%ED%99%A9%EA%B8%88%EB%82%AD&destUrl=https%3A%2F%2Fshop.coupang.com%2Fvid%2FA00490832%3Fsource%3Dbrandstore_share',
-    coupangUrl: 'https://link.coupang.com/re/SHOPPAGESHAREVID?pageKey=A00490832&lptag=A00490832&sourceType2=brandstore_share&title=%EB%A7%9D%EA%B3%A0%EB%A7%88%EC%9D%84%20%ED%99%A9%EA%B8%88%EB%82%AD&destUrl=https%3A%2F%2Fshop.coupang.com%2Fvid%2FA00490832%3Fsource%3Dbrandstore_share',
+    storeUrl: 'https://www.coupang.com/vp/products/9470160816',
+    coupangUrl: 'https://www.coupang.com/vp/products/9470160816',
   },
   {
     id: '7684534428',
@@ -294,7 +294,7 @@ export const COUPANG_PRODUCTS: Product[] = [
     coupangUrl: 'https://www.coupang.com/vp/products/7684534428',
   },
   {
-    id: 'cp-citrus-8yr',
+    id: '9080801055',
     name: '황금낭 귤묘목 8년이상 감귤나무 화분 특상품',
     category: 'citrus',
     categoryName: '감귤·만감류',
@@ -308,11 +308,11 @@ export const COUPANG_PRODUCTS: Product[] = [
     features: ['8년생 이상 대품', '하얀 감귤꽃/결실목', '최대 10,000원 적립', '안전 특송'],
     imageUrl: '/images/coupang/coupang_prod_4.jpg',
     deliveryInfo: '경동택배 전문 안전 특송',
-    storeUrl: 'https://link.coupang.com/re/SHOPPAGESHAREVID?pageKey=A00490832&lptag=A00490832&sourceType2=brandstore_share&title=%EB%A7%9D%EA%B3%A0%EB%A7%88%EC%9D%84%20%ED%99%A9%EA%B8%88%EB%82%AD&destUrl=https%3A%2F%2Fshop.coupang.com%2Fvid%2FA00490832%3Fsource%3Dbrandstore_share',
-    coupangUrl: 'https://link.coupang.com/re/SHOPPAGESHAREVID?pageKey=A00490832&lptag=A00490832&sourceType2=brandstore_share&title=%EB%A7%9D%EA%B3%A0%EB%A7%88%EC%9D%84%20%ED%99%A9%EA%B8%88%EB%82%AD&destUrl=https%3A%2F%2Fshop.coupang.com%2Fvid%2FA00490832%3Fsource%3Dbrandstore_share',
+    storeUrl: 'https://www.coupang.com/vp/products/9080801055',
+    coupangUrl: 'https://www.coupang.com/vp/products/9080801055',
   },
   {
-    id: 'cp-mango-2yr',
+    id: '7634905936',
     name: '망고마을 황금낭 망고묘목 애플망고나무 2년생 (배송비포함), 1개',
     category: 'mangotree',
     categoryName: '애플망고나무',
@@ -326,8 +326,8 @@ export const COUPANG_PRODUCTS: Product[] = [
     features: ['접목 2년생', '배송비 포함', '최대 3,100원 적립', '안전 직송'],
     imageUrl: '/images/coupang/coupang_prod_3.jpg',
     deliveryInfo: '무료배송 (배송비 포함)',
-    storeUrl: 'https://link.coupang.com/re/SHOPPAGESHAREVID?pageKey=A00490832&lptag=A00490832&sourceType2=brandstore_share&title=%EB%A7%9D%EA%B3%A0%EB%A7%88%EC%9D%84%20%ED%99%A9%EA%B8%88%EB%82%AD&destUrl=https%3A%2F%2Fshop.coupang.com%2Fvid%2FA00490832%3Fsource%3Dbrandstore_share',
-    coupangUrl: 'https://link.coupang.com/re/SHOPPAGESHAREVID?pageKey=A00490832&lptag=A00490832&sourceType2=brandstore_share&title=%EB%A7%9D%EA%B3%A0%EB%A7%88%EC%9D%84%20%ED%99%A9%EA%B8%88%EB%82%AD&destUrl=https%3A%2F%2Fshop.coupang.com%2Fvid%2FA00490832%3Fsource%3Dbrandstore_share',
+    storeUrl: 'https://www.coupang.com/vp/products/7634905936',
+    coupangUrl: 'https://www.coupang.com/vp/products/7634905936',
   }
 ];
 
