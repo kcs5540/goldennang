@@ -79,6 +79,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: 'https://shop-phinf.pstatic.net/20260226_227/17720721409760sjQK_JPEG/40731575743602400_1731650058.jpg',
     deliveryInfo: '전국 무료배송 (제주 산지직송)',
     storeUrl: 'https://smartstore.naver.com/goldennang/products/10958477928',
+    coupangUrl: 'https://www.coupang.com/vp/products/7684534428',
   },
   {
     id: '6969133507',
