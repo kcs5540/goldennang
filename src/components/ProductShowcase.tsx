@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { PRODUCTS, BRAND_INFO } from '@/data';
+import { PRODUCTS, COUPANG_PRODUCTS, BRAND_INFO } from '@/data';
 import { Product } from '@/types';
-import { Star, ShoppingBag, Truck, CheckCircle2, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Star, Truck, CheckCircle2, ArrowUpRight, Sparkles } from 'lucide-react';
 
 interface ProductShowcaseProps {
   onSelectProduct?: (product: Product) => void;
@@ -12,6 +12,7 @@ interface ProductShowcaseProps {
 }
 
 export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }: ProductShowcaseProps) {
+  const [storeChannel, setStoreChannel] = useState<'naver' | 'coupang'>('naver');
   const [activeCategory, setActiveCategory] = useState<'all' | 'mangotree' | 'citrus' | 'fresh'>('all');
 
   const categories = [
@@ -21,49 +22,110 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
     { id: 'fresh', label: '제주 프리미엄 생과' },
   ];
 
-  const filteredProducts = activeCategory === 'all'
-    ? PRODUCTS
-    : PRODUCTS.filter((p) => p.category === activeCategory);
+  const currentProducts = storeChannel === 'naver'
+    ? (activeCategory === 'all' ? PRODUCTS : PRODUCTS.filter((p) => p.category === activeCategory))
+    : COUPANG_PRODUCTS;
 
   return (
     <section id="products" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Title */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-          <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold tracking-wider uppercase mb-3">
-              <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-              <span>Signature Collections</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
-              황금낭 대표 상품 컬렉션
-            </h2>
-            <p className="mt-2 text-stone-600 text-base">
-              농장에서 직접 감별하여 출고되는 건강한 프리미엄 유실수와 신선 과실
-            </p>
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold tracking-wider uppercase mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+            <span>Official Brand Store</span>
           </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+            황금낭 대표 상품 컬렉션
+          </h2>
+          <p className="mt-2 text-stone-600 text-base">
+            원하시는 구매 채널(네이버 또는 쿠팡)을 선택하시면 각 매장의 실시간 가격과 혜택으로 바로 연결됩니다.
+          </p>
+        </div>
 
-          {/* Category Tabs */}
-          <div className="flex items-center gap-1.5 mt-6 md:mt-0 p-1 bg-stone-100/90 rounded-2xl overflow-x-auto max-w-full">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id as any)}
-                className={`px-4 py-2 text-xs sm:text-sm font-bold rounded-xl whitespace-nowrap transition-all cursor-pointer ${
-                  activeCategory === cat.id
-                    ? 'bg-teal-700 text-white shadow-sm'
-                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
+        {/* 🏬 Store Channel Selector (대안 B: 네이버관 / 쿠팡관 분리) */}
+        <div className="flex items-center justify-center mb-10">
+          <div className="inline-flex p-1.5 bg-stone-100 rounded-2xl border border-stone-200 shadow-sm max-w-xl w-full">
+            <button
+              onClick={() => setStoreChannel('naver')}
+              className={`flex-1 py-3 px-3 sm:px-5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                storeChannel === 'naver'
+                  ? 'bg-[#03C75A] text-white shadow-md'
+                  : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
+              }`}
+            >
+              <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[10px] font-black flex items-center justify-center shrink-0">N</span>
+              <span className="truncate">네이버 스마트스토어관 (11종)</span>
+            </button>
+            <button
+              onClick={() => setStoreChannel('coupang')}
+              className={`flex-1 py-3 px-3 sm:px-5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                storeChannel === 'coupang'
+                  ? 'bg-[#E61E2B] text-white shadow-md'
+                  : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
+              }`}
+            >
+              <span className="text-xs shrink-0">🚀</span>
+              <span className="truncate">쿠팡 특가 브랜드관 (4종)</span>
+            </button>
           </div>
         </div>
 
+        {/* Channel Specific Header / Filter */}
+        {storeChannel === 'naver' ? (
+          <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
+            <div className="text-xs sm:text-sm text-stone-500">
+              총 <strong className="text-stone-900 font-bold">{PRODUCTS.length}개</strong>의 황금낭 정품 묘목 및 신선 과실
+            </div>
+            {/* Category Filter for Naver */}
+            <div className="flex items-center gap-1.5 p-1 bg-stone-100/90 rounded-2xl overflow-x-auto max-w-full">
+              {categories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id as any)}
+                  className={`px-3.5 py-1.5 text-xs font-bold rounded-xl whitespace-nowrap transition-all cursor-pointer ${
+                    activeCategory === cat.id
+                      ? 'bg-teal-700 text-white shadow-sm'
+                      : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-rose-50 via-amber-50 to-orange-50 border border-rose-200/80 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-11 h-11 rounded-2xl bg-[#E61E2B] text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                🚀
+              </div>
+              <div>
+                <h3 className="text-sm sm:text-base font-black text-stone-900 flex items-center gap-2">
+                  <span>쿠팡 공식 입점 브랜드 [망고마을 황금낭]</span>
+                  <span className="px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 text-[11px] font-bold">만족도 100%</span>
+                </h3>
+                <p className="text-xs text-stone-600 mt-0.5">
+                  쿠팡 와우 회원 혜택과 배송비 포함 특가로 황금낭 인기 묘목을 바로 구매하세요.
+                </p>
+              </div>
+            </div>
+            <a
+              href={BRAND_INFO.links.coupang}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2.5 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white text-xs sm:text-sm font-bold flex items-center gap-1.5 shrink-0 shadow-md transition-all transform hover:-translate-y-0.5"
+            >
+              <span>쿠팡 매장 전체보기</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+          </div>
+        )}
+
         {/* Product Cards Grid */}
         <div id="products-all" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProducts.map((product) => (
+          {currentProducts.map((product) => (
             <div
               key={product.id}
               className="group rounded-3xl bg-white border border-stone-200/90 overflow-hidden hover:border-teal-400/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
@@ -89,7 +151,9 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
                     </div>
                   )}
                   {product.badge && !product.isSoldOut && (
-                    <div className="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-teal-800/90 backdrop-blur-md text-white text-xs font-bold shadow-md">
+                    <div className={`absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-white text-xs font-bold shadow-md backdrop-blur-md ${
+                      storeChannel === 'coupang' ? 'bg-[#E61E2B]' : 'bg-teal-800/90'
+                    }`}>
                       {product.badge}
                     </div>
                   )}
@@ -102,7 +166,9 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
 
                 {/* Card Content */}
                 <div className="p-6">
-                  <span className="text-xs font-bold text-teal-700 uppercase tracking-wider mb-1 block">
+                  <span className={`text-xs font-bold uppercase tracking-wider mb-1 block ${
+                    storeChannel === 'coupang' ? 'text-[#E61E2B]' : 'text-teal-700'
+                  }`}>
                     {product.categoryName}
                   </span>
                   <h3 className="text-lg font-bold text-stone-900 line-clamp-2 group-hover:text-teal-700 transition-colors mb-2">
@@ -119,7 +185,7 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
                         key={i}
                         className="inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md bg-stone-100 text-stone-700"
                       >
-                        <CheckCircle2 className="w-3 h-3 text-teal-600" />
+                        <CheckCircle2 className={`w-3 h-3 ${storeChannel === 'coupang' ? 'text-[#E61E2B]' : 'text-teal-600'}`} />
                         {feature}
                       </span>
                     ))}
@@ -151,34 +217,11 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
                 </div>
               </div>
 
-              {/* Bottom Actions - Smart Channel (Dual if Coupang available, Full-width if Naver only) */}
+              {/* Bottom Action Button */}
               <div className="p-6 pt-0">
-                {product.coupangUrl ? (
-                  <div className="grid grid-cols-2 gap-2.5">
-                    <a
-                      href={product.storeUrl || BRAND_INFO.links.smartstore}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="py-3 px-2 sm:px-3 rounded-xl bg-[#03C75A] hover:bg-[#02b150] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
-                      title="네이버 스마트스토어에서 구매하기"
-                    >
-                      <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[11px] font-black flex items-center justify-center leading-none shrink-0">N</span>
-                      <span className="truncate">네이버 구매</span>
-                    </a>
-                    <a
-                      href={product.coupangUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="py-3 px-2 sm:px-3 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
-                      title="쿠팡 해당 상품 바로구매"
-                    >
-                      <span className="text-xs shrink-0">🚀</span>
-                      <span className="truncate">쿠팡 바로구매</span>
-                    </a>
-                  </div>
-                ) : (
+                {storeChannel === 'naver' ? (
                   <a
-                    href={product.storeUrl || BRAND_INFO.links.smartstore}
+                    href={product.storeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3.5 px-4 rounded-xl bg-[#03C75A] hover:bg-[#02b150] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
@@ -186,6 +229,18 @@ export default function ProductShowcase({ onSelectProduct, onOpenInquiryModal }:
                   >
                     <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[11px] font-black flex items-center justify-center leading-none shrink-0">N</span>
                     <span>네이버스토어로 구매하기</span>
+                    <ArrowUpRight className="w-4 h-4 opacity-80" />
+                  </a>
+                ) : (
+                  <a
+                    href={product.storeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-3.5 px-4 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
+                    title="쿠팡에서 구매하기"
+                  >
+                    <span>🚀</span>
+                    <span>쿠팡에서 바로구매</span>
                     <ArrowUpRight className="w-4 h-4 opacity-80" />
                   </a>
                 )}

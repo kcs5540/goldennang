@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingActionButtons from '@/components/FloatingActionButtons';
-import { PRODUCTS, BRAND_INFO } from '@/data';
+import { PRODUCTS, COUPANG_PRODUCTS, BRAND_INFO } from '@/data';
 import { Product } from '@/types';
 import { 
   ShoppingBag, 
@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 
 export default function ProductsPage() {
+  const [storeChannel, setStoreChannel] = useState<'naver' | 'coupang'>('naver');
   const [activeCategory, setActiveCategory] = useState<'all' | 'mangotree' | 'citrus' | 'fresh'>('all');
 
   const categories = [
@@ -32,9 +33,9 @@ export default function ProductsPage() {
     { id: 'fresh', label: '제주 프리미엄 생과', count: PRODUCTS.filter(p => p.category === 'fresh').length },
   ];
 
-  const filteredProducts = activeCategory === 'all'
-    ? PRODUCTS
-    : PRODUCTS.filter((p) => p.category === activeCategory);
+  const currentProducts = storeChannel === 'naver'
+    ? (activeCategory === 'all' ? PRODUCTS : PRODUCTS.filter((p) => p.category === activeCategory))
+    : COUPANG_PRODUCTS;
 
   return (
     <div className="flex flex-col min-h-screen bg-stone-50/50">
@@ -56,31 +57,87 @@ export default function ProductsPage() {
             </p>
           </div>
 
-          {/* Category Filter Tabs */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-14">
-            {categories.map((cat) => (
+          {/* 🏬 Store Channel Selector (대안 B: 네이버관 / 쿠팡관 분리) */}
+          <div className="flex items-center justify-center mb-10">
+            <div className="inline-flex p-1.5 bg-stone-100 rounded-2xl border border-stone-200 shadow-sm max-w-xl w-full">
               <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id as any)}
-                className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 ${
-                  activeCategory === cat.id
-                    ? 'bg-teal-700 text-white shadow-lg shadow-teal-900/20 scale-105'
-                    : 'bg-white text-stone-700 hover:bg-stone-100 border border-stone-200'
+                onClick={() => setStoreChannel('naver')}
+                className={`flex-1 py-3 px-3 sm:px-5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                  storeChannel === 'naver'
+                    ? 'bg-[#03C75A] text-white shadow-md'
+                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
                 }`}
               >
-                <span>{cat.label}</span>
-                <span className={`text-[11px] px-1.5 py-0.2 rounded-full ${
-                  activeCategory === cat.id ? 'bg-teal-800 text-teal-200' : 'bg-stone-100 text-stone-500'
-                }`}>
-                  {cat.count}
-                </span>
+                <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[10px] font-black flex items-center justify-center shrink-0">N</span>
+                <span className="truncate">네이버 스마트스토어관 (11종)</span>
               </button>
-            ))}
+              <button
+                onClick={() => setStoreChannel('coupang')}
+                className={`flex-1 py-3 px-3 sm:px-5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                  storeChannel === 'coupang'
+                    ? 'bg-[#E61E2B] text-white shadow-md'
+                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
+                }`}
+              >
+                <span className="text-xs shrink-0">🚀</span>
+                <span className="truncate">쿠팡 특가 브랜드관 (4종)</span>
+              </button>
+            </div>
           </div>
+
+          {/* Category Filter Tabs (for Naver) / Coupang Banner (for Coupang) */}
+          {storeChannel === 'naver' ? (
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-14">
+              {categories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id as any)}
+                  className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 ${
+                    activeCategory === cat.id
+                      ? 'bg-teal-700 text-white shadow-lg shadow-teal-900/20 scale-105'
+                      : 'bg-white text-stone-700 hover:bg-stone-100 border border-stone-200'
+                  }`}
+                >
+                  <span>{cat.label}</span>
+                  <span className={`text-[11px] px-1.5 py-0.2 rounded-full ${
+                    activeCategory === cat.id ? 'bg-teal-800 text-teal-200' : 'bg-stone-100 text-stone-500'
+                  }`}>
+                    {cat.count}
+                  </span>
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div className="p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-rose-50 via-amber-50 to-orange-50 border border-rose-200/80 mb-12 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-11 h-11 rounded-2xl bg-[#E61E2B] text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                  🚀
+                </div>
+                <div>
+                  <h3 className="text-sm sm:text-base font-black text-stone-900 flex items-center gap-2">
+                    <span>쿠팡 공식 입점 브랜드 [망고마을 황금낭]</span>
+                    <span className="px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 text-[11px] font-bold">만족도 100%</span>
+                  </h3>
+                  <p className="text-xs text-stone-600 mt-0.5">
+                    쿠팡 와우 회원 혜택과 배송비 포함 특가로 황금낭 인기 묘목을 바로 구매하세요.
+                  </p>
+                </div>
+              </div>
+              <a
+                href={BRAND_INFO.links.coupang}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2.5 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white text-xs sm:text-sm font-bold flex items-center gap-1.5 shrink-0 shadow-md transition-all transform hover:-translate-y-0.5"
+              >
+                <span>쿠팡 매장 전체보기</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
+          )}
 
           {/* Product Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-            {filteredProducts.map((product) => (
+            {currentProducts.map((product) => (
               <div
                 key={product.id}
                 className="group rounded-3xl bg-white border border-stone-200 overflow-hidden hover:border-teal-400 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
@@ -162,34 +219,11 @@ export default function ProductsPage() {
                   </div>
                 </div>
 
-                {/* Bottom Actions - Smart Channel */}
+                {/* Bottom Actions */}
                 <div className="p-6 pt-0">
-                  {product.coupangUrl ? (
-                    <div className="grid grid-cols-2 gap-2.5">
-                      <a
-                        href={product.storeUrl || BRAND_INFO.links.smartstore}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-3 px-2 sm:px-3 rounded-xl bg-[#03C75A] hover:bg-[#02b150] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
-                        title="네이버 스마트스토어에서 구매하기"
-                      >
-                        <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[11px] font-black flex items-center justify-center leading-none shrink-0">N</span>
-                        <span className="truncate">네이버 구매</span>
-                      </a>
-                      <a
-                        href={product.coupangUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-3 px-2 sm:px-3 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
-                        title="쿠팡 해당 상품 바로구매"
-                      >
-                        <span className="text-xs shrink-0">🚀</span>
-                        <span className="truncate">쿠팡 바로구매</span>
-                      </a>
-                    </div>
-                  ) : (
+                  {storeChannel === 'naver' ? (
                     <a
-                      href={product.storeUrl || BRAND_INFO.links.smartstore}
+                      href={product.storeUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-3.5 px-4 rounded-xl bg-[#03C75A] hover:bg-[#02b150] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
@@ -197,6 +231,18 @@ export default function ProductsPage() {
                     >
                       <span className="w-4 h-4 rounded-full bg-white text-[#03C75A] text-[11px] font-black flex items-center justify-center leading-none shrink-0">N</span>
                       <span>네이버스토어로 구매하기</span>
+                      <ArrowUpRight className="w-4 h-4 opacity-80" />
+                    </a>
+                  ) : (
+                    <a
+                      href={product.storeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full py-3.5 px-4 rounded-xl bg-[#E61E2B] hover:bg-[#c91823] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 text-center"
+                      title="쿠팡에서 바로구매"
+                    >
+                      <span>🚀</span>
+                      <span>쿠팡에서 바로구매</span>
                       <ArrowUpRight className="w-4 h-4 opacity-80" />
                     </a>
                   )}
