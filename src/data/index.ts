@@ -203,7 +203,7 @@ export const PRODUCTS: Product[] = [
     storeUrl: 'https://smartstore.naver.com/goldennang/products/4796743460',
   },
   {
-    id: 'ponkan-tree',
+    id: '4796713588',
     name: '황금낭 폰깡묘목 귤나무 (2-3년생)',
     category: 'citrus',
     categoryName: '감귤·만감류',
@@ -218,7 +218,7 @@ export const PRODUCTS: Product[] = [
     features: ['폰깡 2~3년생', '제주 농장 직송', '착불 10,000원'],
     imageUrl: '/images/naver_real/prod_9.jpg',
     deliveryInfo: '화물 착불 10,000원',
-    storeUrl: 'https://smartstore.naver.com/goldennang',
+    storeUrl: 'https://smartstore.naver.com/goldennang/products/4796713588',
   },
   {
     id: 'geumgyul-pot',
