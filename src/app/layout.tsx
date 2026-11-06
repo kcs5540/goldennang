@@ -79,7 +79,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-white text-stone-900 antialiased selection:bg-teal-600 selection:text-white">
+      <body className="min-h-screen flex flex-col bg-white text-stone-900 antialiased selection:bg-teal-600 selection:text-white overflow-x-hidden w-full max-w-full">
         <InquiryModalProvider>
           {children}
         </InquiryModalProvider>

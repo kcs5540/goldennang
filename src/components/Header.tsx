@@ -85,16 +85,16 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/80 transition-all">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/80 transition-all w-full max-w-full overflow-hidden">
       {/* Top Banner Notice */}
-      <div className="bg-gradient-to-r from-teal-700 via-teal-600 to-amber-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
-        <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
-        <span>부와 복을 부르는 귤나무·애플망고나무 농장 | 제주 서귀포 직송 반려 유실수</span>
+      <div className="bg-gradient-to-r from-teal-700 via-teal-600 to-amber-600 text-white text-[11px] sm:text-sm py-2 px-3 sm:px-4 text-center font-medium flex items-center justify-center gap-1.5 sm:gap-2 break-keep">
+        <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse shrink-0" />
+        <span className="truncate sm:overflow-visible">부와 복을 부르는 귤나무·애플망고나무 농장 | 제주 서귀포 직송 반려 유실수</span>
         <a 
           href={BRAND_INFO.links.smartstore} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="ml-2 hidden sm:inline-flex items-center underline hover:text-amber-200 text-xs gap-0.5"
+          className="ml-2 hidden sm:inline-flex items-center underline hover:text-amber-200 text-xs gap-0.5 shrink-0"
         >
           네이버스토어 바로가기 <ExternalLink className="w-3 h-3" />
         </a>
@@ -103,7 +103,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group shrink-0 w-56 xl:w-60">
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group shrink min-w-0 sm:w-56 xl:w-60">
             <div className="relative w-11 h-11 xl:w-12 xl:h-12 rounded-full overflow-hidden bg-teal-50 border border-teal-200 shadow-sm flex items-center justify-center shrink-0">
               <Image
                 src={BRAND_INFO.logos.symbol}
