@@ -169,7 +169,7 @@ export const PRODUCTS: Product[] = [
     storeUrl: 'https://smartstore.naver.com/goldennang/products/4796779517',
   },
   {
-    id: 'cheonhyehyang-tree',
+    id: '4796756605',
     name: '황금낭 천혜향묘목 과실 귤나무 (2 - 3년생)',
     category: 'citrus',
     categoryName: '감귤·만감류',
@@ -183,7 +183,7 @@ export const PRODUCTS: Product[] = [
     features: ['천혜향 정품 접목묘', '2~3년생 묘목', '착불 10,000원', '초보 식집사 추천'],
     imageUrl: '/images/naver_real/prod_7.jpg',
     deliveryInfo: '화물 착불 10,000원 (제주 직송)',
-    storeUrl: 'https://smartstore.naver.com/goldennang',
+    storeUrl: 'https://smartstore.naver.com/goldennang/products/4796756605',
   },
   {
     id: 'redhyang-tree',
