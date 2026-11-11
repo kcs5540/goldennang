@@ -48,22 +48,15 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  ...(process.env.GOOGLE_SITE_VERIFICATION || process.env.NAVER_SITE_VERIFICATION
-    ? {
-        verification: {
-          ...(process.env.GOOGLE_SITE_VERIFICATION
-            ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-            : {}),
-          ...(process.env.NAVER_SITE_VERIFICATION
-            ? {
-                other: {
-                  'naver-site-verification': process.env.NAVER_SITE_VERIFICATION,
-                },
-              }
-            : {}),
-        },
-      }
-    : {}),
+  verification: {
+    ...(process.env.GOOGLE_SITE_VERIFICATION
+      ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+      : {}),
+    other: {
+      'naver-site-verification':
+        process.env.NAVER_SITE_VERIFICATION || '4af9925ff0013820282e2aa6c58f005ca40b336d',
+    },
+  },
 };
 
 export default function RootLayout({
