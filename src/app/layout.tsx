@@ -5,9 +5,12 @@ import { InquiryModalProvider } from '@/context/InquiryModalContext';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://goldennang.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
   title: '황금낭 - 제주 애플망고나무·감귤나무 분재 농장 | 농업회사법인 주식회사 황금낭',
-  description: '부와 복을 부르는 제주 감귤나무와 애플망고나무 농장 황금낭. 서귀포 토평동 직송 접목 2~3년생 묘목 화분, 8년생 대형 유실수, 고당도 완숙 애플망고 선물세트.',
-  keywords: '황금낭, 애플망고나무, 감귤나무화분, 제주애플망고, 유실수묘목, 어윈망고, 제주특산물, 반려식물, 농업회사법인황금낭',
+  description: '부와 복을 부르는 제주 감귤나무와 애플망고나무 농장 황금낭. 서귀포 토평동 직송 열매 달린 귤 묘목·접목 애플망고나무 화분, 완숙 애플망고 선물세트.',
+  keywords: '황금낭, 귤나무, 귤묘목, 열매달린귤나무, 감귤나무화분, 애플망고나무, 제주애플망고, 유실수묘목, 어윈망고, 제주특산물, 반려식물, 농업회사법인황금낭',
   openGraph: {
     title: '황금낭 (GOLDEN NANG) - 제주 프리미엄 유실수 & 애플망고',
     description: '부와 복을 부르는 귤나무·애플망고나무 농장 제주 황금낭. 서귀포 산지직송 반려 유실수 화분과 고당도 생과.',
@@ -38,7 +41,29 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
+  ...(process.env.GOOGLE_SITE_VERIFICATION || process.env.NAVER_SITE_VERIFICATION
+    ? {
+        verification: {
+          ...(process.env.GOOGLE_SITE_VERIFICATION
+            ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+            : {}),
+          ...(process.env.NAVER_SITE_VERIFICATION
+            ? {
+                other: {
+                  'naver-site-verification': process.env.NAVER_SITE_VERIFICATION,
+                },
+              }
+            : {}),
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({
@@ -50,6 +75,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: BRAND_INFO.name,
+    alternateName: BRAND_INFO.brandName,
+    description: BRAND_INFO.subSlogan,
     image: BRAND_INFO.logos.symbol,
     telephone: BRAND_INFO.tel,
     address: {
@@ -59,7 +86,15 @@ export default function RootLayout({
       addressRegion: '제주특별자치도',
       addressCountry: 'KR',
     },
-    url: BRAND_INFO.links.smartstore,
+    url: 'https://goldennang.vercel.app',
+    sameAs: [
+      BRAND_INFO.links.smartstore,
+      BRAND_INFO.links.coupang,
+      BRAND_INFO.links.youtube,
+      BRAND_INFO.links.instagram,
+      BRAND_INFO.links.blog,
+      BRAND_INFO.links.cafe,
+    ],
     priceRange: '₩₩',
     openingHoursSpecification: [
       {

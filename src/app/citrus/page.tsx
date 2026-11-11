@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { PRODUCTS, BRAND_INFO } from '@/data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,9 +7,17 @@ import Footer from '@/components/Footer';
 import FloatingActionButtons from '@/components/FloatingActionButtons';
 import { ShoppingBag, ArrowLeft, Star, Truck, CheckCircle2, ArrowUpRight, Sparkles } from 'lucide-react';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: '감귤나무·만감류 화분 컬렉션 | 황금낭',
-  description: '제주 서귀포 8년생 이상 대형 감귤나무 화분 특상품 및 폰깡, 금귤나무 분재. 개업·승진·입주 축하 선물 1순위.',
+  description: '제주 서귀포 직송 열매 달린 귤 묘목·감귤나무 화분, 폰깡, 금귤나무 분재. 개업·승진·입주 축하 및 홈가드닝 선물 1순위.',
+  alternates: {
+    canonical: '/citrus',
+  },
+  openGraph: {
+    title: '감귤나무·만감류 화분 컬렉션 | 황금낭',
+    description: '노란 열매가 주렁주렁 달린 제주 서귀포 직송 귤나무·감귤나무 묘목 화분.',
+    url: 'https://goldennang.vercel.app/citrus',
+  },
 };
 
 export default function CitrusPage() {

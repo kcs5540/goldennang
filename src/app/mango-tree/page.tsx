@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { PRODUCTS, BRAND_INFO } from '@/data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,9 +7,17 @@ import Footer from '@/components/Footer';
 import FloatingActionButtons from '@/components/FloatingActionButtons';
 import { ShoppingBag, ArrowLeft, Star, Truck, CheckCircle2, ArrowUpRight, Sparkles } from 'lucide-react';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: '애플망고나무 화분 묘목 컬렉션 | 황금낭',
   description: '제주 서귀포 직송 어윈 애플망고나무 화분 3년생 및 접목 2년생 특묘. 실내 거실 및 베란다에서 키우는 반려 유실수.',
+  alternates: {
+    canonical: '/mango-tree',
+  },
+  openGraph: {
+    title: '애플망고나무 화분 묘목 컬렉션 | 황금낭',
+    description: '서귀포 직송 어윈·라일락 애플망고나무 접목 특묘 화분 컬렉션.',
+    url: 'https://goldennang.vercel.app/mango-tree',
+  },
 };
 
 export default function MangoTreePage() {

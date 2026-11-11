@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { PRODUCTS, BRAND_INFO } from '@/data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,9 +7,17 @@ import Footer from '@/components/Footer';
 import FloatingActionButtons from '@/components/FloatingActionButtons';
 import { ShoppingBag, ArrowLeft, Star, Truck, CheckCircle2, ArrowUpRight, Sparkles } from 'lucide-react';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: '제주 프리미엄 애플망고 생과 선물세트 | 황금낭',
   description: '서귀포 토평동 직송 16브릭스 이상 고당도 자연 완숙 애플망고 선물세트. 명절 선물 및 VIP 기업 선물 추천.',
+  alternates: {
+    canonical: '/fresh-fruit',
+  },
+  openGraph: {
+    title: '제주 프리미엄 애플망고 생과 선물세트 | 황금낭',
+    description: '서귀포 직송 고당도 자연 완숙 제주 애플망고 명품 선물세트.',
+    url: 'https://goldennang.vercel.app/fresh-fruit',
+  },
 };
 
 export default function FreshFruitPage() {

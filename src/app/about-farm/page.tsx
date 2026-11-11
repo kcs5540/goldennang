@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -21,9 +22,17 @@ import {
   CalendarCheck
 } from 'lucide-react';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: '농장 소개 | 농업회사법인 주식회사 황금낭',
   description: '제주 서귀포시 토평동에 위치한 황금낭 농장 소개. 천혜의 서귀포 자연환경, 7년 노하우 접목 기술, 첨단 스마트 온실과 명품 유실수 재배 철학.',
+  alternates: {
+    canonical: '/about-farm',
+  },
+  openGraph: {
+    title: '농장 소개 | 농업회사법인 주식회사 황금낭',
+    description: '제주 서귀포 토평동 직송 명품 감귤나무·애플망고 농원 황금낭 소개.',
+    url: 'https://goldennang.vercel.app/about-farm',
+  },
 };
 
 export default function AboutFarmPage() {
