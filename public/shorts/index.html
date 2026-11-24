@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍊 제주 황금낭 쇼츠 제작 & 6대 채널 발행 마스터 복사기 [재물운 황금 화분 편]</title>
+  <style>
+    * { box-sizing: border-box; font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
+    body { margin: 0; background: #0f172a; color: #f8fafc; line-height: 1.65; padding-bottom: 80px; }
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border-bottom: 2px solid #f59e0b;
+      padding: 16px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .topbar h1 { margin: 0; font-size: 18px; color: #fef08a; }
+    .topbar .badge { background: #d97706; color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 999px; font-weight: bold; }
+    .container { max-width: 1000px; margin: 28px auto; padding: 0 18px; }
+    .step-card {
+      background: #1e293b; border: 1px solid #334155; border-radius: 16px;
+      padding: 24px; margin-bottom: 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+    .step-header {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+      border-bottom: 1px solid #334155; padding-bottom: 14px; margin-bottom: 18px;
+    }
+    .step-title { font-size: 18px; font-weight: bold; color: #fbbf24; margin: 0; }
+    .step-sub { font-size: 13px; color: #94a3b8; margin-top: 4px; }
+    .btn {
+      background: #d97706; color: #fff; border: none; padding: 10px 16px; border-radius: 8px;
+      font-size: 13.5px; font-weight: bold; cursor: pointer; transition: all 0.15s;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .btn:hover { background: #b45309; transform: translateY(-1px); }
+    .btn-sm { padding: 9px 13px; font-size: 13px; min-height: 38px; }
+    .btn-copied { background: #10b981 !important; color: #fff !important; }
+    .btn-green { background: #059669; } .btn-green:hover { background: #047857; }
+    .btn-blue { background: #2563eb; } .btn-blue:hover { background: #1d4ed8; }
+    .btn-indigo { background: #4f46e5; } .btn-indigo:hover { background: #4338ca; }
+    .btn-pink { background: #db2777; } .btn-pink:hover { background: #be185d; }
+    .btn-orange { background: #ea580c; } .btn-orange:hover { background: #c2410c; }
+    .btn-yellow { background: #eab308; color: #111827; } .btn-yellow:hover { background: #ca8a04; }
+    .btn-dark { background: #475569; } .btn-dark:hover { background: #334155; }
+    .code-box {
+      background: #0f172a; border: 1px solid #334155; border-radius: 10px;
+      padding: 16px; font-size: 14.5px; color: #e2e8f0; white-space: pre-wrap; word-break: keep-all; line-height: 1.8;
+    }
+    .scene-item {
+      background: #0f172a; border: 1px solid #334155; border-radius: 12px;
+      padding: 16px; margin-bottom: 14px;
+    }
+    .scene-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+    .scene-tag { font-weight: bold; color: #38bdf8; font-size: 14px; }
+    .real-badge { background: #059669; color: #fff; font-size: 11.5px; padding: 2px 8px; border-radius: 6px; font-weight: bold; }
+    .ai-badge { background: #4f46e5; color: #fff; font-size: 11.5px; padding: 2px 8px; border-radius: 6px; font-weight: bold; }
+    .ref-note { font-size: 12.5px; color: #f59e0b; margin-top: 4px; margin-bottom: 8px; }
+    .prompt-label { font-size: 12px; font-weight: bold; color: #fbbf24; margin-top: 8px; }
+    .prompt-text { font-family: Consolas, monospace; font-size: 12.8px; color: #cbd5e1; margin: 4px 0 0 0; background: #1e293b; padding: 10px 12px; border-radius: 8px; }
+    .check-list { list-style: none; padding: 0; margin: 0; }
+    .check-list li {
+      display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+      background: #0f172a; border-radius: 8px; margin-bottom: 8px; font-size: 14px;
+    }
+    .check-list input[type="checkbox"] { width: 18px; height: 18px; accent-color: #f59e0b; cursor: pointer; }
+    .channel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 16px; }
+    .channel-box {
+      background: #0f172a; border: 1px solid #334155; border-radius: 12px; padding: 18px;
+      display: flex; flex-direction: column; justify-content: space-between; gap: 12px;
+    }
+    .channel-head { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #334155; padding-bottom: 10px; }
+    .channel-name { font-size: 15.5px; font-weight: bold; color: #f8fafc; display: flex; align-items: center; gap: 8px; }
+    .channel-preview { font-size: 13px; color: #cbd5e1; white-space: pre-wrap; max-height: 180px; overflow-y: auto; background: #1e293b; padding: 12px; border-radius: 8px; }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 10px; }
+    .toast {
+      position: fixed; bottom: 24px; right: 24px; background: #10b981; color: #fff;
+      padding: 14px 22px; border-radius: 12px; font-weight: bold; font-size: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4); opacity: 0; pointer-events: none; transition: opacity 0.25s;
+      z-index: 999;
+    }
+    .toast.show { opacity: 1; }
+    @media (max-width: 600px) { .channel-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- 상단 헤더 -->
+  <div class="topbar">
+    <div>
+      <h1>🍊 제주 황금낭 쇼츠 제작 & 6대 채널 원클릭 발행 마스터</h1>
+      <div style="font-size:12.5px; color:#cbd5e1; margin-top:3px;">[연말연시/개업 차별화 선물] 시들면 버리는 꽃바구니 대신? 365일 황금 열매 재물운 화분!</div>
+    </div>
+    <span class="badge">반복(루프) 0% · 6초 6씬 + 공식엔딩 4초 (총 40초 완벽 싱크)</span>
+  </div>
+
+  <div style="background: #1e293b; border-bottom: 2px solid #38bdf8; padding: 14px 18px; text-align: center;">
+    <div style="font-size: 14px; color: #fef08a; font-weight: bold; margin-bottom: 10px;">📱 스마트폰 업로드 전용 빠른 에셋 다운로드 & 원클릭 복사</div>
+    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+      <a href="/shorts_assets/00_유튜브쇼츠_대표썸네일.jpg" download class="btn btn-sm btn-yellow" style="text-decoration:none; display:inline-flex; align-items:center;">🖼️ 유튜브 썸네일 받기</a>
+      <a href="/shorts_assets/07_황금낭_공식엔딩_4초.mp4" download class="btn btn-sm btn-orange" style="text-decoration:none; display:inline-flex; align-items:center;">🎬 공식 엔딩 영상 받기</a>
+      <a href="/shorts_assets/00_카톡블로그_대표썸네일.jpg" download class="btn btn-sm btn-blue" style="text-decoration:none; display:inline-flex; align-items:center;">💬 1:1 대표 썸네일 받기</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- STEP 1: 브루 대본 -->
+    <div class="step-card">
+      <div class="step-header">
+        <div>
+          <h2 class="step-title">STEP 1. 브루(Vrew) 원스톱 내레이션 대본 (약 36초 · 6단락)</h2>
+          <div class="step-sub">브루 [텍스트로 비디오 만들기] 또는 [AI 음성 추가]에 그대로 붙여넣으세요. (추천 음성: 신뢰감 있고 부드러운 중저음 남성 또는 밝고 세련된 여성)</div>
+        </div>
+        <button class="btn" onclick="copyById('vrew-script', '브루(Vrew) 내레이션 대본이 복사되었습니다!')">📋 대본 원클릭 복사</button>
+      </div>
+      <div id="vrew-script" class="code-box">시들면 버리는 꽃바구니 대신,
+1년 365일 황금빛 행운이 열리는 선물이 있습니다.
+
+제주 서귀포 직영 농장에서
+정성으로 키워낸 프리미엄 애플망고 황금낭!
+
+싱그러운 초록 잎사귀 사이로
+달콤한 향기와 함께
+황금 열매가 주렁주렁 맺힙니다.
+
+호텔급 16브릭스 완숙 애플망고의
+꿀과즙을 집에서 직접 수확해 맛보세요.
+
+개업, 승진, 특별한 축하 자리는 물론,
+집안의 재물운을 부르는 최고의 선물!
+
+특허받은 안전 패키지로
+제주 농장에서 고객님 댁 앞까지
+신선하게 직배송해 드립니다.
+
+올 연말, 시들지 않는 감동을 선물하세요.
+지금 '황금낭'을 검색해 보세요!</div>
+    </div>
+
+    <!-- STEP 2: 구글 플로우 프롬프트 (6씬 + 1엔딩) -->
+    <div class="step-card">
+      <div class="step-header">
+        <div>
+          <h2 class="step-title">STEP 2. 구글 플로우(Google Flow) 6초 6씬 + 공식 엔딩 4초</h2>
+          <div class="step-sub">💡 <b>루프 반복 0% 완벽 규격</b>: 6초 영상 6개 + 4초 엔딩으로 대사와 1:1 완벽 일치! <b>ref_photos 폴더의 사진</b>을 `Frames to Video`에 업로드 후 2단계 모션만 돌리세요! (다운로드는 1080p 권장)</div>
+        </div>
+      </div>
+
+      <!-- Scene 1 -->
+      <div class="scene-item">
+        <div class="scene-top">
+          <span class="scene-tag">Scene 1 (6초 · scene01_fading_gift.mp4) | 흔한 선물/시든 꽃바구니의 아쉬움 <span class="ai-badge">★ AI 2단계</span></span>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-blue" onclick="copyById('p1-vid', 'Scene 1 [2단계 6초 모션] 복사 완료!')">📋 2단계 6초 모션</button>
+          </div>
+        </div>
+        <div class="ref-note">💡 참조 사진: /shorts_assets/01_흔한선물_시든꽃_고민.jpg</div>
+        <div class="prompt-label">[2단계 6초 모션 프롬프트]</div>
+        <div id="p1-vid" class="prompt-text">Cinematic 6-second vertical 9:16 video, slow steady camera pull-back showing the melancholic wilted flower basket, subtle dust motes in gentle office light, natural atmospheric stillness, professional documentary style, strictly no dialogue, no text, photorealistic 4k.</div>
+      </div>
+
+      <!-- Scene 2 -->
+      <div class="scene-item">
+        <div class="scene-top">
+          <span class="scene-tag">Scene 2 (6초 · scene02_balcony_tree.mp4) | 아파트 베란다에서 생생하게 익어가는 황금 열매 <span class="real-badge">★ 대표님 실사 사진</span></span>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-blue" onclick="copyById('p2-vid', 'Scene 2 [2단계 6초 모션] 복사 완료!')">📋 2단계 6초 모션</button>
+          </div>
+        </div>
+        <div class="ref-note">💡 대표님 실사 사진 적용: /shorts_assets/02_아파트베란다_애플망고_열매.jpg 업로드!</div>
+        <div class="prompt-label">[2단계 6초 모션 프롬프트]</div>
+        <div id="p2-vid" class="prompt-text">Cinematic 6-second vertical 9:16 video, smooth slow push-in toward the three ripe glistening mango fruits hanging proudly on the tree in the sunlit balcony, gentle breeze making leaves subtly sway, glistening water droplets reflecting sunlight, organic camera motion, 4k photorealistic.</div>
+      </div>
+
+      <!-- Scene 3 -->
+      <div class="scene-item">
+        <div class="scene-top">
+          <span class="scene-tag">Scene 3 (6초 · scene03_apple_mango_greenhouse.mp4) | 서귀포 직영 애플망고 스마트 온실 전경 <span class="real-badge">★ 스마트팜 실사</span></span>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-blue" onclick="copyById('p3-vid', 'Scene 3 [2단계 6초 모션] 복사 완료!')">📋 2단계 6초 모션</button>
+          </div>
+        </div>
+        <div class="ref-note">💡 서귀포 스마트팜 온실 실사 적용: /shorts_assets/03_서귀포_황금낭_온실농장.jpg 업로드!</div>
+        <div class="prompt-label">[2단계 6초 모션 프롬프트]</div>
+        <div id="p3-vid" class="prompt-text">Cinematic 6-second vertical 9:16 video, steady smooth forward tracking shot gliding through the sunlit central aisle of the high-tech Jeju Apple Mango smart greenhouse, morning sunlight streaming through the soaring glass ceiling, revealing thriving rows of tropical mango trees with ripe reddish-golden apple mangoes hanging gently, majestic professional farm ambiance, strictly no citrus, photorealistic 4k.</div>
+      </div>
+
+      <!-- Scene 4 -->
+      <div class="scene-item">
+        <div class="scene-top">
+          <span class="scene-tag">Scene 4 (6초 · scene04_apple_mango_cut.mp4) | 최고급 완숙 제주 애플망고와 달콤한 과즙 <span class="real-badge">★ 완숙 큐브컷 (김 0%)</span></span>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-blue" onclick="copyById('p4-vid', 'Scene 4 [2단계 6초 모션] 복사 완료!')">📋 2단계 6초 모션</button>
+          </div>
+        </div>
+        <div class="ref-note">💡 완숙 애플망고 실사 사진 적용: /shorts_assets/04_황금열매_탐스러운_과즙.jpg 업로드!</div>
+        <div class="prompt-label">[2단계 6초 모션 프롬프트]</div>
+        <div id="p4-vid" class="prompt-text">Cinematic 6-second vertical 9:16 video, slow macro push-in toward the sliced ripe Jeju apple mango with classic diamond grid cut, rich golden mango nectar glistening and slowly dripping under warm morning sunlight, appetizing luxury fruit commercial cinematography, strictly no steam, no smoke, no heat, no hands, no text, photorealistic 4k.</div>
+      </div>
+
+      <!-- Scene 5 (신규 추가!) -->
+      <div class="scene-item" style="border: 1.5px solid #38bdf8;">
+        <div class="scene-top">
+          <span class="scene-tag" style="color: #38bdf8;">Scene 5 (6초 · scene05_vip_gift.mp4) | 개업·승진 축하 & 공간의 재물운을 부르는 VIP 선물 <span class="real-badge" style="background:#0284c7;">★ VIP 축하 실사</span></span>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-blue" onclick="copyById('p5-vid', 'Scene 5 [2단계 6초 모션] 복사 완료!')">📋 2단계 6초 모션</button>
+          </div>
+        </div>
+        <div class="ref-note">💡 VIP 축 발전 선물 실사 적용: /shorts_assets/05_개업승진_재물운_VIP선물.jpg 업로드!</div>
+        <div class="prompt-label">[2단계 6초 모션 프롬프트]</div>
+        <div id="p5-vid" class="prompt-text">Cinematic 6-second vertical 9:16 video, slow elegant push-in and slight pedestal rise toward the majestic potted Apple Mango tree standing beside the gold-foil congratulatory card on the wooden credenza, warm golden afternoon sunlight streaming through the penthouse window overlooking the sunlit city skyline, rich prestigious atmosphere of wealth and business prosperity, photorealistic 4k.</div>
+      </div>
+
+      <!-- Scene 6 -->
+      <div class="scene-item">
+        <div class="scene-top">
+          <span class="scene-tag">Scene 6 (6초 · scene06_tall_mango_box.mp4) | 특허 완충 안전 포장과 대형 애플망고 화분 언박싱 <span class="real-badge">★ 대형 특수박스</span></span>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-blue" onclick="copyById('p6-vid', 'Scene 6 [2단계 6초 모션] 복사 완료!')">📋 2단계 6초 모션</button>
+          </div>
+        </div>
+        <div class="ref-note">💡 대형 애플망고 특허 택배 실사 적용: /shorts_assets/06_특허완충_안심택배_포장.jpg 업로드!</div>
+        <div class="prompt-label">[2단계 6초 모션 프롬프트]</div>
+        <div id="p6-vid" class="prompt-text">Cinematic 6-second vertical 9:16 video, slow smooth reveal and gentle camera push-in showing the substantial 1-meter-tall potted Apple Mango tree inside the opened tall protective shipping box, morning sunlight shifting softly across the three ripe reddish-golden mangoes hanging from sturdy branches, leaves subtly trembling with fresh vitality, impressive large scale delivery, warm delight and festive satisfaction, strictly no steam, no smoke, photorealistic 4k.</div>
+      </div>
+
+      <!-- Scene 7: 공식 엔딩 영상 -->
+      <div class="scene-item" style="border: 2px solid #f59e0b; background: #1a2234;">
+        <div class="scene-top">
+          <span class="scene-tag" style="color: #fbbf24;">Scene 7 (4초 · 공식 엔딩 영상) | 다이내믹 바운스 & 골드 샤인 공식 엔딩 <span class="real-badge" style="background:#d97706;">★ 완성본 탑재</span></span>
+        </div>
+        <div style="font-size: 13.5px; color: #cbd5e1; margin-top: 4px;">
+          별도 AI 생성 필요 없이 <b>/shorts_assets/07_황금낭_공식엔딩_4초.mp4</b>를 캡컷/브루 타임라인 맨 뒤에 그대로 붙여넣으세요!<br>
+          <span style="color:#fbbf24; font-weight:bold;">✔ 공식 연락처 1588-6709 / 010-2690-5574 + 145% 축소 2 탄성 바운스 + 골드 샤인 빔 + BGM 차임 믹싱 완비!</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STEP 2.5: 브루 자막 ↔ 영상 컷 1:1 배치 매칭표 (7개 컷) -->
+    <div class="step-card" style="border: 2px solid #f59e0b; background: #162032;">
+      <div class="step-header">
+        <div>
+          <h2 class="step-title" style="color: #fef08a;">🎯 STEP 2.5. [브루(Vrew) 편집 핵심] 자막 ↔ 영상 컷 1:1 배치 매칭표 (루프 0% 완벽 싱크)</h2>
+          <div class="step-sub">총 6개 플로우 영상 클립(각 6초) + 1개 공식 엔딩(4초) = 총 40초로 브루 음성과 1:1 완벽 일치! 반복 재생 오류 0%</div>
+        </div>
+      </div>
+                  <table style="width:100%; border-collapse:collapse; font-size:13.5px;">
+        <thead>
+          <tr style="background:#0f172a; color:#fbbf24; text-align:left;">
+            <th style="padding:11px 10px; border:1px solid #334155; width:16%;">영상 파일</th>
+            <th style="padding:11px 10px; border:1px solid #334155; width:46%;">브루(Vrew) 대사 / 음성 구간</th>
+            <th style="padding:11px 10px; border:1px solid #334155; width:38%;">화면 강조 1줄 자막 (10자 이내)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#1e293b;">
+            <td style="padding:10px; border:1px solid #334155; font-weight:bold; color:#38bdf8;">Scene 1 (6초)<br><span style="font-size:11px; color:#94a3b8;">01_흔한선물_시든꽃.mp4</span></td>
+            <td style="padding:10px; border:1px solid #334155; color:#f8fafc;">시들면 버리는 꽃바구니 대신,<br>1년 365일 황금빛 행운이 열리는 선물이 있습니다.</td>
+            <td style="padding:10px; border:1px solid #334155; color:#fde047; font-weight:bold;">시들면 버리는 꽃 대신? ➡️ 365일 황금 열매 화분!</td>
+          </tr>
+          <tr style="background:#0f172a;">
+            <td style="padding:10px; border:1px solid #334155; font-weight:bold; color:#38bdf8;">Scene 2 (6초)<br><span style="font-size:11px; color:#94a3b8;">02_아파트베란다_열매.mp4</span></td>
+            <td style="padding:10px; border:1px solid #334155; color:#f8fafc;">제주 서귀포 직영 농장에서<br>정성으로 키워낸 프리미엄 애플망고 황금낭!</td>
+            <td style="padding:10px; border:1px solid #334155; color:#fde047; font-weight:bold;">제주 직영 농장 ➡️ 프리미엄 애플망고!</td>
+          </tr>
+          <tr style="background:#1e293b;">
+            <td style="padding:10px; border:1px solid #334155; font-weight:bold; color:#38bdf8;">Scene 3 (6초)<br><span style="font-size:11px; color:#94a3b8;">03_애플망고_온실농장.mp4</span></td>
+            <td style="padding:10px; border:1px solid #334155; color:#f8fafc;">싱그러운 초록 잎사귀 사이로<br>달콤한 향기와 함께 황금 열매가 주렁주렁 맺힙니다.</td>
+            <td style="padding:10px; border:1px solid #334155; color:#fde047; font-weight:bold;">달콤한 향기 ➡️ 황금 열매 주렁주렁!</td>
+          </tr>
+          <tr style="background:#0f172a;">
+            <td style="padding:10px; border:1px solid #334155; font-weight:bold; color:#34d399;">Scene 4 (6초)<br><span style="font-size:11px; color:#94a3b8;">04_완숙_애플망고_과즙.mp4</span></td>
+            <td style="padding:10px; border:1px solid #334155; color:#f8fafc;">호텔급 16브릭스 완숙 애플망고의<br>꿀과즙을 집에서 직접 수확해 맛보세요.</td>
+            <td style="padding:10px; border:1px solid #334155; color:#fde047; font-weight:bold;">16브릭스 꿀과즙 ➡️ 집에서 직접 수확!</td>
+          </tr>
+          <tr style="background:#1e293b;">
+            <td style="padding:10px; border:1px solid #334155; font-weight:bold; color:#38bdf8;">Scene 5 (6초)<br><span style="font-size:11px; color:#94a3b8;">05_개업승진_VIP선물.mp4</span></td>
+            <td style="padding:10px; border:1px solid #334155; color:#f8fafc;">개업, 승진, 특별한 축하 자리는 물론,<br>집안의 재물운을 부르는 최고의 선물!</td>
+            <td style="padding:10px; border:1px solid #334155; color:#fde047; font-weight:bold;">개업·승진 축하 ➡️ 집안의 재물운 선물!</td>
+          </tr>
+          <tr style="background:#0f172a;">
+            <td style="padding:10px; border:1px solid #334155; font-weight:bold; color:#34d399;">Scene 6 (6초)<br><span style="font-size:11px; color:#94a3b8;">06_특허완충_대형택배.mp4</span></td>
+            <td style="padding:10px; border:1px solid #334155; color:#f8fafc;">특허받은 안전 패키지로<br>제주 농장에서 고객님 댁 앞까지 신선하게 직배송해 드립니다.</td>
+            <td style="padding:10px; border:1px solid #334155; color:#fde047; font-weight:bold;">특허 안심 패키지 ➡️ 전국 집 앞 직배송!</td>
+          </tr>
+          <tr style="background:#1e293b;">
+            <td style="padding:10px; border:1px solid #334155; font-weight:bold; color:#fbbf24;">Scene 7 (4초)<br><span style="font-size:11px; color:#94a3b8;">07_황금낭_공식엔딩.mp4</span></td>
+            <td style="padding:10px; border:1px solid #334155; color:#f8fafc;">올 연말, 시들지 않는 감동을 선물하세요.<br>지금 '황금낭'을 검색해 보세요!</td>
+            <td style="padding:10px; border:1px solid #334155; color:#fbbf24; font-weight:bold;">네이버 검색 : 황금낭<br>📞 1588-6709 · 📱 010-2690-5574</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 25px; margin-bottom: 12px; padding-top: 18px; border-top: 1px dashed #334155;">
+        <h3 style="color: #fef08a; font-size: 16px; margin: 0 0 6px 0;">📋 브루(Vrew) 편집 & 1차 마스터 내보내기 체크리스트</h3>
+        <div style="font-size: 12.5px; color: #94a3b8;">위 매칭표대로 영상을 배치한 후, 화면전환·BGM·효과음을 적용하고 1차 내보내기를 완료하세요.</div>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox" /> <span><b>1. 대본 투입 & AI 음성 생성</b>: STEP 1 대본 붙여넣기 ➡️ 신뢰감 있는 음성 선택 후 무음 구간 자동 정리</span></li>
+        <li><input type="checkbox" /> <span><b>2. 자막 줄바꿈 & 오탈자 확인</b>: 1줄당 8~10자 이내로 눈에 쏙 들어오게 가독성 확인</span></li>
+        <li><input type="checkbox" /> <span><b>3. 플로우 영상 6개 1:1 배치</b>: 위 매칭표를 보며 씬 1~6번 대사 구간에 해당 비디오 파일 얹기</span></li>
+        <li><input type="checkbox" /> <span><b>4. 화면 전환 (디졸브 0.3초)</b>: 각 씬이 끝나는 마지막 줄(총 5군데)에만 <code>[디졸브]</code> 적용 (전체 적용 X)</span></li>
+        <li><input type="checkbox" /> <span><b>5. 배경음악 (BGM) 삽입</b>: <code>[삽입] ➡️ [배경음악]</code> (어쿠스틱/힐링) ➡️ 볼륨 <b>15~20%</b> 오디오 더킹</span></li>
+        <li><input type="checkbox" /> <span><b>6. 핵심 효과음 (SFX) 삽입</b>: 0초 첫 시작 <code>Whoosh</code>(슉) + 핵심 포인트 <code>Ding/Pop</code> 톡 넣어주기</span></li>
+        <li><input type="checkbox" /> <span><b>7. 1차 마스터 영상 내보내기</b>: <code>[내보내기] ➡️ [영상 파일]</code> 1080p 고화질 저장 후 캡컷으로 이동!</span></li>
+      </ul>
+    </div>
+
+    <!-- STEP 3: 캡컷(CapCut) 시각특효 & 공식 엔딩 마감 체크리스트 -->
+    <div class="step-card">
+      <div class="step-header">
+        <div>
+          <h2 class="step-title">STEP 3. 캡컷(CapCut) 특수효과·공식엔딩·썸네일 최종 마감</h2>
+          <div class="step-sub">브루에서 [음성+자막+영상+화면전환+BGM+SFX]를 1차 완성 후, 캡컷에서 화룡점정 비주얼 마감만 진행하세요!</div>
+        </div>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox" /> <span><b>브루 1차 영상 불러오기</b>: 브루에서 화면전환과 BGM/SFX까지 완성된 영상을 캡컷에 얹기</span></li>
+        <li><input type="checkbox" /> <span><b>★ 특수 스티커 효과</b>: 시선 강탈을 위한 [스티커/이펙트] (스파크, 화살표, 하이라이트 등) 배치</span></li>
+        <li><input type="checkbox" /> <span><b>★ 공식 엔딩 영상 맨 뒤 연결</b>: <code>/shorts_assets/07_황금낭_공식엔딩_4초.mp4</code>를 맨 뒤에 연결!</span></li>
+        <li><input type="checkbox" /> <span><b>★ 엔딩 규격 최종 확인</b>: 폰트 <code>코트라 볼드체</code> + 모션 인(In) <b><code>축소 2</code> (0.4초)</b> 확인</span></li>
+        <li><input type="checkbox" /> <span><b>★ 대표 썸네일 세팅</b>: <code>/shorts_assets/00_유튜브쇼츠_대표썸네일.jpg</code> 세팅 후 최종 1080p 내보내기!</span></li>
+      </ul>
+    </div>
+
+    <!-- STEP 4: 6대 채널 원클릭 업로드 메타 -->
+    <div class="step-card">
+      <div class="step-header">
+        <div>
+          <h2 class="step-title">STEP 4. 6대 채널 원클릭 업로드 메타 복사기</h2>
+          <div class="step-sub">쇼츠 영상 렌더링 완료 후 각 플랫폼별 최적화된 메타데이터를 클릭 한 번으로 복사하여 발행하세요.</div>
+        </div>
+      </div>
+
+      <div class="channel-grid">
+
+        <!-- 1. 유튜브 쇼츠 -->
+        <div class="channel-box">
+          <div class="channel-head">
+            <span class="channel-name">🔴 1. 유튜브 쇼츠 (YouTube Shorts)</span>
+            <label style="font-size:12.5px; color:#94a3b8; cursor:pointer;"><input type="checkbox" /> 발행완료</label>
+          </div>
+          <div class="channel-preview"><b>[제목]</b>
+시들면 버리는 꽃바구니 대신? 365일 황금 열매가 열리는 '재물운 화분'을 선물하세요! #shorts
+
+<b>[설명]</b>
+개업, 승진, 특별한 축하 자리에 시들면 버려지는 꽃바구니가 아쉬우셨나요?
+제주 서귀포 직영 농장에서 정성껏 키워낸 프리미엄 황금낭은 365일 싱그러운 잎과 탐스러운 황금 열매로 받는 분의 공간에 지속적인 감동과 재물운을 선물합니다.
+
+🌿 특허받은 안심 완충 패키지로 제주 농장에서 고객님 댁 앞까지 안전하게 직배송됩니다.
+
+🍊 공식 판매처: https://smartstore.naver.com/goldennang/products/4790070622
+📞 대표 상담 번호: 1588-6709
+📱 직통 모바일 문의: 010-2690-5574
+🏠 공식 홈페이지: https://goldennang.vercel.app
+
+#황금낭 #재물운화분 #개업선물 #승진선물 #연말선물 #제주직송 #애플망고화분 #감귤나무화분 #실내공기정화식물 #shorts</div>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-pink" onclick="copyText(ytTitle, '유튜브 제목이 복사되었습니다!')">📋 제목 복사</button>
+            <button class="btn btn-sm btn-blue" onclick="copyText(ytDesc, '유튜브 설명이 복사되었습니다!')">📋 본문/설명 복사</button>
+            <button class="btn btn-sm btn-indigo" onclick="copyText(ytTags, '유튜브 태그가 복사되었습니다!')">📋 태그 복사</button>
+            <button class="btn btn-sm btn-yellow" onclick="copyText(ytComment, '유튜브 고정댓글이 복사되었습니다!')">📋 고정댓글 복사</button>
+          </div>
+        </div>
+
+        <!-- 2. 네이버 클립 -->
+        <div class="channel-box">
+          <div class="channel-head">
+            <span class="channel-name">🟢 2. 네이버 클립 (Naver Clip)</span>
+            <label style="font-size:12.5px; color:#94a3b8; cursor:pointer;"><input type="checkbox" /> 발행완료</label>
+          </div>
+          <div class="channel-preview">시들면 버리는 꽃바구니 대신? 365일 황금 열매가 열리는 '재물운 화분'을 선물하세요! 🍊✨
+
+개업식, 집들이, 연말연시 감사 선물로 최고의 선택!
+제주 서귀포 직영 농장에서 정성으로 키운 프리미엄 황금낭입니다.
+
+📞 대표 상담: 1588-6709 / 📱 직통: 010-2690-5574
+🍊 네이버 쇼핑: 스마트스토어 '황금낭' 검색!
+
+#황금낭 #재물운화분 #개업선물 #승진선물 #집들이선물 #네이버클립 #클립크리에이터 #플랜테리어 #제주황금낭</div>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-green" onclick="copyText(clipText, '네이버 클립 본문이 복사되었습니다!')">📋 클립 본문 복사</button>
+          </div>
+        </div>
+
+        <!-- 3. 인스타그램 릴스 -->
+        <div class="channel-box">
+          <div class="channel-head">
+            <span class="channel-name">📸 3. 인스타그램 릴스 (Instagram Reels)</span>
+            <label style="font-size:12.5px; color:#94a3b8; cursor:pointer;"><input type="checkbox" /> 발행완료</label>
+          </div>
+          <div class="channel-preview">시들면 버려지는 꽃바구니 대신,
+1년 365일 공간을 밝히는 '살아있는 황금 열매'를 선물해 보세요 🍊✨
+
+제주 서귀포 농장에서 바로 올라오는 프리미엄 황금낭은
+개업, 승진, 특별한 축하 자리에 재물운과 번영의 기운을 가득 채워드립니다.
+
+🌿 특허받은 안심 맞춤 완충 박스로 흙 한 톨 쏟아지지 않고 안전 배송!
+프로필 링크에서 지금 바로 만나보세요 🔗
+
+📞 문의: 1588-6709 / 010-2690-5574
+🏠 공식 스토어: @goldennang_official
+
+#황금낭 #재물운화분 #개업선물추천 #승진축하선물 #연말선물 #집들이선물화분 #플랜테리어 #베란다가드닝 #릴스 #reels</div>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-pink" onclick="copyText(instaText, '인스타그램 캡션이 복사되었습니다!')">📋 릴스 본문 복사</button>
+            <button class="btn btn-sm btn-yellow" onclick="copyText(instaComment, '인스타 고정댓글이 복사되었습니다!')">📋 고정댓글 복사</button>
+          </div>
+        </div>
+
+        <!-- 4. 스레드 -->
+        <div class="channel-box">
+          <div class="channel-head">
+            <span class="channel-name">🧵 4. 스레드 (Threads)</span>
+            <label style="font-size:12.5px; color:#94a3b8; cursor:pointer;"><input type="checkbox" /> 발행완료</label>
+          </div>
+          <div class="channel-preview">개업이나 승진 축하할 때 며칠 지나면 시들어 버리는 꽃바구니 선물, 솔직히 아까우셨죠?
+
+365일 황금 열매가 주렁주렁 매달려 재물운을 불러오는 '제주 황금낭 화분'은 어떠세요?
+제주 농장 직배송이라 싱싱함이 차원이 다릅니다 🍊
+
+네이버에 '황금낭' 검색해 보세요!
+상담: 1588-6709 / 010-2690-5574</div>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-dark" onclick="copyText(threadsText, '스레드 본문이 복사되었습니다!')">📋 스레드 본문 복사</button>
+          </div>
+        </div>
+
+        <!-- 5. 당근마켓 -->
+        <div class="channel-box">
+          <div class="channel-head">
+            <span class="channel-name">🥕 5. 당근마켓 (동네생활 / 비즈프로필)</span>
+            <label style="font-size:12.5px; color:#94a3b8; cursor:pointer;"><input type="checkbox" /> 발행완료</label>
+          </div>
+          <div class="channel-preview">[제주 직송] 시들면 버리는 꽃 대신 365일 황금 열매가 열리는 '재물운 화분' 황금낭 🍊✨
+
+이웃님들, 개업이나 집들이, 승진 축하 선물로 꽃바구니 보냈다가 며칠 만에 시들어 버려 아쉬웠던 적 있으시죠?
+
+제주 서귀포 직영 농장에서 직접 키운 프리미엄 '황금낭'은 1년 내내 탐스러운 황금 열매와 싱그러운 초록 잎으로 공간을 채워주며 재물과 번영을 부르는 특별한 화분입니다.
+
+✔ 특허받은 안심 포장으로 제주에서 집 앞까지 안전 배송
+✔ 실내에서도 누구나 손쉽게 키울 수 있는 관리 가이드 제공
+
+📞 대표 상담: 1588-6709
+📱 직통 모바일 문의: 010-2690-5574
+🍊 네이버 쇼핑: '황금낭' 검색</div>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-orange" onclick="copyText(danggeunText, '당근마켓 소식이 복사되었습니다!')">📋 당근 소식 복사</button>
+          </div>
+        </div>
+
+        <!-- 6. 카카오톡 비즈채널 -->
+        <div class="channel-box">
+          <div class="channel-head">
+            <span class="channel-name">💬 6. 카카오톡 채널 / 단체 메시지</span>
+            <label style="font-size:12.5px; color:#94a3b8; cursor:pointer;"><input type="checkbox" /> 발행완료</label>
+          </div>
+          <div class="channel-preview">[황금낭] 시들지 않는 감동! 365일 황금 열매가 열리는 '재물운 화분' 안내 🍊✨
+
+소중한 분의 개업, 승진, 특별한 축하를 전할 때
+며칠 만에 시드는 꽃바구니 대신 1년 내내 싱그러운 황금빛 결실을 맺는 '제주 황금낭'을 선물해 보세요.
+
+받는 분의 공간에 번영과 재물운을 불러오며, 보는 내내 선물한 분의 따뜻한 정성을 떠올리게 됩니다.
+
+🌿 특허받은 안심 포장으로 제주 농장에서 안전하게 직배송!
+🍊 공식 스토어: https://smartstore.naver.com/goldennang/products/4790070622
+📞 대표 상담: 1588-6709
+📱 직통 모바일: 010-2690-5574</div>
+          <div class="btn-group">
+            <button class="btn btn-sm btn-yellow" onclick="copyText(kakaoText, '카카오톡 메시지가 복사되었습니다!')">📋 카톡 메시지 복사</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="toast" class="toast">복사되었습니다!</div>
+
+  <script>
+    const ytTitle = `시들면 버리는 꽃바구니 대신? 365일 황금 열매가 열리는 '재물운 화분'을 선물하세요! #shorts`;
+    const ytDesc = `개업, 승진, 특별한 축하 자리에 시들면 버려지는 꽃바구니가 아쉬우셨나요?\n제주 서귀포 직영 농장에서 정성껏 키워낸 프리미엄 황금낭은 365일 싱그러운 잎과 탐스러운 황금 열매로 받는 분의 공간에 지속적인 감동과 재물운을 선물합니다.\n\n🌿 특허받은 안심 완충 패키지로 제주 농장에서 고객님 댁 앞까지 안전하게 직배송됩니다.\n\n🍊 공식 판매처: https://smartstore.naver.com/goldennang/products/4790070622\n📞 대표 상담 번호: 1588-6709\n📱 직통 모바일 문의: 010-2690-5574\n🏠 공식 홈페이지: https://goldennang.vercel.app\n\n#황금낭 #재물운화분 #개업선물 #승진선물 #연말선물 #제주직송 #애플망고화분 #감귤나무화분 #실내공기정화식물 #shorts`;
+    const ytTags = `황금낭, 제주황금낭, 재물운화분, 개업선물, 승진선물, 축하선물, 연말선물, 제주직송, 애플망고화분, 감귤나무화분, 실내화분, 인테리어화분, 플랜테리어, 공기정화식물, 황금열매, 부자되는화분, 대박화분, 집들이선물, 부모님선물, 쇼츠, shorts`;
+    const ytComment = `🍊 [제주 황금낭 공식 안내]\n시들면 버려지는 꽃바구니 대신, 365일 황금 열매가 맺히는 프리미엄 황금낭 화분으로 번영과 재물운을 선물하세요!\n\n🌿 특허받은 안심 포장으로 제주 농장에서 전국 직배송!\n🍊 네이버 검색: 황금낭\n🛒 공식 스마트스토어: https://smartstore.naver.com/goldennang/products/4790070622\n📞 대표 상담 번호: 1588-6709\n📱 직통 모바일 문의: 010-2690-5574`;
+
+    const clipText = `시들면 버리는 꽃바구니 대신? 365일 황금 열매가 열리는 '재물운 화분'을 선물하세요! 🍊✨\n\n개업식, 집들이, 연말연시 감사 선물로 최고의 선택!\n제주 서귀포 직영 농장에서 정성으로 키운 프리미엄 황금낭입니다.\n\n📞 대표 상담: 1588-6709 / 📱 직통: 010-2690-5574\n🍊 네이버 쇼핑: 스마트스토어 '황금낭' 검색!\n\n#황금낭 #재물운화분 #개업선물 #승진선물 #집들이선물 #네이버클립 #클립크리에이터 #플랜테리어 #제주황금낭`;
+
+    const instaText = `시들면 버려지는 꽃바구니 대신,\n1년 365일 공간을 밝히는 '살아있는 황금 열매'를 선물해 보세요 🍊✨\n\n제주 서귀포 농장에서 바로 올라오는 프리미엄 황금낭은\n개업, 승진, 특별한 축하 자리에 재물운과 번영의 기운을 가득 채워드립니다.\n\n🌿 특허받은 안심 맞춤 완충 박스로 흙 한 톨 쏟아지지 않고 안전 배송!\n프로필 링크에서 지금 바로 만나보세요 🔗\n\n📞 문의: 1588-6709 / 010-2690-5574\n🏠 공식 스토어: @goldennang_official\n\n#황금낭 #재물운화분 #개업선물추천 #승진축하선물 #연말선물 #집들이선물화분 #플랜테리어 #베란다가드닝 #릴스 #reels`;
+    const instaComment = `🍊 [제주 황금낭 공식 안내]\n시들면 버리는 꽃바구니 대신 365일 황금 열매가 열리는 재물운 화분!\n프로필 링크에서 전 상품을 만나보실 수 있습니다.\n📞 대표 상담: 1588-6709 / 📱 직통: 010-2690-5574`;
+
+    const threadsText = `개업이나 승진 축하할 때 며칠 지나면 시들어 버리는 꽃바구니 선물, 솔직히 아까우셨죠?\n\n365일 황금 열매가 주렁주렁 매달려 재물운을 불러오는 '제주 황금낭 화분'은 어떠세요?\n제주 농장 직배송이라 싱싱함이 차원이 다릅니다 🍊\n\n네이버에 '황금낭' 검색해 보세요!\n상담: 1588-6709 / 010-2690-5574`;
+
+    const danggeunText = `[제주 직송] 시들면 버리는 꽃 대신 365일 황금 열매가 열리는 '재물운 화분' 황금낭 🍊✨\n\n이웃님들, 개업이나 집들이, 승진 축하 선물로 꽃바구니 보냈다가 며칠 만에 시들어 버려 아쉬웠던 적 있으시죠?\n\n제주 서귀포 직영 농장에서 직접 키운 프리미엄 '황금낭'은 1년 내내 탐스러운 황금 열매와 싱그러운 초록 잎으로 공간을 채워주며 재물과 번영을 부르는 특별한 화분입니다.\n\n✔ 특허받은 안심 포장으로 제주에서 집 앞까지 안전 배송\n✔ 실내에서도 누구나 손쉽게 키울 수 있는 관리 가이드 제공\n\n📞 대표 상담: 1588-6709\n📱 직통 모바일 문의: 010-2690-5574\n🍊 네이버 쇼핑: '황금낭' 검색`;
+
+    const kakaoText = `[황금낭] 시들지 않는 감동! 365일 황금 열매가 열리는 '재물운 화분' 안내 🍊✨\n\n소중한 분의 개업, 승진, 특별한 축하를 전할 때\n며칠 만에 시드는 꽃바구니 대신 1년 내내 싱그러운 황금빛 결실을 맺는 '제주 황금낭'을 선물해 보세요.\n\n받는 분의 공간에 번영과 재물운을 불러오며, 보는 내내 선물한 분의 따뜻한 정성을 떠올리게 됩니다.\n\n🌿 특허받은 안심 포장으로 제주 농장에서 안전하게 직배송!\n🍊 공식 스토어: https://smartstore.naver.com/goldennang/products/4790070622\n📞 대표 상담: 1588-6709\n📱 직통 모바일: 010-2690-5574`;
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = '✔ ' + msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+    function fallbackCopy(text, msg) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.top = '0';
+      ta.style.left = '0';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      ta.setSelectionRange(0, 999999);
+      try {
+        document.execCommand('copy');
+        showToast(msg);
+      } catch (err) {
+        alert('복사 권한이 차단되었습니다. 텍스트를 직접 길게 눌러 복사해 주세요.');
+      }
+      document.body.removeChild(ta);
+    }
+    function copyText(text, msg) {
+      const btn = window.event && window.event.currentTarget;
+      const markDone = () => {
+        showToast(msg);
+        if (btn) {
+          const orig = btn.innerHTML;
+          btn.classList.add('btn-copied');
+          btn.innerHTML = '✔ 복사됨!';
+          setTimeout(() => { btn.classList.remove('btn-copied'); btn.innerHTML = orig; }, 1200);
+        }
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(markDone).catch(() => { fallbackCopy(text, msg); markDone(); });
+      } else {
+        fallbackCopy(text, msg);
+        markDone();
+      }
+    }
+    function copyById(id, msg) {
+      const text = document.getElementById(id).innerText;
+      copyText(text, msg);
+    }
+  </script>
+</body>
+</html>

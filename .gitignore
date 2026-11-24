@@ -44,7 +44,7 @@ next-env.d.ts
 *사업계획*
 *.env*
 !*.env.example
-shorts/
+/shorts/
 media_library/
 youtube_assets/
 longform_intro/

@@ -17,3 +17,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - 공식 판매처: https://smartstore.naver.com/goldennang/products/4790070622
 - 공식 홈페이지: https://goldennang.vercel.app
 
+## 쇼츠 제작 표준 규격 (2026-11-24 김철수 대표님 최종 승인)
+- 모든 쇼츠는 `00_shorts_master_copy.html` + `ref_photos` 폴더 + `쇼츠_복사기_열기.bat` 3종 세트 필수 완비.
+- 씬 1~5번 레퍼런스 이미지는 에이전트가 사전에 고해상도 9:16으로 직접 선제작하여 `ref_photos`에 담아둘 것.
+- 더블 클릭 시 웹 대시보드와 `ref_photos` 폴더가 동시에 팝업되고 콘솔은 자동 종료(`exit`).
+- 바탕화면 저장은 반드시 `C:\Users\user\Desktop\[AI작업실]\황금낭_프로젝트\` 내에 정리.
+
+
