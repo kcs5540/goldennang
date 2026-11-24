@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍊 [제주 황금낭] 재물운 화분 네이버 블로그 스마트에디터 ONE 서식 복사기</title>
+  <style>
+    * { box-sizing: border-box; font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
+    body { margin: 0; padding: 20px 16px 80px; background: #f1f5f9; color: #1e293b; line-height: 1.85; }
+    
+    .top-toolbar {
+      max-width: 800px; margin: 0 auto 20px;
+      background: #0f172a; color: #fff; padding: 20px 24px; border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25); border-left: 6px solid #f59e0b;
+      position: sticky; top: 12px; z-index: 100;
+    }
+    .toolbar-head {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #334155;
+    }
+    .toolbar-title { font-size: 17px; font-weight: bold; color: #fef08a; }
+    .toolbar-sub { font-size: 13px; color: #94a3b8; }
+    
+    .btn-group { display: flex; flex-wrap: wrap; gap: 8px; }
+    .btn-action {
+      border: none; border-radius: 8px; padding: 10px 16px; font-size: 13.5px; font-weight: bold;
+      cursor: pointer; transition: all 0.15s ease;
+    }
+    .btn-action:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .btn-title { background: #334155; color: #f8fafc; }
+    .btn-main {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #fff; font-size: 14.5px; padding: 10px 22px;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+    }
+    .btn-tags { background: #f59e0b; color: #78350f; font-weight: 800; }
+    
+    .toolbar-guide {
+      margin-top: 12px; padding: 10px 14px; background: rgba(255,255,255,0.06);
+      border-radius: 8px; font-size: 12.5px; color: #cbd5e1; display: flex; flex-wrap: wrap; gap: 14px;
+    }
+    .guide-chip { color: #fde047; font-weight: bold; }
+
+    .paper {
+      max-width: 800px; margin: 0 auto; background: #ffffff; padding: 50px 42px;
+      border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+
+    .photo-slot {
+      background: #f8fafc; border: 2px dashed #94a3b8; border-radius: 12px;
+      padding: 16px; margin: 26px 0; text-align: center;
+    }
+    .photo-slot-title { font-weight: bold; font-size: 14px; color: #0284c7; margin-bottom: 4px; }
+    .photo-slot-sub { font-size: 12px; color: #64748b; }
+
+    .quote-box {
+      border-left: 5px solid #f59e0b; background: #fffbeb;
+      padding: 18px 22px; margin: 26px 0; border-radius: 0 10px 10px 0;
+      color: #78350f; font-weight: bold; font-size: 16px;
+    }
+    .section-title {
+      font-size: 20px; font-weight: 800; color: #0f172a; margin-top: 36px; margin-bottom: 14px;
+      display: flex; align-items: center; gap: 8px; border-left: 4px solid #10b981; padding-left: 10px;
+    }
+    .highlight-yellow { background: #fef08a; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e293b; }
+    .highlight-green { background: #dcfce7; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #166534; }
+    
+    .cta-card {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: #fff; padding: 28px 24px; border-radius: 14px; margin-top: 38px;
+      border: 2px solid #f59e0b; box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .cta-title { font-size: 18px; font-weight: bold; color: #fef08a; margin-bottom: 12px; }
+    .cta-item { margin: 8px 0; font-size: 14.5px; }
+
+    .toast {
+      position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+      background: #0f172a; color: #38bdf8; padding: 14px 28px; border-radius: 999px;
+      font-size: 14.5px; font-weight: bold; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      display: none; z-index: 9999; border: 1.5px solid #38bdf8;
+    }
+    .toast.show { display: block; animation: fadeInOut 2.5s forwards; }
+    @keyframes fadeInOut { 0% { opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:0; } }
+  </style>
+</head>
+<body>
+
+  <!-- Top Toolbar -->
+  <div class="top-toolbar">
+    <div class="toolbar-head">
+      <div>
+        <div class="toolbar-title">🍊 제주 황금낭 네이버 블로그 원클릭 서식 복사기</div>
+        <div class="toolbar-sub">버튼 클릭 1번으로 제목·서식·태그가 네이버 스마트에디터 ONE에 100% 깔끔하게 복사됩니다.</div>
+      </div>
+      <div style="font-size: 12px; color: #94a3b8;">
+        <label style="cursor:pointer;"><input type="checkbox" id="keep-slot-marker" /> [사진 자리] 메모 남기기</label>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn-action btn-title" onclick="copyTitle()">📋 1. 추천 제목 복사</button>
+      <button class="btn-action btn-main" onclick="copyFormattedBlog()">✨ 2. 예쁜 서식 본문 복사 (Ctrl+V)</button>
+      <button class="btn-action btn-tags" onclick="copyTags()">🏷️ 3. 태그 30개 일괄 복사</button>
+    </div>
+
+    <div class="toolbar-guide">
+      <div>💡 <span class="guide-chip">[내 클립] 연동</span>: 에디터 우측 [내 클립] 클릭 ➡️ 방금 올린 클립 선택!</div>
+      <div>🔗 <span class="guide-chip">[링크 🔗] 카드</span>: 상단 도구 7번째 링크 버튼 ➡️ 스마트스토어 주소 입력!</div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">✔ 복사되었습니다!</div>
+
+  <!-- Blog Copy Paper -->
+  <div class="paper">
+    <div id="blog-copy-area">
+
+      <!-- Blog Title Area -->
+      <h1 style="font-size: 24px; font-weight: 800; color: #0f172a; line-height: 1.45; border-bottom: 3px solid #f59e0b; padding-bottom: 16px; margin-top: 0;">
+        시들면 버리는 꽃바구니 대신? 365일 황금 열매가 열리는 '재물운 화분' 제주 황금낭 선물 🍊✨
+      </h1>
+
+      <!-- Photo Slot 0: Cover Thumbnail -->
+      <div class="photo-slot" data-slot="0 (대표 썸네일)">
+        <div class="photo-slot-title">📷 [대표 사진 00] blog_photos/00_대표썸네일.jpg</div>
+        <div class="photo-slot-sub">💡 1:1 정방형 고해상도 커버 썸네일 (네이버 블로그 '대표' 지정용)</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        소중한 거래처 대표님의 개업식, 존경하는 상사의 영전·승진, 그리고 한 해를 마무리하는 연말연시 감사 선물...<br>
+        특별한 축하의 마음을 전해야 할 때마다 많은 분들이 가장 먼저 떠올리는 것이 바로 <b>꽃바구니</b>나 <b>축하 화환</b>입니다.
+      </p>
+
+      <!-- Photo Slot 1: Hooking -->
+      <div class="photo-slot" data-slot="1 (시든 꽃바구니 고민)">
+        <div class="photo-slot-title">📷 [사진 01] blog_photos/01_시든꽃바구니_선물고민.jpg</div>
+        <div class="photo-slot-sub">💡 시든 꽃바구니와 선물 선택 고민 이미지 배치</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        하지만 10만 원, 20만 원을 들여 정성껏 보낸 꽃바구니가 <span class="highlight-yellow">불과 일주일도 지나지 않아 시들어 쓰레기봉투로 향하는 모습</span>을 보며 씁쓸함을 느껴본 적 없으신가요?<br><br>
+        받는 분 입장에서도 얼마 못 가 시들어버리는 화환을 정리하느라 번거롭고, 보내는 분 입장에서도 소중한 정성이 금세 잊히는 것 같아 늘 아쉬움이 남곤 합니다.
+      </p>
+
+      <div class="quote-box">
+        "보내는 사람의 따뜻한 정성이 며칠 만에 사라지지 않고,<br>
+        365일 받는 분의 공간에서 살아 숨 쉬며 매일 황금빛 행운을 전할 수는 없을까?"
+      </div>
+
+      <!-- Clip Slot: Naver Clip Card -->
+      <div class="photo-slot" data-slot="내 클립 (숏폼 영상)" style="border-color: #10b981; background: #f0fdf4;">
+        <div class="photo-slot-title" style="color: #059669;">🎬 [네이버 클립 연동 자리] 방금 발행한 황금낭 숏폼 영상 카드</div>
+        <div class="photo-slot-sub">💡 스마트에디터 ONE 우측 도구 모음의 <b>[내 클립]</b> 아이콘 클릭 ➡️ 방금 올린 클립 선택 후 본문 삽입!</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        그 간절한 고민에 대한 가장 확실하고 품격 있는 해답!<br>
+        바로 1년 내내 탐스러운 황금빛 결실을 맺는 <span class="highlight-green">제주 서귀포 산지직송 프리미엄 유실수, [제주 황금낭]</span>입니다. 🍊🌿
+      </p>
+
+      <!-- Section 1 -->
+      <div class="section-title">1. 조화가 아닙니다! 365일 살아 숨 쉬는 진짜 유실수 화분</div>
+      
+      <!-- Photo Slot 2: Real Tree -->
+      <div class="photo-slot" data-slot="2 (베란다 애플망고 실사)">
+        <div class="photo-slot-title">📷 [사진 02] blog_photos/02_베란다_애플망고화분_실사.jpg</div>
+        <div class="photo-slot-sub">💡 아파트 베란다에서 실제로 자라 열매 맺힌 애플망고나무 실사</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        시중에 흔히 보이는 플라스틱 모조 나무나 인위적인 조화가 절대 아닙니다.<br>
+        청정 제주의 따스한 햇살과 맑은 해풍을 머금은 <span class="highlight-yellow">서귀포 직영 농장 스마트 온실에서 전문 농업인의 손길로 정성껏 키워낸 '진짜 살아있는 유실수 화분'</span>입니다.
+      </p>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        사계절 내내 윤기 흐르는 싱그러운 초록 잎사귀로 실내 공기를 맑게 정화해 줄 뿐만 아니라, 매년 붉고 노란 황금빛 열매를 주렁주렁 매달아 공간 전체에 생명력 넘치는 활기와 풍요로움을 불어넣어 줍니다.
+      </p>
+
+      <!-- Section 2 -->
+      <div class="section-title">2. 아파트 베란다와 사무실에서도 누구나 쉽게 키우는 생명력</div>
+
+      <!-- Photo Slot 3: Farm Greenhouse -->
+      <div class="photo-slot" data-slot="3 (서귀포 온실 스마트팜)">
+        <div class="photo-slot-title">📷 [사진 03] blog_photos/03_서귀포_직영농장_온실.jpg</div>
+        <div class="photo-slot-sub">💡 첨단 유인줄 스마트팜 온실 실사 (한라봉 없는 순수 애플망고 온실)</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        "제주도 열대 과일나무를 서울이나 수도권 아파트, 사무실에서 키우기 어렵지 않을까요?"<br>
+        많은 분들이 가장 먼저 물어보시는 질문입니다.
+      </p>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        결론부터 말씀드리면, <b>식물을 처음 키워보는 초보 식집사도 누구나 손쉽게 키우실 수 있습니다!</b>
+      </p>
+
+      <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 20px; margin: 20px 0;">
+        <div style="font-weight: bold; color: #0284c7; margin-bottom: 10px; font-size: 15px;">🌿 황금낭 초간편 3대 홈케어 포인트</div>
+        <ul style="margin: 0; padding-left: 20px; color: #334155; font-size: 15px; line-height: 1.8;">
+          <li><b>물주기</b>: 겉흙이 바짝 말랐을 때 일주일에 1~2회 화분 밑으로 물이 빠져나올 때까지 흠뻑 주기만 하면 끝!</li>
+          <li><b>채광</b>: 햇빛이 잘 드는 아파트 베란다 창가나 햇살이 드는 사무실 창가에 두시면 싱싱하게 자랍니다.</li>
+          <li><b>맞춤 관리 가이드북 동봉</b>: 화분과 함께 누구나 따라 할 수 있는 '황금낭 전용 계절별 관리법 가이드'를 함께 보내드립니다.</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section-title">3. 호텔급 16브릭스(Brix) 완숙 꿀과즙을 내 집에서 수확하는 감동!</div>
+
+      <!-- Photo Slot 4: Mango Fruit -->
+      <div class="photo-slot" data-slot="4 (완숙 애플망고 큐브컷)">
+        <div class="photo-slot-title">📷 [사진 04] blog_photos/04_완숙애플망고_꿀과즙_수확.jpg</div>
+        <div class="photo-slot-sub">💡 호텔급 16브릭스 다이아몬드 큐브컷 완숙 과즙 실사</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        제주 황금낭의 가장 독보적인 매력은 바로 <span class="highlight-yellow">'내가 직접 키워 따먹는 완숙 애플망고의 황홀한 맛'</span>입니다.<br><br>
+        일반 마트나 백화점에서 판매되는 수입산 망고는 장거리 해상 운송을 위해 덜 익은 초록 상태에서 수확해 약품으로 강제 후숙하는 경우가 대부분입니다.
+      </p>
+
+      <!-- Comparison Table -->
+      <table style="width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 14.5px;">
+        <thead>
+          <tr style="background: #0f172a; color: #fef08a;">
+            <th style="padding: 12px; border: 1px solid #cbd5e1; width: 28%;">구분</th>
+            <th style="padding: 12px; border: 1px solid #cbd5e1; width: 36%;">수입산 후숙 망고</th>
+            <th style="padding: 12px; border: 1px solid #cbd5e1; width: 36%; background: #d97706; color: #fff;">제주 황금낭 직영 완숙</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; font-weight: bold; text-align: center; background: #f8fafc;">수확 시기</td>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; text-align: center; color: #64748b;">덜 익은 조기 수확</td>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; text-align: center; font-weight: bold; color: #047857; background: #f0fdf4;">나무에서 100% 자연 완숙</td>
+          </tr>
+          <tr>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; font-weight: bold; text-align: center; background: #f8fafc;">당도(Brix)</td>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; text-align: center; color: #64748b;">11~13 브릭스</td>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; text-align: center; font-weight: bold; color: #b45309; background: #fefce8;">최고급 16~18 브릭스!</td>
+          </tr>
+          <tr>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; font-weight: bold; text-align: center; background: #f8fafc;">향기와 식감</td>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; text-align: center; color: #64748b;">푸석하고 밋밋한 단맛</td>
+            <td style="padding: 11px; border: 1px solid #cbd5e1; text-align: center; font-weight: bold; color: #047857; background: #f0fdf4;">터져 나오는 꿀과즙 & 쫄깃한 식감</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        나무에서 햇살을 듬뿍 받아 붉게 물든 완숙 애플망고를 베란다에서 가족, 아이들과 함께 직접 수확하는 순간은 평생 잊지 못할 달콤한 추억과 감동이 됩니다.
+      </p>
+
+      <!-- Section 4 -->
+      <div class="section-title">4. 개업·승진·연말연시, 공간의 번영과 재물운(財物運)을 부르는 VIP 화분</div>
+
+      <!-- Photo Slot 5: VIP Office -->
+      <div class="photo-slot" data-slot="5 (VIP 사무실 선물 실사)">
+        <div class="photo-slot-title">📷 [사진 05] blog_photos/05_VIP사무실_개업승진_재물운화분.jpg</div>
+        <div class="photo-slot-sub">💡 펜트하우스 임원실에 놓인 품격 있는 VIP 축하 화분 실사</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        동양 전통 풍수지리에서 <span class="highlight-yellow">황금빛 열매는 예로부터 집안과 사업장에 금전운과 재물복, 번영의 기운을 가득 불러들이는 최고의 영물</span>로 꼽혀왔습니다.<br><br>
+        새롭게 문을 연 매장의 카운터, 대표이사 집무실, 병원이나 로펌 로비, 혹은 가정집 거실에 황금낭을 놓아두는 것만으로도 공간의 격조가 한층 높아집니다.
+      </p>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        방문하는 손님들마다 <b>"이게 진짜 열매예요? 세상에, 너무 신기하고 복스러워 보이네요!"</b>라며 감탄을 쏟아내시니, 선물을 보낸 분의 특별한 안목과 정성이 1년 365일 내내 각인되는 최고의 선물이 됩니다.
+      </p>
+
+      <!-- Section 5 -->
+      <div class="section-title">5. 흙 한 톨 쏟아지지 않는 [특허 등록 안심 완충 패키지] 전국 직배송!</div>
+
+      <!-- Photo Slot 6: Safe Delivery Box -->
+      <div class="photo-slot" data-slot="6 (특허 안심 택배 박스)">
+        <div class="photo-slot-title">📷 [사진 06] blog_photos/06_특허완충_안심택배박스_배송.jpg</div>
+        <div class="photo-slot-sub">💡 1미터 대형 애플망고 화분과 특허 완충 안심 박스 실사</div>
+      </div>
+
+      <p style="font-size: 16px; color: #334155; line-height: 1.9;">
+        "아무리 좋은 나무라도 제주도에서 육지까지 배송되다 가지가 부러지거나 흙이 쏟아지면 어쩌지?"<br>
+        그런 염려는 완전히 내려놓으셔도 좋습니다. 황금낭은 식물 배송의 한계를 뛰어넘은 <span class="highlight-green">자체 특허 등록 안심 완충 패키지 시스템</span>을 보유하고 있습니다.
+      </p>
+
+      <ul style="color: #334155; font-size: 16px; line-height: 1.9;">
+        <li><b>특허받은 전용 입체 완충재</b>: 1미터 대형 나무 화분을 상하좌우 빈틈없이 고정하여 택배 박스가 뒤집히거나 흔들려도 흙 한 톨 쏟아지지 않습니다.</li>
+        <li><b>서귀포 직영 농장 직배송</b>: 주문 즉시 현지 농장에서 가장 튼튼하고 수형이 아름다운 특급 개체만을 엄선하여 전국 고객님 댁 앞까지 안전하게 직송해 드립니다.</li>
+      </ul>
+
+      <!-- CTA Card Area -->
+      <div class="cta-card">
+        <div class="cta-title">🍊 제주 황금낭 공식 판매처 & VIP 대량 상담 안내</div>
+        <div style="font-size: 14.5px; color: #e2e8f0; line-height: 1.8; margin-bottom: 16px;">
+          올 연말연시, 시들면 버려지는 흔한 선물 대신<br>
+          받는 분의 공간에서 365일 황금빛 행운을 전하는 <b>살아있는 감동, 제주 황금낭</b>을 선물해 보세요!
+        </div>
+
+        <div style="background: rgba(255,255,255,0.08); padding: 14px 18px; border-radius: 10px; margin-bottom: 14px;">
+          <div class="cta-item">🛒 <b>네이버 쇼핑</b>: 스마트스토어 <b>'황금낭'</b> 검색</div>
+          <div class="cta-item">🔗 <b>공식 스마트스토어</b>: <a href="https://smartstore.naver.com/goldennang/products/4790070622" target="_blank" style="color: #fde047; text-decoration: underline; font-weight: bold;">https://smartstore.naver.com/goldennang/products/4790070622</a></div>
+          <div class="cta-item">🏠 <b>공식 홈페이지</b>: <a href="https://goldennang.vercel.app" target="_blank" style="color: #38bdf8; text-decoration: underline;">https://goldennang.vercel.app</a></div>
+        </div>
+
+        <div style="font-size: 14px; color: #fef08a; font-weight: bold;">
+          📞 대표 상담 번호: 1588-6709<br>
+          📱 직통 모바일 문의: 010-2690-5574<br>
+          <span style="font-size: 12.5px; color: #94a3b8; font-weight: normal;">(※ 기업·법인 대량 단체 주문 맞춤 100% 전자세금계산서 발행 및 전국 분할 직배송 지원)</span>
+        </div>
+      </div>
+
+      <!-- Link Card Guidance -->
+      <div style="margin-top: 24px; padding: 16px; border: 1.5px dashed #f59e0b; border-radius: 10px; background: #fffbeb; text-align: center;">
+        <span style="font-weight: bold; color: #b45309;">💡 [링크 🔗] 카드 삽입 안내</span><br>
+        <span style="font-size: 13px; color: #78350f;">에디터 상단 7번째 <b>[링크 🔗]</b> 아이콘 클릭 ➡️ <code>https://smartstore.naver.com/goldennang/products/4790070622</code> 입력 후 [확인] 누르면 예쁜 구매 카드가 완성됩니다!</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const titleText = `시들면 버리는 꽃바구니 대신? 365일 황금 열매가 열리는 '재물운 화분' 제주 황금낭 선물`;
+    const tagsText = `#황금낭 #제주황금낭 #재물운화분 #개업선물 #승진선물 #연말선물 #연말연시선물 #기업선물 #VIP선물 #거래처선물 #집들이선물 #부모님선물 #축하화분 #개업화분추천 #승진화분 #애플망고화분 #애플망고나무 #감귤화분 #실내공기정화식물 #플랜테리어 #베란다가드닝 #식집사 #제주직송 #산지직송 #특허안심배송 #부자되는화분 #돈들어오는나무 #공간인테리어 #호텔급과일 #16브릭스`;
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = '✔ ' + msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    function copyTitle() {
+      navigator.clipboard.writeText(titleText).then(() => {
+        showToast("추천 제목이 복사되었습니다! 네이버 블로그 제목창에 붙여넣으세요.");
+      });
+    }
+
+    function copyTags() {
+      navigator.clipboard.writeText(tagsText).then(() => {
+        showToast("네이버 블로그 태그 30개가 일괄 복사되었습니다!");
+      });
+    }
+
+    async function copyFormattedBlog() {
+      const area = document.getElementById("blog-copy-area");
+      const keepMarker = document.getElementById("keep-slot-marker").checked;
+
+      const clone = area.cloneNode(true);
+
+      const slots = clone.querySelectorAll(".photo-slot");
+      slots.forEach(slot => {
+        const slotNum = slot.getAttribute("data-slot") || "";
+        if (keepMarker) {
+          const p = document.createElement("p");
+          p.style.cssText = "color: #94a3b8; font-size: 13px; text-align: center; margin: 16px 0;";
+          p.textContent = `[사진 ${slotNum} 자리]`;
+          slot.parentNode.replaceChild(p, slot);
+        } else {
+          const frag = document.createDocumentFragment();
+          const p1 = document.createElement("p"); p1.innerHTML = "<br>";
+          const p2 = document.createElement("p"); p2.innerHTML = "<br>";
+          frag.appendChild(p1); frag.appendChild(p2);
+          slot.parentNode.replaceChild(frag, slot);
+        }
+      });
+
+      const html = clone.innerHTML;
+      const text = clone.innerText;
+
+      try {
+        if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+          const item = new ClipboardItem({
+            "text/html": new Blob([html], { type: "text/html" }),
+            "text/plain": new Blob([text], { type: "text/plain" })
+          });
+          await navigator.clipboard.write([item]);
+          showToast("예쁜 서식 본문이 복사되었습니다! 스마트에디터 ONE에 Ctrl+V 하세요.");
+          return;
+        }
+      } catch (err) {}
+
+      const range = document.createRange();
+      range.selectNodeContents(clone);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      document.execCommand("copy");
+      sel.removeAllRanges();
+      showToast("본문이 복사되었습니다! 네이버 블로그 에디터에 Ctrl+V 해주세요.");
+    }
+  </script>
+
+</body>
+</html>
